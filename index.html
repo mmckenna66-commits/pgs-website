@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Premier General Surgeons | Surgical Care in Brownsville, TX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Premier General Surgeons provides comprehensive surgical care in Brownsville, TX. Board-certified surgeons offering general, bariatric, trauma, laparoscopic, and wound care services. Se habla español." />
+
+  <!--
+    NOTE: To use real Gotham and Jakobs Handwriting 2 on the web,
+    you will need to load them via @font-face or a webfont service.
+    For now, we use good system fallbacks.
+  -->
+  <style>
+    :root {
+      /* Brand Colors */
+      --pgs-blue: #5988DA;          /* PGS Blue */
+      --pgs-orange: #FF8400;        /* PGS Orange */
+      --pgs-light-blue: #97CBEA;    /* secondary */
+      --pgs-steel-blue: #73A8E4;    /* secondary */
+      --pgs-yellow-orange: #F2C21A; /* secondary */
+      --pgs-light-gray: #D3D3D3;    /* secondary */
+
+      /* Neutral + text */
+      --color-bg: #f5f7fb;
+      --color-bg-alt: #ffffff;
+      --color-text: #1f2933;
+      --color-muted: #6b7280;
+      --shadow-soft: 0 14px 30px rgba(15, 23, 42, 0.12);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        system-ui, sans-serif;
+      color: var(--color-text);
+      background: radial-gradient(circle at top left, #ffffff 0, #f3f4f6 40%, #e5e7eb 100%);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, var(--pgs-orange), var(--pgs-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .logo-text-top {
+      font-family: "Gotham Bold", system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: var(--pgs-blue);
+    }
+
+    .logo-text-bottom {
+      font-family: "Gotham Book", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: var(--color-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--pgs-blue);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--pgs-blue), var(--pgs-orange));
+      transition: width 0.2s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--pgs-blue), var(--pgs-steel-blue));
+      color: #ffffff;
+      box-shadow: 0 10px 22px rgba(89, 136, 218, 0.45);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 26px rgba(89, 136, 218, 0.55);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: var(--pgs-blue);
+      border: 1px solid var(--pgs-blue);
+    }
+
+    .btn-outline:hover {
+      background: var(--pgs-blue);
+      color: #ffffff;
+    }
+
+    /* Mobile nav */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-links-mobile-select {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links-mobile-select {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 0.25rem 0.5rem;
+        border: 1px solid #e5e7eb;
+        background: #ffffff;
+        font-size: 0.88rem;
+        color: var(--color-muted);
+      }
+    }
+
+    /* HERO */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--pgs-blue);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+      font-family: "Gotham Bold", system-ui, sans-serif;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title span {
+      color: var(--pgs-blue);
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle-es {
+      font-size: 0.95rem;
+      color: var(--pgs-steel-blue);
+      font-style: italic;
+      margin-bottom: 1.3rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-contact-line {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+    }
+
+    .hero-contact-line strong {
+      color: var(--pgs-blue);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 1.25rem;
+    }
+
+    .hero-badge {
+      font-size: 0.78rem;
+      background: #ffffff;
+      border-radius: 999px;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--color-muted);
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--pgs-orange);
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, var(--pgs-light-blue), var(--pgs-blue));
+      border-radius: 24px;
+      padding: 1.6rem 1.4rem;
+      color: #ffffff;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.15);
+      right: -40px;
+      top: -50px;
+    }
+
+    .hero-card-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-card-pill {
+      font-family: "Jakobs Handwriting 2", "Pacifico", cursive;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .hero-card-list li {
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .hero-card-list span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--pgs-yellow-orange);
+      flex-shrink: 0;
+    }
+
+    .hero-hospital-tag {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    /* SECTIONS GENERIC */
+    .section {
+      padding: 2.5rem 0;
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--pgs-steel-blue);
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 1.45rem;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+    }
+
+    /* STAT BAR */
+    .stat-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .stat-pill {
+      background: #ffffff;
+      border-radius: 999px;
+      padding: 0.65rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      box-shadow: 0 8px 18px rgba(148, 163, 184, 0.3);
+      border: 1px solid #e5e7eb;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+    }
+
+    .stat-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* GRID CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1rem;
+      box-shadow: 0 10px 22px rgba(148, 163, 184, 0.35);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.35rem;
+      gap: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-pill {
+      font-size: 0.72rem;
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(89, 136, 218, 0.12);
+      color: var(--pgs-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-meta {
+      font-size: 0.82rem;
+      color: var(--pgs-steel-blue);
+    }
+
+    .card-footer {
+      margin-top: 0.65rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .link {
+      color: var(--pgs-blue);
+      font-weight: 500;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTACT / LOCATIONS */
+    .locations {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .location-list {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.8rem;
+    }
+
+    .location-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1rem;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 18px rgba(148, 163, 184, 0.25);
+    }
+
+    .location-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .location-address {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .location-note {
+      font-size: 0.85rem;
+      color: var(--pgs-steel-blue);
+    }
+
+    .contact-panel {
+      background: linear-gradient(135deg, var(--pgs-blue), var(--pgs-light-blue));
+      border-radius: 22px;
+      padding: 1.2rem 1.2rem;
+      color: #ffffff;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-panel-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .contact-panel-line {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 0 1.6rem;
+      background: #ffffff;
+      margin-top: 2rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--color-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 2.7rem;
+      }
+
+      .locations {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+
+  <script>
+    // Simple helper for mobile nav dropdown
+    function handleNavSelect(select) {
+      const value = select.value;
+      if (value) {
+        const section = document.querySelector(value);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+        select.value = "";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#hero" class="logo">
+          <div class="logo-mark">PGS</div>
+          <div>
+            <div class="logo-text-top">PGS</div>
+            <div class="logo-text-bottom">Premier General Surgeons</div>
+          </div>
+        </a>
+
+        <nav class="nav-actions">
+          <select class="nav-links-mobile-select" onchange="handleNavSelect(this)">
+            <option value="">Menu</option>
+            <option value="#hero">Home</option>
+            <option value="#services">Services</option>
+            <option value="#surgeons">Surgeons</option>
+            <option value="#midlevels">Mid-Level Providers</option>
+            <option value="#resources">Patient Resources</option>
+            <option value="#referring">Referring Providers</option>
+            <option value="#contact">Contact</option>
+          </select>
+
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#surgeons">Surgeons</a>
+            <a href="#resources">Patients</a>
+            <a href="#referring">Referring Providers</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Request Appointment</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div>
+            <div class="hero-kicker">General, Bariatric & Advanced Laparoscopic Surgery</div>
+            <h1 class="hero-title">
+              Surgical care in <span>Brownsville, TX</span><br />
+              from hands you can trust.
+            </h1>
+            <p class="hero-subtitle">
+              Premier General Surgeons is a multi-physician surgical practice providing advanced general, bariatric, trauma, and wound care services for patients in the Rio Grande Valley.
+            </p>
+            <p class="hero-subtitle-es">
+              Se habla español. Atención quirúrgica integral para usted y su familia.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Request Appointment</a>
+              <a href="tel:9566214981" class="btn btn-outline">Call:
+                <strong>9566214981</strong></a>
+            </div>
+            <p class="hero-contact-line">
+              New patients &amp; referrals welcome. <strong>Same-week availability often possible.</strong>
+            </p>
+
+            <div class="hero-badge-row">
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                4 Board-Certified Surgeons
+              </div>
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                2 Advanced Practice Providers
+              </div>
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                General • Bariatric • Trauma • Wound Care
+              </div>
+            </div>
+
+            <div class="stat-bar">
+              <div class="stat-pill">
+                <div class="stat-label">Patients</div>
+                <div class="stat-value">Comprehensive adult surgical care</div>
+              </div>
+              <div class="stat-pill">
+                <div class="stat-label">Referring Providers</div>
+                <div class="stat-value">Streamlined communication &amp; follow-up</div>
+              </div>
+              <div class="stat-pill">
+                <div class="stat-label">Language</div>
+                <div class="stat-value">English &amp; Spanish</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="hero-card-heading">Premier General Surgeons</div>
+            <div class="hero-card-pill">“Hands you can trust”</div>
+            <ul class="hero-card-list">
+              <li>
+                <span></span>
+                General surgery, bariatric surgery, advanced laparoscopy
+              </li>
+              <li>
+                <span></span>
+                Inpatient &amp; outpatient care with dedicated PA &amp; NP
+              </li>
+              <li>
+                <span></span>
+                Wound care and post-operative management
+              </li>
+              <li>
+                <span></span>
+                Convenient Brownsville locations
+              </li>
+            </ul>
+            <p class="hero-hospital-tag">
+              Serving patients throughout Brownsville and the surrounding Rio Grande Valley.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Services</div>
+            <h2 class="section-title">Conditions &amp; Procedures</h2>
+            <p class="section-subtitle">
+              From routine general surgery to complex bariatric and trauma care, our surgeons provide comprehensive, evidence-based treatment.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">General Surgery</h3>
+                <span class="card-pill">Core</span>
+              </div>
+              <p class="card-body">
+                Expertise in common general surgical conditions, including gallbladder disease, hernias, and soft tissue masses.
+              </p>
+              <div class="card-meta">Laparoscopic and open approaches available.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Advanced Laparoscopy</h3>
+                <span class="card-pill">Minimally Invasive</span>
+              </div>
+              <p class="card-body">
+                Minimally invasive techniques designed to reduce pain, shorten hospital stays, and speed recovery.
+              </p>
+              <div class="card-meta">Performed by Dr. Michael J. McKenna &amp; Dr. Raquel Silhy.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Bariatric Surgery</h3>
+                <span class="card-pill">Weight Loss</span>
+              </div>
+              <p class="card-body">
+                Surgical options for medically supervised weight loss, performed in collaboration with your care team.
+              </p>
+              <div class="card-meta">Led by Dr. Carlos A. Barba &amp; Dr. January Hill.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Trauma &amp; Emergency Surgery</h3>
+                <span class="card-pill">Acute</span>
+              </div>
+              <p class="card-body">
+                Management of urgent and emergent surgical needs, with hospital-based call coverage.
+              </p>
+              <div class="card-meta">Coordinated closely with local hospital systems.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Wound Care</h3>
+                <span class="card-pill">Healing</span>
+              </div>
+              <p class="card-body">
+                Outpatient wound evaluation and management, including post-operative and chronic wounds.
+              </p>
+              <div class="card-meta">Supported by NP Leticia Asencio.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Inpatient &amp; Post-Operative Care</h3>
+                <span class="card-pill">Continuity</span>
+              </div>
+              <p class="card-body">
+                Dedicated advanced practice support for in-hospital care and safe transition back home.
+              </p>
+              <div class="card-meta">Led by PA Hector Martinez.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SURGEONS -->
+      <section id="surgeons" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Our Surgeons</div>
+            <h2 class="section-title">Meet the Premier General Surgeons Team</h2>
+            <p class="section-subtitle">
+              Four experienced surgeons working together to provide coordinated, patient-centered surgical care.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Michael J. McKenna, DO</h3>
+                <span class="card-pill">General &amp; Laparoscopic</span>
+              </div>
+              <p class="card-body">
+                General Surgery and Advanced Laparoscopy. Dr. McKenna provides a broad range of minimally invasive and open surgical care.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">Board-certified General Surgeon</span>
+                <a href="#contact" class="link">View profile</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Carlos A. Barba, MD</h3>
+                <span class="card-pill">Bariatric &amp; Trauma</span>
+              </div>
+              <p class="card-body">
+                General, Bariatric, and Trauma Surgery. Dr. Barba specializes in weight loss surgery and complex surgical care.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">General, Bariatric &amp; Trauma Surgery</span>
+                <a href="#contact" class="link">View profile</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Raquel Silhy, MD</h3>
+                <span class="card-pill">Laparoscopic</span>
+              </div>
+              <p class="card-body">
+                General Surgery and Advanced Laparoscopy. Dr. Silhy offers minimally invasive options tailored to each patient.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">General Surgery &amp; Advanced Laparoscopy</span>
+                <a href="#contact" class="link">View profile</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">January Hill, MD</h3>
+                <span class="card-pill">General &amp; Bariatric</span>
+              </div>
+              <p class="card-body">
+                General and Bariatric Surgery. Dr. Hill focuses on comprehensive surgical management for patients with obesity and related conditions.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">General &amp; Bariatric Surgery</span>
+                <a href="#contact" class="link">View profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MID-LEVEL PROVIDERS -->
+      <section id="midlevels" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Mid-Level Providers</div>
+            <h2 class="section-title">Advanced Practice Support</h2>
+            <p class="section-subtitle">
+              Our physician assistant and nurse practitioner help coordinate inpatient and outpatient care, ensuring continuity and accessibility for our patients.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Hector Martinez, PA</h3>
+                <span class="card-pill">Inpatient</span>
+              </div>
+              <p class="card-body">
+                Inpatient physician assistant providing hospital-based support, daily rounds, and coordination of post-operative care.
+              </p>
+              <div class="card-meta">Works closely with the surgical team to support in-hospital recovery.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Leticia Asencio, NP</h3>
+                <span class="card-pill">Outpatient &amp; Wound Care</span>
+              </div>
+              <p class="card-body">
+                Nurse practitioner focused on outpatient visits and wound care, helping patients heal safely at home.
+              </p>
+              <div class="card-meta">Provides follow-up visits and wound evaluations in clinic.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PATIENT RESOURCES -->
+      <section id="resources" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Patients</div>
+            <h2 class="section-title">Patient Resources / Recursos para Pacientes</h2>
+            <p class="section-subtitle">
+              Helpful information to prepare for your visit and recovery.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">New Patient Information</h3>
+              </div>
+              <p class="card-body">
+                What to bring to your first appointment, how to arrive, and how to let us know about your medications and medical history.
+              </p>
+              <div class="card-footer">
+                <a href="#" class="link">Download forms (EN)</a>
+                <a href="#" class="link">Descargar formularios (ES)</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Pre-Operative Instructions</h3>
+              </div>
+              <p class="card-body">
+                Guidelines on eating, medications, and arrival times before surgery, as provided by your surgeon and hospital.
+              </p>
+              <div class="card-footer">
+                <a href="#" class="link">View instructions</a>
+                <span class="card-meta">English &amp; Spanish</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Post-Operative Care</h3>
+              </div>
+              <p class="card-body">
+                What to expect after surgery, wound care basics, and when to call our office or seek emergency care.
+              </p>
+              <div class="card-footer">
+                <a href="#" class="link">View instructions</a>
+                <span class="card-meta">Wound care &amp; follow-up</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Insurance &amp; Billing</h3>
+              </div>
+              <p class="card-body">
+                Information on accepted insurance plans and basic billing policies.
+              </p>
+              <div class="card-footer">
+                <a href="#contact" class="link">Contact us with questions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERRING PROVIDERS -->
+      <section id="referring" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Referring Providers</div>
+            <h2 class="section-title">Information for Referring Physicians</h2>
+            <p class="section-subtitle">
+              We value our partnerships with primary care physicians and specialists throughout the Rio Grande Valley.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">How to Refer</h3>
+              </div>
+              <p class="card-body">
+                Referrals may be made by phone or fax. Please include recent clinic notes, imaging, and labs when available.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">
+                  Phone: 9566214981 · Fax: TODO-FAX
+                </span>
+                <a href="#" class="link">Download referral form</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Communication &amp; Follow-Up</h3>
+              </div>
+              <p class="card-body">
+                We make every effort to keep referring physicians updated on consult findings, operative plans, and post-operative outcomes.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">Timely documentation &amp; direct communication.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / LOCATIONS -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Contact &amp; Locations / Contacto y Ubicaciones</h2>
+            <p class="section-subtitle">
+              Call or email to request an appointment or to send a referral. Se habla español.
+            </p>
+          </div>
+
+          <div class="locations">
+            <div class="location-list">
+              <div class="location-card">
+                <div class="location-name">Brownsville – Frontage Road</div>
+                <div class="location-address">
+                  4970 Frontage Rd., Suite A<br />
+                  Brownsville, TX 78526
+                </div>
+                <div class="location-note">
+                  Convenient access from the highway with on-site parking.
+                </div>
+              </div>
+
+              <div class="location-card">
+                <div class="location-name">Second Location</div>
+                <div class="location-address">
+                  <!-- TODO: Replace with your second physical address -->
+                  TODO: Second address line 1<br />
+                  TODO: City, State ZIP
+                </div>
+                <div class="location-note">
+                  Additional clinic hours and services available.
+                </div>
+              </div>
+            </div>
+
+            <aside class="contact-panel">
+              <div class="contact-panel-title">Request an Appointment / Solicitar Cita</div>
+              <p class="contact-panel-line">
+                Phone / Teléfono: <strong>9566214981</strong>
+              </p>
+              <p class="contact-panel-line">
+                Office Hours: Monday–Friday · 8:00 AM - 5:00 PM
+              </p>
+              <p class="contact-panel-line">
+                For appointments and referrals, please email:
+              </p>
+              <a
+                href="mailto:appointments@premiergeneralsurgeons.com"
+                class="contact-email"
+              >
+                <span>✉</span>
+                <span>appointments@premiergeneralsurgeons.com</span>
+              </a>
+              <p class="contact-panel-line" style="margin-top: 0.7rem;">
+                En su mensaje, puede escribir en <strong>inglés o español</strong>. Incluya su nombre,
+                fecha de nacimiento y un número de teléfono donde podamos llamarle.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <span>Brownsville, TX</span>
+          <span>·</span>
+          <a href="#surgeons" class="link">Meet our surgeons</a>
+          <span>·</span>
+          <a href="#contact" class="link">Contact</a>
+          <span>·</span>
+          <!-- TODO: Replace with actual social links or remove -->
+          <a href="#" class="link">Surgeon social media</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
