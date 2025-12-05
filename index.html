@@ -33,26 +33,16 @@
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "Premier General Surgeons, PLLC",
-  "url": "https://www.premiergeneralsurgeons.com",
+  "url": "https://www.premiergeneralsurgeon.com",
   "telephone": "+1-956-621-4981",
-  "address": [
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "4970 Frontage Rd., Suite A",
-      "addressLocality": "Brownsville",
-      "addressRegion": "TX",
-      "postalCode": "78526",
-      "addressCountry": "US"
-    },
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "5505 S Expressway, Ste 301",
-      "addressLocality": "Harlingen",
-      "addressRegion": "TX",
-      "postalCode": "78550",
-      "addressCountry": "US"
-    }
-  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4970 Frontage Rd., Suite A",
+    "addressLocality": "Brownsville",
+    "addressRegion": "TX",
+    "postalCode": "78526",
+    "addressCountry": "US"
+  },
   "openingHours": [
     "Mo-Fr 08:00-17:00"
   ],
@@ -64,7 +54,7 @@
     "WoundCare"
   ],
   "areaServed": {
-    "@type": "Place",
+    "@type": "AdministrativeArea",
     "name": "Rio Grande Valley"
   },
   "department": [
@@ -84,7 +74,19 @@
       "@type": "MedicalSpecialty",
       "name": "Wound Care"
     }
-  ]
+  ],
+  "subOrganization": {
+    "@type": "MedicalClinic",
+    "name": "Premier General Surgeons – Harlingen",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5505 S Expressway, Ste 301",
+      "addressLocality": "Harlingen",
+      "addressRegion": "TX",
+      "postalCode": "78550",
+      "addressCountry": "US"
+    }
+  }
 }
 </script>
 
