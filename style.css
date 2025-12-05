@@ -641,6 +641,23 @@ footer {
   gap: 0.75rem;
 }
 
+/* Footer branding with logo */
+.footer-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  height: 30px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
