@@ -56,10 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // Read values from the form inputs safely. The `?.` operator
       // prevents errors if an element is missing, and `trim()` removes
       // extra whitespace. The `|| ""` ensures we always have a string.
-      const name = document.getElementById("cf-name")?.value.trim() || "";
-      const dob = document.getElementById("cf-dob")?.value.trim() || "";
-      const phone = document.getElementById("cf-phone")?.value.trim() || "";
-      const message = document.getElementById("cf-message")?.value.trim() || "";
+      // Safely read input values. If an element is missing, fall back to
+      // an empty string before calling `trim()` to avoid runtime errors.
+      const name = (document.getElementById("cf-name")?.value || "").trim();
+      const dob = (document.getElementById("cf-dob")?.value || "").trim();
+      const phone = (document.getElementById("cf-phone")?.value || "").trim();
+      const message = (document.getElementById("cf-message")?.value || "").trim();
 
       // `encodeURIComponent` is used to make strings safe for use in
       // URLs (it escapes characters like spaces, &, ? and newlines).
@@ -112,27 +114,30 @@ document.addEventListener("DOMContentLoaded", () => {
     // Save the preference so it persists on future visits
     localStorage.setItem("pgsLang", normalized);
 
-    // Update the visual state of language buttons (adds/removes a CSS class)
+    // Update the visual state of language buttons and accessibility attrs.
     langButtons.forEach((btn) => {
       const isActive = btn.getAttribute("data-lang") === normalized;
       btn.classList.toggle("lang-btn-active", isActive);
+      // Expose pressed state for assistive tech
+      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
-    // Show only the elements for the active language and hide the others.
-    // This makes sure only one language's buttons/labels/text are visible
-    // at a time (e.g., only `.lang-en` OR `.lang-es`). We use the
-    // HTML `hidden` property which is accessible and reversible.
-    try {
-      document.querySelectorAll(".lang-en").forEach((el) => {
+    // Toggle visibility for language-specific content. We explicitly set
+    // the `hidden` and `aria-hidden` attributes on elements with the
+    // `.lang-en`/`.lang-es` classes. This is reachable, deterministic,
+    // and works even if CSS rules are changed later.
+    document.querySelectorAll(".lang-en, .lang-es").forEach((el) => {
+      const isEn = el.classList.contains("lang-en");
+      const isEs = el.classList.contains("lang-es");
+      if (isEn) {
         el.hidden = normalized !== "en";
-      });
-      document.querySelectorAll(".lang-es").forEach((el) => {
+        el.setAttribute("aria-hidden", normalized !== "en" ? "true" : "false");
+      }
+      if (isEs) {
         el.hidden = normalized !== "es";
-      });
-    } catch (e) {
-      // Defensive: if querySelectorAll isn't available for some reason,
-      // just silently skip this step (page will still function).
-    }
+        el.setAttribute("aria-hidden", normalized !== "es" ? "true" : "false");
+      }
+    });
   }
 
   // Initialize language from localStorage or default to English ('en')

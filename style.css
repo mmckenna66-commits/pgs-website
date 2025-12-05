@@ -710,6 +710,86 @@ footer {
   }
 }
 
+/* Additional phone-focused tweaks (improve spacing & touch targets) */
+@media (max-width: 600px) {
+  /* Slightly tighter navbar padding and smaller gaps to fit narrow screens */
+  .navbar-inner {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  /* Make the mobile select easier to tap and read */
+  .nav-links-mobile-select {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  /* Language toggle: larger tap targets and balanced spacing */
+  .lang-toggle {
+    padding: 0.2rem;
+    gap: 0.2rem;
+    border-radius: 12px;
+  }
+
+  .lang-btn {
+    padding: 0.36rem 0.6rem;
+    font-size: 0.85rem;
+    min-width: 40px;
+    line-height: 1;
+  }
+
+  /* Ensure primary CTA in the navbar wraps nicely */
+  .nav-actions > a.btn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  /* Contact panel: make full-width, reduce padding and improve form spacing */
+  .contact-panel {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .contact-panel-line {
+    font-size: 0.95rem;
+  }
+
+  .contact-email {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  /* Make inputs and the submit button full width and stack vertically */
+  .contact-form-row input,
+  .contact-form-row textarea {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .contact-form-button {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .contact-form-note {
+    font-size: 0.85rem;
+  }
+
+  /* Slightly reduce hero vertical spacing on phones */
+  .hero {
+    padding: 2.2rem 0 1.4rem;
+  }
+}
+
   letter-spacing: 0.08em;
 }
 
