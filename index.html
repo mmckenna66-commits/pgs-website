@@ -40,30 +40,64 @@
           </div>
         </a>
 
-        <nav class="nav-actions">
-          <select class="nav-links-mobile-select" onchange="handleNavSelect(this)">
-            <option value="">Menu</option>
-            <option value="#hero">Home</option>
-            <option value="#services">Services</option>
-            <option value="#surgeons">Surgeons</option>
-            <option value="#midlevels">Mid-Level Providers</option>
-            <option value="#resources">Patient Resources</option>
-            <option value="#referring">Referring Providers</option>
-            <option value="#contact">Contact</option>
-          </select>
+        <nav class="nav-actions" aria-label="Main navigation">
+          <!-- Mobile nav EN -->
+<select class="nav-links-mobile-select lang-en"
+        onchange="handleNavSelect(this)"
+        aria-label="Main menu">
+  <option value="">Menu</option>
+  <option value="#hero">Home</option>
+  <option value="#services">Services</option>
+  <option value="#surgeons">Surgeons</option>
+  <option value="#midlevels">Mid-Level Providers</option>
+  <option value="#resources">Patient Resources</option>
+  <option value="#referring">Referring Providers</option>
+  <option value="#contact">Contact</option>
+</select>
+
+<!-- Mobile nav ES -->
+<select class="nav-links-mobile-select lang-es"
+  onchange="handleNavSelect(this)"
+  aria-label="Menú principal">
+  <option value="">Menú</option>
+  <option value="#hero">Inicio</option>
+  <option value="#services">Servicios</option>
+  <option value="#surgeons">Cirujanos</option>
+  <option value="#midlevels">Proveedores de Nivel Intermedio</option>
+  <option value="#resources">Recursos para Pacientes</option>
+  <option value="#referring">Médicos Referentes</option>
+  <option value="#contact">Contacto</option>
+</select>
+
 
           <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#surgeons">Surgeons</a>
-            <a href="#resources">Patients</a>
-            <a href="#referring">Referring Providers</a>
-            <a href="#contact">Contact</a>
-          </div>
+  <a href="#services">
+    <span class="lang-en">Services</span>
+    <span class="lang-es">Servicios</span>
+  </a>
+  <a href="#surgeons">
+    <span class="lang-en">Surgeons</span>
+    <span class="lang-es">Cirujanos</span>
+  </a>
+  <a href="#resources">
+    <span class="lang-en">Patients</span>
+    <span class="lang-es">Pacientes</span>
+  </a>
+  <a href="#referring">
+    <span class="lang-en">Referring Providers</span>
+    <span class="lang-es">Médicos Referentes</span>
+  </a>
+  <a href="#contact">
+    <span class="lang-en">Contact</span>
+    <span class="lang-es">Contacto</span>
+  </a>
+</div>
+
 
           <!-- Language toggle -->
           <div class="lang-toggle">
-            <button type="button" class="lang-btn lang-btn-en" data-lang="en">EN</button>
-            <button type="button" class="lang-btn lang-btn-es" data-lang="es">ES</button>
+            <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn lang-btn-es" data-lang="es" aria-label="Español">ES</button>
           </div>
 
           <a href="#contact" class="btn btn-primary lang-en">Request Appointment</a>
