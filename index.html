@@ -496,6 +496,39 @@
                 En su mensaje, puede escribir en <strong>inglés o español</strong>. Incluya su nombre,
                 fecha de nacimiento y un número de teléfono donde podamos llamarle.
               </p>
+              <form class="contact-form" id="contact-form">
+  <h3 class="contact-form-title">Quick message from this page</h3>
+
+  <div class="contact-form-row">
+    <label for="cf-name">Full name</label>
+    <input type="text" id="cf-name" name="name" required />
+  </div>
+
+  <div class="contact-form-row">
+    <label for="cf-dob">Date of birth</label>
+    <input type="text" id="cf-dob" name="dob" placeholder="MM/DD/YYYY" />
+  </div>
+
+  <div class="contact-form-row">
+    <label for="cf-phone">Phone number</label>
+    <input type="tel" id="cf-phone" name="phone" placeholder="(956) 621-4981" />
+  </div>
+
+  <div class="contact-form-row">
+    <label for="cf-message">How can we help?</label>
+    <textarea id="cf-message" name="message" rows="4" placeholder="Brief reason for visit or question"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary contact-form-button">
+    Open Email to Send
+  </button>
+
+  <p class="contact-form-note">
+    This will open your email app with the information above pre-filled in a message to
+    <strong>appointments@premiergeneralsurgeons.com</strong>. Please review and then click “Send”.
+  </p>
+</form>
+
             </aside>
           </div>
         </div>
