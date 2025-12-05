@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Premier General Surgeons | Surgical Care in Brownsville, TX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Premier General Surgeons provides comprehensive surgical care in Brownsville, TX. Board-certified surgeons offering general, bariatric, trauma, laparoscopic, and wound care services. Se habla español." />
 
-<!-- Favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon2-32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon2-64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="assets/favicons/favicon2-128.png">
-<link rel="icon" type="image/png" sizes="256x256" href="assets/favicons/favicon2-256.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/favicon2-512.png">
-
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon2-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon2-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/favicons/favicon2-128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicons/favicon2-256.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/favicon2-512.png">
 
   <!--
     NOTE: To use real Gotham and Jakobs Handwriting 2 on the web,
@@ -30,17 +29,16 @@
     <header class="navbar">
       <div class="container navbar-inner">
         <a href="#hero" class="logo">
-  <img
-    src="assets/pgs-logo.png"
-    alt="Premier General Surgeons logo"
-    class="logo-image"
-  />
-  <div>
-    <div class="logo-text-top">PGS</div>
-    <div class="logo-text-bottom">Premier General Surgeons</div>
-  </div>
-</a>
-
+          <img
+            src="assets/pgs-logo.png"
+            alt="Premier General Surgeons logo"
+            class="logo-image"
+          />
+          <div>
+            <div class="logo-text-top">PGS</div>
+            <div class="logo-text-bottom">Premier General Surgeons</div>
+          </div>
+        </a>
 
         <nav class="nav-actions">
           <select class="nav-links-mobile-select" onchange="handleNavSelect(this)">
@@ -62,7 +60,14 @@
             <a href="#contact">Contact</a>
           </div>
 
-          <a href="#contact" class="btn btn-primary">Request Appointment</a>
+          <!-- Language toggle -->
+          <div class="lang-toggle">
+            <button type="button" class="lang-btn lang-btn-en" data-lang="en">EN</button>
+            <button type="button" class="lang-btn lang-btn-es" data-lang="es">ES</button>
+          </div>
+
+          <a href="#contact" class="btn btn-primary lang-en">Request Appointment</a>
+          <a href="#contact" class="btn btn-primary lang-es">Solicitar Cita</a>
         </nav>
       </div>
     </header>
@@ -72,26 +77,38 @@
       <section id="hero" class="hero">
         <div class="container hero-inner">
           <div>
-            <div class="hero-kicker">General, Bariatric & Advanced Laparoscopic Surgery</div>
-            <h1 class="hero-title">
+            <div class="hero-kicker lang-en">General, Bariatric &amp; Advanced Laparoscopic Surgery</div>
+            <!-- (Optional) you could add a Spanish version of the kicker later -->
+            <h1 class="hero-title lang-en">
               Surgical care in <span>Brownsville, TX</span><br />
               from hands you can trust.
             </h1>
-            <p class="hero-subtitle">
+            <h1 class="hero-title lang-es">
+              Atención quirúrgica en <span>Brownsville, TX</span><br />
+              de manos en las que puede confiar.
+            </h1>
+
+            <p class="hero-subtitle lang-en">
               Premier General Surgeons is a multi-physician surgical practice providing advanced general, bariatric, trauma, and wound care services for patients in the Rio Grande Valley.
             </p>
-            <p class="hero-subtitle-es">
+            <p class="hero-subtitle-es lang-es">
               Se habla español. Atención quirúrgica integral para usted y su familia.
             </p>
 
             <div class="hero-actions">
-              <a href="#contact" class="btn btn-primary">Request Appointment</a>
+              <a href="#contact" class="btn btn-primary lang-en">Request Appointment</a>
+              <a href="#contact" class="btn btn-primary lang-es">Solicitar Cita</a>
+
               <a href="tel:9566214981" class="btn btn-outline">
                 Call: <strong>(956) 621-4981</strong>
               </a>
             </div>
-            <p class="hero-contact-line">
+
+            <p class="hero-contact-line lang-en">
               New patients &amp; referrals welcome. <strong>Same-week availability often possible.</strong>
+            </p>
+            <p class="hero-contact-line lang-es">
+              Pacientes nuevos y referidos bienvenidos. <strong>Con frecuencia hay disponibilidad en la misma semana.</strong>
             </p>
 
             <div class="hero-badge-row">
@@ -112,11 +129,13 @@
             <div class="stat-bar">
               <div class="stat-pill">
                 <div class="stat-label">Patients</div>
-                <div class="stat-value">Comprehensive adult surgical care</div>
+                <div class="stat-value lang-en">Comprehensive adult surgical care</div>
+                <div class="stat-value lang-es">Atención quirúrgica integral para adultos</div>
               </div>
               <div class="stat-pill">
                 <div class="stat-label">Referring Providers</div>
-                <div class="stat-value">Streamlined communication &amp; follow-up</div>
+                <div class="stat-value lang-en">Streamlined communication &amp; follow-up</div>
+                <div class="stat-value lang-es">Comunicación y seguimiento eficientes</div>
               </div>
               <div class="stat-pill">
                 <div class="stat-label">Language</div>
@@ -127,7 +146,8 @@
 
           <aside class="hero-card">
             <div class="hero-card-heading">Premier General Surgeons</div>
-            <div class="hero-card-pill">“Hands you can trust”</div>
+            <div class="hero-card-pill lang-en">“Hands you can trust”</div>
+            <div class="hero-card-pill lang-es">“Manos en las que puede confiar”</div>
             <ul class="hero-card-list">
               <li>
                 <span></span>
@@ -146,8 +166,11 @@
                 Convenient Brownsville locations
               </li>
             </ul>
-            <p class="hero-hospital-tag">
+            <p class="hero-hospital-tag lang-en">
               Serving patients throughout Brownsville and the surrounding Rio Grande Valley.
+            </p>
+            <p class="hero-hospital-tag lang-es">
+              Atendiendo a pacientes en Brownsville y el resto del Valle del Río Grande.
             </p>
           </aside>
         </div>
@@ -157,78 +180,121 @@
       <section id="services" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Services</div>
-            <h2 class="section-title">Conditions &amp; Procedures</h2>
-            <p class="section-subtitle">
+            <div class="section-kicker lang-en">Services</div>
+            <div class="section-kicker lang-es">Servicios</div>
+
+            <h2 class="section-title lang-en">Conditions &amp; Procedures</h2>
+            <h2 class="section-title lang-es">Condiciones y Procedimientos</h2>
+
+            <p class="section-subtitle lang-en">
               From routine general surgery to complex bariatric and trauma care, our surgeons provide comprehensive, evidence-based treatment.
+            </p>
+            <p class="section-subtitle lang-es">
+              Desde cirugía general de rutina hasta atención compleja bariátrica y de trauma, nuestros cirujanos ofrecen tratamiento integral basado en evidencia.
             </p>
           </div>
 
           <div class="grid">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">General Surgery</h3>
-                <span class="card-pill">Core</span>
+                <h3 class="card-title lang-en">General Surgery</h3>
+                <h3 class="card-title lang-es">Cirugía General</h3>
+                <span class="card-pill lang-en">Core</span>
+                <span class="card-pill lang-es">Básico</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Expertise in common general surgical conditions, including gallbladder disease, hernias, and soft tissue masses.
               </p>
-              <div class="card-meta">Laparoscopic and open approaches available.</div>
+              <p class="card-body lang-es">
+                Experiencia en condiciones quirúrgicas generales comunes, incluyendo enfermedad de la vesícula biliar, hernias y masas de tejido blando.
+              </p>
+              <div class="card-meta lang-en">Laparoscopic and open approaches available.</div>
+              <div class="card-meta lang-es">Enfoques laparoscópicos y abiertos disponibles.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Advanced Laparoscopy</h3>
-                <span class="card-pill">Minimally Invasive</span>
+                <h3 class="card-title lang-en">Advanced Laparoscopy</h3>
+                <h3 class="card-title lang-es">Laparoscopía Avanzada</h3>
+                <span class="card-pill lang-en">Minimally Invasive</span>
+                <span class="card-pill lang-es">Mínimamente Invasiva</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Minimally invasive techniques designed to reduce pain, shorten hospital stays, and speed recovery.
               </p>
-              <div class="card-meta">Performed by Dr. Michael J. McKenna &amp; Dr. Raquel Silhy.</div>
+              <p class="card-body lang-es">
+                Técnicas mínimamente invasivas diseñadas para reducir el dolor, acortar la estancia hospitalaria y acelerar la recuperación.
+              </p>
+              <div class="card-meta lang-en">Performed by Dr. Michael J. McKenna &amp; Dr. Raquel Silhy.</div>
+              <div class="card-meta lang-es">Realizado por el Dr. Michael J. McKenna y la Dra. Raquel Silhy.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Bariatric Surgery</h3>
-                <span class="card-pill">Weight Loss</span>
+                <h3 class="card-title lang-en">Bariatric Surgery</h3>
+                <h3 class="card-title lang-es">Cirugía Bariátrica</h3>
+                <span class="card-pill lang-en">Weight Loss</span>
+                <span class="card-pill lang-es">Pérdida de Peso</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Surgical options for medically supervised weight loss, performed in collaboration with your care team.
               </p>
-              <div class="card-meta">Led by Dr. Carlos A. Barba &amp; Dr. January Hill.</div>
+              <p class="card-body lang-es">
+                Opciones quirúrgicas para pérdida de peso bajo supervisión médica, en colaboración con su equipo de atención.
+              </p>
+              <div class="card-meta lang-en">Led by Dr. Carlos A. Barba &amp; Dr. January Hill.</div>
+              <div class="card-meta lang-es">Dirigido por el Dr. Carlos A. Barba y la Dra. January Hill.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Trauma &amp; Emergency Surgery</h3>
-                <span class="card-pill">Acute</span>
+                <h3 class="card-title lang-en">Trauma &amp; Emergency Surgery</h3>
+                <h3 class="card-title lang-es">Cirugía de Trauma y Emergencia</h3>
+                <span class="card-pill lang-en">Acute</span>
+                <span class="card-pill lang-es">Aguda</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Management of urgent and emergent surgical needs, with hospital-based call coverage.
               </p>
-              <div class="card-meta">Coordinated closely with local hospital systems.</div>
+              <p class="card-body lang-es">
+                Manejo de necesidades quirúrgicas urgentes y de emergencia, con cobertura de guardia hospitalaria.
+              </p>
+              <div class="card-meta lang-en">Coordinated closely with local hospital systems.</div>
+              <div class="card-meta lang-es">Coordinado estrechamente con los sistemas hospitalarios locales.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Wound Care</h3>
-                <span class="card-pill">Healing</span>
+                <h3 class="card-title lang-en">Wound Care</h3>
+                <h3 class="card-title lang-es">Cuidado de Heridas</h3>
+                <span class="card-pill lang-en">Healing</span>
+                <span class="card-pill lang-es">Cicatrización</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Outpatient wound evaluation and management, including post-operative and chronic wounds.
               </p>
-              <div class="card-meta">Supported by NP Leticia Asencio.</div>
+              <p class="card-body lang-es">
+                Evaluación y manejo ambulatorio de heridas, incluyendo heridas postoperatorias y crónicas.
+              </p>
+              <div class="card-meta lang-en">Supported by NP Leticia Asencio.</div>
+              <div class="card-meta lang-es">Apoyado por la NP Leticia Asencio.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Inpatient &amp; Post-Operative Care</h3>
-                <span class="card-pill">Continuity</span>
+                <h3 class="card-title lang-en">Inpatient &amp; Post-Operative Care</h3>
+                <h3 class="card-title lang-es">Atención Intrahospitalaria y Postoperatoria</h3>
+                <span class="card-pill lang-en">Continuity</span>
+                <span class="card-pill lang-es">Continuidad</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Dedicated advanced practice support for in-hospital care and safe transition back home.
               </p>
-              <div class="card-meta">Led by PA Hector Martinez.</div>
+              <p class="card-body lang-es">
+                Apoyo de práctica avanzada dedicado para la atención intrahospitalaria y una transición segura de regreso a casa.
+              </p>
+              <div class="card-meta lang-en">Led by PA Hector Martinez.</div>
+              <div class="card-meta lang-es">Dirigido por el PA Héctor Martínez.</div>
             </div>
           </div>
         </div>
@@ -238,10 +304,15 @@
       <section id="surgeons" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Our Surgeons</div>
-            <h2 class="section-title">Meet the Premier General Surgeons Team</h2>
-            <p class="section-subtitle">
+            <div class="section-kicker lang-en">Our Surgeons</div>
+            <div class="section-kicker lang-es">Nuestros Cirujanos</div>
+            <h2 class="section-title lang-en">Meet the Premier General Surgeons Team</h2>
+            <h2 class="section-title lang-es">Conozca al Equipo de Premier General Surgeons</h2>
+            <p class="section-subtitle lang-en">
               Four experienced surgeons working together to provide coordinated, patient-centered surgical care.
+            </p>
+            <p class="section-subtitle lang-es">
+              Cuatro cirujanos con experiencia que trabajan juntos para brindar atención quirúrgica coordinada y centrada en el paciente.
             </p>
           </div>
 
@@ -249,56 +320,80 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Michael J. McKenna, DO</h3>
-                <span class="card-pill">General &amp; Laparoscopic</span>
+                <span class="card-pill lang-en">General &amp; Laparoscopic</span>
+                <span class="card-pill lang-es">General y Laparoscópico</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 General Surgery and Advanced Laparoscopy. Dr. McKenna provides a broad range of minimally invasive and open surgical care.
               </p>
+              <p class="card-body lang-es">
+                Cirugía general y laparoscopía avanzada. El Dr. McKenna ofrece una amplia gama de atención quirúrgica abierta y mínimamente invasiva.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">Board-certified General Surgeon</span>
-                <a href="#contact" class="link">View profile</a>
+                <span class="card-meta lang-en">Board-certified General Surgeon</span>
+                <span class="card-meta lang-es">Cirujano General Certificado</span>
+                <a href="#contact" class="link lang-en">View profile</a>
+                <a href="#contact" class="link lang-es">Ver perfil</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Carlos A. Barba, MD</h3>
-                <span class="card-pill">Bariatric &amp; Trauma</span>
+                <span class="card-pill lang-en">Bariatric &amp; Trauma</span>
+                <span class="card-pill lang-es">Bariátrico y Trauma</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 General, Bariatric, and Trauma Surgery. Dr. Barba specializes in weight loss surgery and complex surgical care.
               </p>
+              <p class="card-body lang-es">
+                Cirugía general, bariátrica y de trauma. El Dr. Barba se especializa en cirugía para pérdida de peso y atención quirúrgica compleja.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">General, Bariatric &amp; Trauma Surgery</span>
-                <a href="#contact" class="link">View profile</a>
+                <span class="card-meta lang-en">General, Bariatric &amp; Trauma Surgery</span>
+                <span class="card-meta lang-es">Cirugía General, Bariátrica y de Trauma</span>
+                <a href="#contact" class="link lang-en">View profile</a>
+                <a href="#contact" class="link lang-es">Ver perfil</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Raquel Silhy, MD</h3>
-                <span class="card-pill">Laparoscopic</span>
+                <span class="card-pill lang-en">Laparoscopic</span>
+                <span class="card-pill lang-es">Laparoscópica</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 General Surgery and Advanced Laparoscopy. Dr. Silhy offers minimally invasive options tailored to each patient.
               </p>
+              <p class="card-body lang-es">
+                Cirugía general y laparoscopía avanzada. La Dra. Silhy ofrece opciones mínimamente invasivas adaptadas a cada paciente.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">General Surgery &amp; Advanced Laparoscopy</span>
-                <a href="#contact" class="link">View profile</a>
+                <span class="card-meta lang-en">General Surgery &amp; Advanced Laparoscopy</span>
+                <span class="card-meta lang-es">Cirugía General y Laparoscopía Avanzada</span>
+                <a href="#contact" class="link lang-en">View profile</a>
+                <a href="#contact" class="link lang-es">Ver perfil</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">January Hill, MD</h3>
-                <span class="card-pill">General &amp; Bariatric</span>
+                <span class="card-pill lang-en">General &amp; Bariatric</span>
+                <span class="card-pill lang-es">General y Bariátrica</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 General and Bariatric Surgery. Dr. Hill focuses on comprehensive surgical management for patients with obesity and related conditions.
               </p>
+              <p class="card-body lang-es">
+                Cirugía general y bariátrica. La Dra. Hill se enfoca en el manejo quirúrgico integral de pacientes con obesidad y condiciones relacionadas.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">General &amp; Bariatric Surgery</span>
-                <a href="#contact" class="link">View profile</a>
+                <span class="card-meta lang-en">General &amp; Bariatric Surgery</span>
+                <span class="card-meta lang-es">Cirugía General y Bariátrica</span>
+                <a href="#contact" class="link lang-en">View profile</a>
+                <a href="#contact" class="link lang-es">Ver perfil</a>
               </div>
             </div>
           </div>
@@ -309,10 +404,15 @@
       <section id="midlevels" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Mid-Level Providers</div>
-            <h2 class="section-title">Advanced Practice Support</h2>
-            <p class="section-subtitle">
+            <div class="section-kicker lang-en">Mid-Level Providers</div>
+            <div class="section-kicker lang-es">Proveedores de Nivel Intermedio</div>
+            <h2 class="section-title lang-en">Advanced Practice Support</h2>
+            <h2 class="section-title lang-es">Apoyo de Práctica Avanzada</h2>
+            <p class="section-subtitle lang-en">
               Our physician assistant and nurse practitioner help coordinate inpatient and outpatient care, ensuring continuity and accessibility for our patients.
+            </p>
+            <p class="section-subtitle lang-es">
+              Nuestro asistente médico y nuestra enfermera practicante ayudan a coordinar la atención hospitalaria y ambulatoria, garantizando continuidad y accesibilidad para nuestros pacientes.
             </p>
           </div>
 
@@ -320,23 +420,33 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Hector Martinez, PA</h3>
-                <span class="card-pill">Inpatient</span>
+                <span class="card-pill lang-en">Inpatient</span>
+                <span class="card-pill lang-es">Intrahospitalario</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Inpatient physician assistant providing hospital-based support, daily rounds, and coordination of post-operative care.
               </p>
-              <div class="card-meta">Works closely with the surgical team to support in-hospital recovery.</div>
+              <p class="card-body lang-es">
+                Asistente médico intrahospitalario que brinda apoyo en el hospital, visitas diarias y coordinación del cuidado postoperatorio.
+              </p>
+              <div class="card-meta lang-en">Works closely with the surgical team to support in-hospital recovery.</div>
+              <div class="card-meta lang-es">Trabaja en estrecha colaboración con el equipo quirúrgico para apoyar la recuperación en el hospital.</div>
             </div>
 
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Leticia Asencio, NP</h3>
-                <span class="card-pill">Outpatient &amp; Wound Care</span>
+                <span class="card-pill lang-en">Outpatient &amp; Wound Care</span>
+                <span class="card-pill lang-es">Ambulatorio y Cuidado de Heridas</span>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Nurse practitioner focused on outpatient visits and wound care, helping patients heal safely at home.
               </p>
-              <div class="card-meta">Provides follow-up visits and wound evaluations in clinic.</div>
+              <p class="card-body lang-es">
+                Enfermera practicante enfocada en consultas ambulatorias y cuidado de heridas, ayudando a los pacientes a sanar de forma segura en casa.
+              </p>
+              <div class="card-meta lang-en">Provides follow-up visits and wound evaluations in clinic.</div>
+              <div class="card-meta lang-es">Realiza visitas de seguimiento y evaluaciones de heridas en la clínica.</div>
             </div>
           </div>
         </div>
@@ -346,62 +456,91 @@
       <section id="resources" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Patients</div>
-            <h2 class="section-title">Patient Resources / Recursos para Pacientes</h2>
-            <p class="section-subtitle">
+            <div class="section-kicker lang-en">Patients</div>
+            <div class="section-kicker lang-es">Pacientes</div>
+
+            <h2 class="section-title lang-en">Patient Resources</h2>
+            <h2 class="section-title lang-es">Recursos para Pacientes</h2>
+
+            <p class="section-subtitle lang-en">
               Helpful information to prepare for your visit and recovery.
+            </p>
+            <p class="section-subtitle lang-es">
+              Información útil para prepararse para su visita y recuperación.
             </p>
           </div>
 
           <div class="grid">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">New Patient Information</h3>
+                <h3 class="card-title lang-en">New Patient Information</h3>
+                <h3 class="card-title lang-es">Información para Pacientes Nuevos</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 What to bring to your first appointment, how to arrive, and how to let us know about your medications and medical history.
               </p>
+              <p class="card-body lang-es">
+                Qué traer a su primera cita, cómo llegar y cómo informarnos sobre sus medicamentos e historial médico.
+              </p>
               <div class="card-footer">
-                <a href="#" class="link">Download forms (EN)</a>
-                <a href="#" class="link">Descargar formularios (ES)</a>
+                <a href="#" class="link lang-en">Download forms (EN)</a>
+                <a href="#" class="link lang-es">Descargar formularios</a>
+                <a href="#" class="link lang-en">Descargar formularios (ES)</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Pre-Operative Instructions</h3>
+                <h3 class="card-title lang-en">Pre-Operative Instructions</h3>
+                <h3 class="card-title lang-es">Instrucciones Preoperatorias</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Guidelines on eating, medications, and arrival times before surgery, as provided by your surgeon and hospital.
               </p>
+              <p class="card-body lang-es">
+                Guías sobre alimentación, medicamentos y horarios de llegada antes de la cirugía, según las indicaciones de su cirujano y hospital.
+              </p>
               <div class="card-footer">
-                <a href="#" class="link">View instructions</a>
-                <span class="card-meta">English &amp; Spanish</span>
+                <a href="#" class="link lang-en">View instructions</a>
+                <a href="#" class="link lang-es">Ver instrucciones</a>
+                <span class="card-meta lang-en">English &amp; Spanish</span>
+                <span class="card-meta lang-es">Inglés y Español</span>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Post-Operative Care</h3>
+                <h3 class="card-title lang-en">Post-Operative Care</h3>
+                <h3 class="card-title lang-es">Cuidado Postoperatorio</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 What to expect after surgery, wound care basics, and when to call our office or seek emergency care.
               </p>
+              <p class="card-body lang-es">
+                Qué esperar después de la cirugía, conceptos básicos de cuidado de heridas y cuándo llamar a nuestra oficina o acudir a urgencias.
+              </p>
               <div class="card-footer">
-                <a href="#" class="link">View instructions</a>
-                <span class="card-meta">Wound care &amp; follow-up</span>
+                <a href="#" class="link lang-en">View instructions</a>
+                <a href="#" class="link lang-es">Ver instrucciones</a>
+                <span class="card-meta lang-en">Wound care &amp; follow-up</span>
+                <span class="card-meta lang-es">Cuidado de heridas y seguimiento</span>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Insurance &amp; Billing</h3>
+                <h3 class="card-title lang-en">Insurance &amp; Billing</h3>
+                <h3 class="card-title lang-es">Seguro y Facturación</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Information on accepted insurance plans and basic billing policies.
               </p>
+              <p class="card-body lang-es">
+                Información sobre los seguros médicos aceptados y las políticas básicas de facturación.
+              </p>
               <div class="card-footer">
-                <a href="#contact" class="link">Contact us with questions</a>
+                <a href="#contact" class="link lang-en">Contact us with questions</a>
+                <a href="#contact" class="link lang-es">Contáctenos si tiene preguntas</a>
               </div>
             </div>
           </div>
@@ -412,38 +551,56 @@
       <section id="referring" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Referring Providers</div>
-            <h2 class="section-title">Information for Referring Physicians</h2>
-            <p class="section-subtitle">
+            <div class="section-kicker lang-en">Referring Providers</div>
+            <div class="section-kicker lang-es">Médicos Referentes</div>
+            <h2 class="section-title lang-en">Information for Referring Physicians</h2>
+            <h2 class="section-title lang-es">Información para Médicos Referentes</h2>
+            <p class="section-subtitle lang-en">
               We value our partnerships with primary care physicians and specialists throughout the Rio Grande Valley.
+            </p>
+            <p class="section-subtitle lang-es">
+              Valoramos nuestras alianzas con médicos de atención primaria y especialistas en todo el Valle del Río Grande.
             </p>
           </div>
 
           <div class="grid">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">How to Refer</h3>
+                <h3 class="card-title lang-en">How to Refer</h3>
+                <h3 class="card-title lang-es">Cómo Referir</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 Referrals may be made by phone or fax. Please include recent clinic notes, imaging, and labs when available.
               </p>
+              <p class="card-body lang-es">
+                Los referidos se pueden hacer por teléfono o fax. Por favor incluya notas clínicas recientes, estudios de imagen y laboratorios cuando estén disponibles.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">
+                <span class="card-meta lang-en">
                   Phone: (956) 621-4981 · Fax: (956) 621-4994
                 </span>
-                <a href="#" class="link">Download referral form</a>
+                <span class="card-meta lang-es">
+                  Teléfono: (956) 621-4981 · Fax: (956) 621-4994
+                </span>
+                <a href="#" class="link lang-en">Download referral form</a>
+                <a href="#" class="link lang-es">Descargar formulario de referencia</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Communication &amp; Follow-Up</h3>
+                <h3 class="card-title lang-en">Communication &amp; Follow-Up</h3>
+                <h3 class="card-title lang-es">Comunicación y Seguimiento</h3>
               </div>
-              <p class="card-body">
+              <p class="card-body lang-en">
                 We make every effort to keep referring physicians updated on consult findings, operative plans, and post-operative outcomes.
               </p>
+              <p class="card-body lang-es">
+                Hacemos todo lo posible por mantener informados a los médicos referentes sobre los hallazgos de la consulta, los planes quirúrgicos y los resultados postoperatorios.
+              </p>
               <div class="card-footer">
-                <span class="card-meta">Timely documentation &amp; direct communication.</span>
+                <span class="card-meta lang-en">Timely documentation &amp; direct communication.</span>
+                <span class="card-meta lang-es">Documentación oportuna y comunicación directa.</span>
               </div>
             </div>
           </div>
@@ -454,50 +611,75 @@
       <section id="contact" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="section-kicker">Contact</div>
-            <h2 class="section-title">Contact &amp; Locations / Contacto y Ubicaciones</h2>
-            <p class="section-subtitle">
-              Call or email to request an appointment or to send a referral. Se habla español.
+            <div class="section-kicker lang-en">Contact</div>
+            <div class="section-kicker lang-es">Contacto</div>
+
+            <h2 class="section-title lang-en">Contact &amp; Locations</h2>
+            <h2 class="section-title lang-es">Contacto y Ubicaciones</h2>
+
+            <p class="section-subtitle lang-en">
+              Call or email to request an appointment or to send a referral.
+            </p>
+            <p class="section-subtitle lang-es">
+              Se habla español.
             </p>
           </div>
 
           <div class="locations">
             <div class="location-list">
               <div class="location-card">
-                <div class="location-name">Brownsville – Frontage Road</div>
+                <div class="location-name lang-en">Brownsville – Frontage Road</div>
+                <div class="location-name lang-es">Brownsville – Frontage Road</div>
                 <div class="location-address">
                   4970 Frontage Rd., Suite A<br />
                   Brownsville, TX 78526
                 </div>
-                <div class="location-note">
+                <div class="location-note lang-en">
                   Convenient access from the highway with on-site parking.
+                </div>
+                <div class="location-note lang-es">
+                  Acceso conveniente desde la autopista con estacionamiento en el lugar.
                 </div>
               </div>
 
               <div class="location-card">
-                <div class="location-name">Harlingen</div>
+                <div class="location-name lang-en">Harlingen</div>
+                <div class="location-name lang-es">Harlingen</div>
                 <div class="location-address">
-                
                   5505 S Expressway, Ste 301<br />
                   Harlingen, TX 78550
                 </div>
-                <div class="location-note">
+                <div class="location-note lang-en">
                   Additional clinic hours and services available.
+                </div>
+                <div class="location-note lang-es">
+                  Horarios y servicios adicionales de clínica disponibles.
                 </div>
               </div>
             </div>
 
             <aside class="contact-panel">
-              <div class="contact-panel-title">Request an Appointment / Solicitar Cita</div>
-              <p class="contact-panel-line">
-                Phone / Teléfono: <strong>(956) 621-4981</strong>
+              <div class="contact-panel-title lang-en">Request an Appointment</div>
+              <div class="contact-panel-title lang-es">Solicitar Cita</div>
+
+              <p class="contact-panel-line lang-en">
+                Phone: <strong>(956) 621-4981</strong>
               </p>
+              <p class="contact-panel-line lang-es">
+                Teléfono: <strong>(956) 621-4981</strong>
+              </p>
+
               <p class="contact-panel-line">
                 Office Hours: Monday–Friday · 8:00 AM – 5:00 PM
               </p>
-              <p class="contact-panel-line">
+
+              <p class="contact-panel-line lang-en">
                 For appointments and referrals, please email:
               </p>
+              <p class="contact-panel-line lang-es">
+                Para citas y referidos, por favor envíe un correo electrónico:
+              </p>
+
               <a
                 href="mailto:appointments@premiergeneralsurgeons.com"
                 class="contact-email"
@@ -505,42 +687,56 @@
                 <span>✉</span>
                 <span>appointments@premiergeneralsurgeons.com</span>
               </a>
-              <p class="contact-panel-line" style="margin-top: 0.7rem;">
+
+              <p class="contact-panel-line lang-es" style="margin-top: 0.7rem;">
                 En su mensaje, puede escribir en <strong>inglés o español</strong>. Incluya su nombre,
                 fecha de nacimiento y un número de teléfono donde podamos llamarle.
               </p>
+
               <form class="contact-form" id="contact-form">
-  <h3 class="contact-form-title">Quick message from this page</h3>
+                <h3 class="contact-form-title lang-en">Quick message from this page</h3>
+                <h3 class="contact-form-title lang-es">Mensaje rápido desde esta página</h3>
 
-  <div class="contact-form-row">
-    <label for="cf-name">Full name</label>
-    <input type="text" id="cf-name" name="name" required />
-  </div>
+                <div class="contact-form-row">
+                  <label for="cf-name" class="lang-en">Full name</label>
+                  <label for="cf-name" class="lang-es">Nombre completo</label>
+                  <input type="text" id="cf-name" name="name" required />
+                </div>
 
-  <div class="contact-form-row">
-    <label for="cf-dob">Date of birth</label>
-    <input type="text" id="cf-dob" name="dob" placeholder="MM/DD/YYYY" />
-  </div>
+                <div class="contact-form-row">
+                  <label for="cf-dob" class="lang-en">Date of birth</label>
+                  <label for="cf-dob" class="lang-es">Fecha de nacimiento</label>
+                  <input type="text" id="cf-dob" name="dob" placeholder="MM/DD/YYYY" />
+                </div>
 
-  <div class="contact-form-row">
-    <label for="cf-phone">Phone number</label>
-    <input type="tel" id="cf-phone" name="phone" placeholder="(956) 621-4981" />
-  </div>
+                <div class="contact-form-row">
+                  <label for="cf-phone" class="lang-en">Phone number</label>
+                  <label for="cf-phone" class="lang-es">Número de teléfono</label>
+                  <input type="tel" id="cf-phone" name="phone" placeholder="(956) 621-4981" />
+                </div>
 
-  <div class="contact-form-row">
-    <label for="cf-message">How can we help?</label>
-    <textarea id="cf-message" name="message" rows="4" placeholder="Brief reason for visit or question"></textarea>
-  </div>
+                <div class="contact-form-row">
+                  <label for="cf-message" class="lang-en">How can we help?</label>
+                  <label for="cf-message" class="lang-es">¿Cómo podemos ayudarle?</label>
+                  <textarea id="cf-message" name="message" rows="4" placeholder="Brief reason for visit or question"></textarea>
+                </div>
 
-  <button type="submit" class="btn btn-primary contact-form-button">
-    Open Email to Send
-  </button>
+                <button type="submit" class="btn btn-primary contact-form-button lang-en">
+                  Open Email to Send
+                </button>
+                <button type="submit" class="btn btn-primary contact-form-button lang-es">
+                  Abrir correo para enviar
+                </button>
 
-  <p class="contact-form-note">
-    This will open your email app with the information above pre-filled in a message to
-    <strong>appointments@premiergeneralsurgeons.com</strong>. Please review and then click “Send”.
-  </p>
-</form>
+                <p class="contact-form-note lang-en">
+                  This will open your email app with the information above pre-filled in a message to
+                  <strong>appointments@premiergeneralsurgeons.com</strong>. Please review and then click “Send”.
+                </p>
+                <p class="contact-form-note lang-es">
+                  Esto abrirá su aplicación de correo con la información arriba prellenada en un mensaje a
+                  <strong>appointments@premiergeneralsurgeons.com</strong>. Por favor revise y luego haga clic en “Enviar”.
+                </p>
+              </form>
 
             </aside>
           </div>
@@ -557,12 +753,15 @@
         <div class="footer-links">
           <span>Brownsville, TX</span>
           <span>·</span>
-          <a href="#surgeons" class="link">Meet our surgeons</a>
+          <a href="#surgeons" class="link lang-en">Meet our surgeons</a>
+          <a href="#surgeons" class="link lang-es">Conozca a nuestros cirujanos</a>
           <span>·</span>
-          <a href="#contact" class="link">Contact</a>
+          <a href="#contact" class="link lang-en">Contact</a>
+          <a href="#contact" class="link lang-es">Contacto</a>
           <span>·</span>
           <!-- TODO: Replace with actual social links or remove -->
-          <a href="#" class="link">Surgeon social media</a>
+          <a href="#" class="link lang-en">Surgeon social media</a>
+          <a href="#" class="link lang-es">Redes sociales de los cirujanos</a>
         </div>
       </div>
     </footer>
