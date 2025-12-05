@@ -26,6 +26,130 @@
 
   <!-- External stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+<!-- LocalBusiness Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Premier General Surgeons, PLLC",
+  "url": "https://www.premiergeneralsurgeons.com",
+  "telephone": "+1-956-621-4981",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "4970 Frontage Rd., Suite A",
+      "addressLocality": "Brownsville",
+      "addressRegion": "TX",
+      "postalCode": "78526",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "5505 S Expressway, Ste 301",
+      "addressLocality": "Harlingen",
+      "addressRegion": "TX",
+      "postalCode": "78550",
+      "addressCountry": "US"
+    }
+  ],
+  "openingHours": [
+    "Mo-Fr 08:00-17:00"
+  ],
+  "medicalSpecialty": [
+    "GeneralSurgery",
+    "BariatricSurgery",
+    "TraumaSurgery",
+    "LaparoscopicSurgery",
+    "WoundCare"
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "Rio Grande Valley"
+  },
+  "department": [
+    {
+      "@type": "MedicalSpecialty",
+      "name": "General Surgery"
+    },
+    {
+      "@type": "MedicalSpecialty",
+      "name": "Bariatric Surgery"
+    },
+    {
+      "@type": "MedicalSpecialty",
+      "name": "Trauma Surgery"
+    },
+    {
+      "@type": "MedicalSpecialty",
+      "name": "Wound Care"
+    }
+  ]
+}
+</script>
+
+<!-- Physician Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Michael J. McKenna, DO",
+  "medicalSpecialty": "GeneralSurgery",
+  "worksFor": {
+    "@type": "MedicalClinic",
+    "name": "Premier General Surgeons, PLLC"
+  },
+  "telephone": "+1-956-621-4981",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4970 Frontage Rd., Suite A",
+    "addressLocality": "Brownsville",
+    "addressRegion": "TX",
+    "postalCode": "78526",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Carlos A. Barba, MD",
+  "medicalSpecialty": ["BariatricSurgery","TraumaSurgery"],
+  "worksFor": {
+    "@type": "MedicalClinic",
+    "name": "Premier General Surgeons, PLLC"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Raquel Silhy, MD",
+  "medicalSpecialty": "GeneralSurgery",
+  "worksFor": {
+    "@type": "MedicalClinic",
+    "name": "Premier General Surgeons, PLLC"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "January Hill, MD",
+  "medicalSpecialty": "BariatricSurgery",
+  "worksFor": {
+    "@type": "MedicalClinic",
+    "name": "Premier General Surgeons, PLLC"
+  }
+}
+</script>
+
 </head>
 
 <body>
