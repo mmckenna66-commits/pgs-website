@@ -451,10 +451,18 @@
           <div class="grid">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Hector Martinez, PA</h3>
-                <span class="card-pill lang-en">Inpatient</span>
-                <span class="card-pill lang-es">Intrahospitalario</span>
-              </div>
+  <div class="card-header-main">
+    <h3 class="card-title">Hector Martinez, PA</h3>
+    <span class="card-pill lang-en">Inpatient</span>
+    <span class="card-pill lang-es">Hospitalario</span>
+  </div>
+  <img
+    src="assets/providers/martinez.jpg"
+    alt="Photo of Hector Martinez, PA"
+    class="card-avatar"
+  />
+</div>
+
               <p class="card-body lang-en">
                 Inpatient physician assistant providing hospital-based support, daily rounds, and coordination of post-operative care.
               </p>
@@ -467,10 +475,18 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Leticia Asencio, NP</h3>
-                <span class="card-pill lang-en">Outpatient &amp; Wound Care</span>
-                <span class="card-pill lang-es">Ambulatorio y Cuidado de Heridas</span>
-              </div>
+  <div class="card-header-main">
+    <h3 class="card-title">Leticia Asencio, NP</h3>
+    <span class="card-pill lang-en">Outpatient &amp; Wound Care</span>
+    <span class="card-pill lang-es">Ambulatorio &amp; Cuidado de Heridas</span>
+  </div>
+  <img
+    src="assets/providers/asencio.jpg"
+    alt="Photo of Leticia Asencio, NP"
+    class="card-avatar"
+  />
+</div>
+
               <p class="card-body lang-en">
                 Nurse practitioner focused on outpatient visits and wound care, helping patients heal safely at home.
               </p>
@@ -778,25 +794,54 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="container footer-inner">
-        <div>
-          &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
-        </div>
-        <div class="footer-links">
-          <span>Brownsville, TX</span>
-          <span>·</span>
-          <a href="#surgeons" class="link lang-en">Meet our surgeons</a>
-          <a href="#surgeons" class="link lang-es">Conozca a nuestros cirujanos</a>
-          <span>·</span>
-          <a href="#contact" class="link lang-en">Contact</a>
-          <a href="#contact" class="link lang-es">Contacto</a>
-          <span>·</span>
-          <!-- TODO: Replace with actual social links or remove -->
-          <a href="#" class="link lang-en">Surgeon social media</a>
-          <a href="#" class="link lang-es">Redes sociales de los cirujanos</a>
-        </div>
+  <div class="container footer-inner">
+    
+    <div class="footer-branding">
+      <img
+        src="assets/pgs-logo.png"
+        alt="Premier General Surgeons logo"
+        class="footer-logo"
+      />
+
+      <div class="footer-copyright">
+        <!-- ENGLISH -->
+        <span class="lang-en">
+          &copy; <span id="year"></span> Premier General Surgeons.
+          All rights reserved.<br />
+          Brownsville, TX
+        </span>
+
+        <!-- SPANISH -->
+        <span class="lang-es">
+          &copy; <span id="year"></span> Premier General Surgeons.
+          Todos los derechos reservados.<br />
+          Brownsville, TX
+        </span>
       </div>
-    </footer>
+    </div>
+
+    <div class="footer-links" aria-label="Footer navigation">
+
+      <!-- ENGLISH -->
+      <a href="#surgeons" class="link lang-en">Meet our surgeons</a>
+      <!-- SPANISH -->
+      <a href="#surgeons" class="link lang-es">Nuestros cirujanos</a>
+
+      <span class="footer-separator">·</span>
+
+      <!-- ENGLISH -->
+      <a href="#contact" class="link lang-en">Contact</a>
+      <!-- SPANISH -->
+      <a href="#contact" class="link lang-es">Contacto</a>
+
+      <span class="footer-separator">·</span>
+      <!-- placeholder: real social media later -->
+      <a href="#" class="link">PGS</a>
+    </div>
+
+  </div>
+</footer>
+
   </div>
 
   <!-- External JS -->
