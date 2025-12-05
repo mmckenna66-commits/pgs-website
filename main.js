@@ -1,35 +1,72 @@
-// Simple helper for mobile nav dropdown
+// main.js
+// This file contains small, plain JavaScript helpers for the website UI.
+// It does NOT require a framework. The sections below handle:
+// - mobile navigation selection (scroll to a section),
+// - setting the current year in the footer,
+// - turning the contact form submission into a pre-filled email (mailto),
+// - and a simple language toggle that uses `localStorage`.
+
+// -----------------------------
+// Mobile navigation helper
+// -----------------------------
+// `handleNavSelect` is called when a mobile <select> navigation element
+// changes value. The `select` parameter is the <select> element itself.
+// The function reads the selected `value`, finds the matching element
+// on the page (via `querySelector`) and scrolls it into view smoothly.
+// Finally it clears the select back to its default empty value.
 function handleNavSelect(select) {
   const value = select.value;
   if (value) {
     const section = document.querySelector(value);
     if (section) {
+      // Smoothly scroll the matched section into view
       section.scrollIntoView({ behavior: "smooth" });
     }
+    // Reset the select so it doesn't stay on the chosen value
     select.value = "";
   }
 }
 
+// Wait until the HTML document is fully loaded before querying DOM nodes
 document.addEventListener("DOMContentLoaded", () => {
-  // Set current year in footer
+  // -----------------------------
+  // Footer: set the current year
+  // -----------------------------
+  // This keeps the copyright year up-to-date automatically.
   const yearEl = document.getElementById("year");
   if (yearEl) {
+    // `new Date().getFullYear()` returns the current year as a number
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // Contact form -> open email with pre-filled body
+  // -----------------------------
+  // Contact form: open user's email client
+  // -----------------------------
+  // The site uses a simple pattern: instead of sending the form to a
+  // server, we open the user's default email client with a pre-filled
+  // email (`mailto:`). This is useful for small sites where a backend
+  // isn't available. The code below collects form values and builds
+  // a properly encoded `mailto:` URL.
   const form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", (event) => {
+      // Prevent the browser's default form submission behavior
       event.preventDefault();
 
+      // Read values from the form inputs safely. The `?.` operator
+      // prevents errors if an element is missing, and `trim()` removes
+      // extra whitespace. The `|| ""` ensures we always have a string.
       const name = document.getElementById("cf-name")?.value.trim() || "";
       const dob = document.getElementById("cf-dob")?.value.trim() || "";
       const phone = document.getElementById("cf-phone")?.value.trim() || "";
       const message = document.getElementById("cf-message")?.value.trim() || "";
 
+      // `encodeURIComponent` is used to make strings safe for use in
+      // URLs (it escapes characters like spaces, &, ? and newlines).
       const subject = encodeURIComponent("Appointment request from website");
 
+      // Build the body as multiple lines, filtering out any empty lines
+      // so the email body looks neat even if some fields are blank.
       const bodyLines = [
         "Appointment / consultation request from website:",
         "",
@@ -41,36 +78,68 @@ document.addEventListener("DOMContentLoaded", () => {
         message || "(no additional message provided)",
       ].filter(Boolean);
 
+      // Join lines with a newline character, then encode for the URL
       const body = encodeURIComponent(bodyLines.join("\n"));
 
+      // Construct the mailto URL. When the browser navigates to this URL
+      // it opens the user's default email client with the fields filled.
       const mailtoUrl = `mailto:appointments@premiergeneralsurgeons.com?subject=${subject}&body=${body}`;
 
-      // Open default email client
+      // Navigate to the mailto URL to open the email client. This does
+      // not send the email automatically — the user must click send.
       window.location.href = mailtoUrl;
     });
   }
 
-  // Language toggle
+  // -----------------------------
+  // Language toggle (simple, client-side)
+  // -----------------------------
+  // This small feature toggles between English and Spanish by setting
+  // attributes on the `<html>` element and storing the choice in
+  // `localStorage` so the preference persists between visits.
   const htmlEl = document.documentElement;
   const langButtons = document.querySelectorAll(".lang-btn");
 
+  // `setLang` applies the language to the page and highlights the active
+  // language button. It accepts 'es' for Spanish; any other value
+  // defaults to English ('en').
   function setLang(lang) {
     const normalized = lang === "es" ? "es" : "en";
+    // `data-lang` can be used in CSS, and the `lang` attribute is used
+    // by screen readers and search engines.
     htmlEl.setAttribute("data-lang", normalized);
     htmlEl.setAttribute("lang", normalized);
+    // Save the preference so it persists on future visits
     localStorage.setItem("pgsLang", normalized);
 
+    // Update the visual state of language buttons (adds/removes a CSS class)
     langButtons.forEach((btn) => {
       const isActive = btn.getAttribute("data-lang") === normalized;
       btn.classList.toggle("lang-btn-active", isActive);
     });
+
+    // Show only the elements for the active language and hide the others.
+    // This makes sure only one language's buttons/labels/text are visible
+    // at a time (e.g., only `.lang-en` OR `.lang-es`). We use the
+    // HTML `hidden` property which is accessible and reversible.
+    try {
+      document.querySelectorAll(".lang-en").forEach((el) => {
+        el.hidden = normalized !== "en";
+      });
+      document.querySelectorAll(".lang-es").forEach((el) => {
+        el.hidden = normalized !== "es";
+      });
+    } catch (e) {
+      // Defensive: if querySelectorAll isn't available for some reason,
+      // just silently skip this step (page will still function).
+    }
   }
 
-  // Initialize language from localStorage or default to EN
+  // Initialize language from localStorage or default to English ('en')
   const savedLang = localStorage.getItem("pgsLang") || "en";
   setLang(savedLang);
 
-  // Wire buttons
+  // Wire up the buttons so clicking them changes the language
   langButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.getAttribute("data-lang");
