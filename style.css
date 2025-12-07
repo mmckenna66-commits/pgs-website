@@ -1198,6 +1198,31 @@ footer {
   opacity: 1;
 }
 
+/* Force stat cards to be square, readable, and not clipped */
+.hero .stat-bar .stat-pill {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px !important;  /* override any earlier pill radius */
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.hero .stat-bar .stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #374151; /* dark gray */
+}
+
+.hero .stat-bar .stat-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937; /* main text color */
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
