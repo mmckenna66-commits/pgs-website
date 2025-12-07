@@ -9,10 +9,6 @@
     content="Meet the surgeons of Premier General Surgeons, PLLC in Brownsville and Harlingen, TX. General, bariatric, trauma, and advanced laparoscopic surgery."
   />
 
-  <!-- Favicons (optional, reuse from index if desired) -->
-  <link rel="icon" type="image/png" href="assets/favicons/pgs-favicon-2025.png" />
-
-  <!-- Shared stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,87 +16,103 @@
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="container navbar-inner">
-        <a href="index.html#hero" class="logo">
-          <img
-            src="assets/pgs-logo.png"
-            alt="Premier General Surgeons logo"
-            class="logo-image"
-          />
+        <a href="#hero" class="logo">
+          <picture>
+            <source srcset="assets/pgs-logo.webp" type="image/webp">
+            <img
+              src="assets/pgs-logo.png"
+              alt="Premier General Surgeons logo"
+              class="logo-image"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              height="40"
+            />
+          </picture>
+
           <div>
             <div class="logo-text-top">PGS</div>
             <div class="logo-text-bottom">Premier General Surgeons</div>
           </div>
         </a>
 
-        <nav class="nav-actions">
-          <!-- Mobile nav (EN + ES variants if your language toggle is active) -->
-          <select class="nav-links-mobile-select lang-en" onchange="handleNavSelect(this)">
-            <option value="">Menu</option>
-            <option value="index.html#hero">Home</option>
-            <option value="index.html#services">Services</option>
-            <option value="surgeons.html">Surgeons</option>
-            <option value="index.html#midlevels">Mid-Level Providers</option>
-            <option value="index.html#resources">Patient Resources</option>
-            <option value="index.html#referring">Referring Providers</option>
-            <option value="index.html#contact">Contact</option>
-          </select>
+        <nav class="nav-actions" aria-label="Main navigation">
+          <!-- Mobile nav EN -->
+<select class="nav-links-mobile-select lang-en"
+        onchange="handleNavSelect(this)"
+        aria-label="Main menu">
+  <option value="">Menu</option>
+  <option value="#hero">Home</option>
+  <option value="#services">Services</option>
+  <option value="#surgeons">Surgeons</option>
+  <option value="#midlevels">Mid-Level Providers</option>
+  <option value="#resources">Patient Resources</option>
+  <option value="#referring">Referring Providers</option>
+  <option value="#contact">Contact</option>
+</select>
 
-          <select
-            class="nav-links-mobile-select lang-es"
-            style="display:none;"
-            onchange="handleNavSelect(this)"
-          >
-            <option value="">Menú</option>
-            <option value="index.html#hero">Inicio</option>
-            <option value="index.html#services">Servicios</option>
-            <option value="surgeons.html">Cirujanos</option>
-            <option value="index.html#midlevels">Proveedores de Nivel Intermedio</option>
-            <option value="index.html#resources">Recursos para Pacientes</option>
-            <option value="index.html#referring">Médicos Referentes</option>
-            <option value="index.html#contact">Contacto</option>
-          </select>
+<!-- Mobile nav ES -->
+<select class="nav-links-mobile-select lang-es"
+  onchange="handleNavSelect(this)"
+  aria-label="Menú principal">
+  <option value="">Menú</option>
+  <option value="#hero">Inicio</option>
+  <option value="#services">Servicios</option>
+  <option value="#surgeons">Cirujanos</option>
+  <option value="#midlevels">Proveedores de Nivel Intermedio</option>
+  <option value="#resources">Recursos para Pacientes</option>
+  <option value="#referring">Médicos Referentes</option>
+  <option value="#contact">Contacto</option>
+</select>
+
 
           <div class="nav-links">
-            <a href="index.html#services">
-              <span class="lang-en">Services</span>
-              <span class="lang-es" style="display:none;">Servicios</span>
-            </a>
-            <a href="surgeons.html">
-              <span class="lang-en">Surgeons</span>
-              <span class="lang-es" style="display:none;">Cirujanos</span>
-            </a>
-            <a href="index.html#resources">
-              <span class="lang-en">Patients</span>
-              <span class="lang-es" style="display:none;">Pacientes</span>
-            </a>
-            <a href="index.html#referring">
-              <span class="lang-en">Referring Providers</span>
-              <span class="lang-es" style="display:none;">Médicos Referentes</span>
-            </a>
-            <a href="index.html#contact">
-              <span class="lang-en">Contact</span>
-              <span class="lang-es" style="display:none;">Contacto</span>
-            </a>
+  <a href="#services">
+    <span class="lang-en">Services</span>
+    <span class="lang-es">Servicios</span>
+  </a>
+  <a href="surgeons.html">
+  <span class="lang-en">Surgeons</span>
+  <span class="lang-es">Cirujanos</span>
+</a>
+
+  <a href="#resources">
+    <span class="lang-en">Patients</span>
+    <span class="lang-es">Pacientes</span>
+  </a>
+  <a href="#referring">
+    <span class="lang-en">Referring Providers</span>
+    <span class="lang-es">Médicos Referentes</span>
+  </a>
+  <a href="#contact">
+    <span class="lang-en">Contact</span>
+    <span class="lang-es">Contacto</span>
+  </a>
+</div>
+
+
+          <!-- Language toggle -->
+          <div class="lang-toggle">
+            <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn lang-btn-es" data-lang="es" aria-label="Español">ES</button>
           </div>
 
-          <a href="index.html#contact" class="btn btn-primary">
-            <span class="lang-en">Request Appointment</span>
-            <span class="lang-es" style="display:none;">Solicitar Cita</span>
-          </a>
+          <a href="#contact" class="btn btn-primary lang-en" aria-label="Request an appointment">Request Appointment</a>
+          <a href="#contact" class="btn btn-primary lang-es" aria-label="Solicitar una cita">Solicitar Cita</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- PAGE HERO / INTRO -->
+      <!-- INTRO -->
       <section class="section">
         <div class="container">
           <div class="section-header">
             <div class="section-kicker lang-en">Our Surgeons</div>
-            <div class="section-kicker lang-es" style="display:none;">Nuestros Cirujanos</div>
+            <div class="section-kicker lang-es">Nuestros Cirujanos</div>
 
             <h1 class="section-title lang-en">Meet the Premier General Surgeons Team</h1>
-            <h1 class="section-title lang-es" style="display:none;">
+            <h1 class="section-title lang-es">
               Conozca al equipo de Premier General Surgeons
             </h1>
 
@@ -108,7 +120,7 @@
               Four experienced surgeons providing coordinated general, bariatric, trauma, and
               advanced laparoscopic care in Brownsville and Harlingen.
             </p>
-            <p class="section-subtitle lang-es" style="display:none;">
+            <p class="section-subtitle lang-es">
               Cuatro cirujanos experimentados que ofrecen atención coordinada en cirugía general,
               bariátrica, de trauma y laparoscópica avanzada en Brownsville y Harlingen.
             </p>
@@ -120,78 +132,68 @@
       <section class="section">
         <div class="container">
           <div class="grid">
-            <!-- Dr. McKenna -->
+            <!-- McKenna -->
             <article class="card surgeon-detail" id="mckenna">
               <div class="card-header">
                 <div class="card-header-main">
                   <h2 class="card-title">Michael J. McKenna, DO</h2>
                   <span class="card-pill lang-en">General &amp; Advanced Laparoscopy</span>
-                  <span class="card-pill lang-es" style="display:none;">
+                  <span class="card-pill lang-es">
                     Cirugía General y Laparoscopia Avanzada
                   </span>
                 </div>
-
-                <!-- Use the same src as in index.html for Dr. McKenna -->
-                <img
-                  src="assets/providers/mckenna.jpg"
-                  alt="Photo of Michael J. McKenna, DO"
-                  class="card-avatar"
-                  loading="lazy"
-                  decoding="async"
-                  width="64"
-                  height="64"
-                />
+                <picture>
+                  <source srcset="assets/providers/mckenna.webp" type="image/webp">
+                  <img
+                    src="assets/providers/mckenna.jpg"
+                    alt="Photo of Michael J. McKenna, DO"
+                    class="card-avatar"
+                    loading="lazy"
+                    decoding="async"
+                    width="64"
+                    height="64"
+                  />
+                </picture>
               </div>
 
               <div class="card-body">
                 <p class="lang-en">
                   Dr. McKenna is a board-certified general surgeon with a focus on minimally
-                  invasive and advanced laparoscopic surgery. He provides a broad range of
-                  inpatient and outpatient surgical care, working closely with patients, families,
-                  and referring physicians throughout the Rio Grande Valley.
+                  invasive and advanced laparoscopic surgery. He provides a broad range of inpatient
+                  and outpatient surgical care, working closely with patients, families, and
+                  referring physicians throughout the Rio Grande Valley.
                 </p>
-                <p class="lang-es" style="display:none;">
+                <p class="lang-es">
                   El Dr. McKenna es un cirujano general certificado con enfoque en cirugía
                   mínimamente invasiva y laparoscopia avanzada. Ofrece una amplia gama de
-                  procedimientos quirúrgicos hospitalarios y ambulatorios, trabajando de cerca con
-                  pacientes, familias y médicos referentes en todo el Valle del Río Grande.
+                  procedimientos hospitalarios y ambulatorios, trabajando de cerca con pacientes,
+                  familias y médicos referentes en todo el Valle del Río Grande.
                 </p>
-              </div>
-
-              <div class="card-footer">
-                <ul class="card-meta">
-                  <li class="lang-en">
-                    Common areas of care: hernias, gallbladder disease, soft tissue masses,
-                    abdominal surgery.
-                  </li>
-                  <li class="lang-es" style="display:none;">
-                    Áreas frecuentes de atención: hernias, enfermedad de la vesícula biliar,
-                    masas de tejidos blandos y cirugía abdominal.
-                  </li>
-                </ul>
               </div>
             </article>
 
-            <!-- Dr. Barba -->
+            <!-- Barba -->
             <article class="card surgeon-detail" id="barba">
               <div class="card-header">
                 <div class="card-header-main">
                   <h2 class="card-title">Carlos A. Barba, MD</h2>
                   <span class="card-pill lang-en">Bariatric &amp; Trauma Surgery</span>
-                  <span class="card-pill lang-es" style="display:none;">
+                  <span class="card-pill lang-es">
                     Cirugía Bariátrica y de Trauma
                   </span>
                 </div>
-
-                <img
-                  src="assets/providers/barba.jpg"
-                  alt="Photo of Carlos A. Barba, MD"
-                  class="card-avatar"
-                  loading="lazy"
-                  decoding="async"
-                  width="64"
-                  height="64"
-                />
+                <picture>
+                  <source srcset="assets/providers/barba.webp" type="image/webp">
+                  <img
+                    src="assets/providers/barba.jpg"
+                    alt="Photo of Carlos A. Barba, MD"
+                    class="card-avatar"
+                    loading="lazy"
+                    decoding="async"
+                    width="64"
+                    height="64"
+                  />
+                </picture>
               </div>
 
               <div class="card-body">
@@ -201,47 +203,37 @@
                   closely with primary care and specialty providers to help patients achieve better
                   long-term health.
                 </p>
-                <p class="lang-es" style="display:none;">
+                <p class="lang-es">
                   El Dr. Barba es cirujano general, bariátrico y de trauma con experiencia en
-                  cirugía compleja y procedimientos de pérdida de peso supervisados médicamente.
-                  Colabora estrechamente con médicos de atención primaria y especialistas para
-                  mejorar la salud a largo plazo de sus pacientes.
+                  cirugía compleja y pérdida de peso supervisada médicamente. Colabora
+                  estrechamente con médicos de atención primaria y especialistas para mejorar la
+                  salud a largo plazo de sus pacientes.
                 </p>
-              </div>
-
-              <div class="card-footer">
-                <ul class="card-meta">
-                  <li class="lang-en">
-                    Focus areas: bariatric surgery, trauma surgery, complex abdominal procedures.
-                  </li>
-                  <li class="lang-es" style="display:none;">
-                    Áreas de enfoque: cirugía bariátrica, cirugía de trauma y procedimientos
-                    abdominales complejos.
-                  </li>
-                </ul>
               </div>
             </article>
 
-            <!-- Dr. Silhy -->
+            <!-- Silhy -->
             <article class="card surgeon-detail" id="silhy">
               <div class="card-header">
                 <div class="card-header-main">
                   <h2 class="card-title">Raquel Silhy, MD</h2>
                   <span class="card-pill lang-en">General &amp; Laparoscopic Surgery</span>
-                  <span class="card-pill lang-es" style="display:none;">
+                  <span class="card-pill lang-es">
                     Cirugía General y Laparoscópica
                   </span>
                 </div>
-
-                <img
-                  src="assets/providers/silhy.jpg"
-                  alt="Photo of Raquel Silhy, MD"
-                  class="card-avatar"
-                  loading="lazy"
-                  decoding="async"
-                  width="64"
-                  height="64"
-                />
+                <picture>
+                  <source srcset="assets/providers/silhy.webp" type="image/webp">
+                  <img
+                    src="assets/providers/silhy.jpg"
+                    alt="Photo of Raquel Silhy, MD"
+                    class="card-avatar"
+                    loading="lazy"
+                    decoding="async"
+                    width="64"
+                    height="64"
+                  />
+                </picture>
               </div>
 
               <div class="card-body">
@@ -250,88 +242,64 @@
                   each patient. Her practice emphasizes clear communication, careful pre-operative
                   planning, and attentive post-operative follow-up.
                 </p>
-                <p class="lang-es" style="display:none;">
+                <p class="lang-es">
                   La Dra. Silhy ofrece opciones quirúrgicas mínimamente invasivas y tradicionales
                   adaptadas a cada paciente. Su práctica enfatiza la comunicación clara, la
                   planificación preoperatoria cuidadosa y el seguimiento posoperatorio cercano.
                 </p>
               </div>
-
-              <div class="card-footer">
-                <ul class="card-meta">
-                  <li class="lang-en">
-                    Focus areas: laparoscopic general surgery, hernias, gallbladder disease, and
-                    abdominal procedures.
-                  </li>
-                  <li class="lang-es" style="display:none;">
-                    Áreas de enfoque: cirugía general laparoscópica, hernias, enfermedad de la
-                    vesícula biliar y procedimientos abdominales.
-                  </li>
-                </ul>
-              </div>
             </article>
 
-            <!-- Dr. Hill -->
+            <!-- Hill -->
             <article class="card surgeon-detail" id="hill">
               <div class="card-header">
                 <div class="card-header-main">
                   <h2 class="card-title">January Hill, MD</h2>
                   <span class="card-pill lang-en">General &amp; Bariatric Surgery</span>
-                  <span class="card-pill lang-es" style="display:none;">
+                  <span class="card-pill lang-es">
                     Cirugía General y Bariátrica
                   </span>
                 </div>
-
-                <img
-                  src="assets/providers/hill.jpg"
-                  alt="Photo of January Hill, MD"
-                  class="card-avatar"
-                  loading="lazy"
-                  decoding="async"
-                  width="64"
-                  height="64"
-                />
+                <picture>
+                  <source srcset="assets/providers/hill.webp" type="image/webp">
+                  <img
+                    src="assets/providers/hill.jpg"
+                    alt="Photo of January Hill, MD"
+                    class="card-avatar"
+                    loading="lazy"
+                    decoding="async"
+                    width="64"
+                    height="64"
+                  />
+                </picture>
               </div>
 
               <div class="card-body">
                 <p class="lang-en">
                   Dr. Hill provides general and bariatric surgical care with a focus on long-term
-                  outcomes and close coordination with each patient’s care team. She works with
-                  patients to understand their goals and create a surgical plan that supports those
-                  goals safely.
+                  outcomes and coordination with each patient’s care team. She works with patients
+                  to understand their goals and create a surgical plan that supports those goals
+                  safely.
                 </p>
-                <p class="lang-es" style="display:none;">
+                <p class="lang-es">
                   La Dra. Hill ofrece atención en cirugía general y bariátrica con enfoque en los
-                  resultados a largo plazo y la coordinación cercana con el equipo de atención de
-                  cada paciente. Trabaja con los pacientes para entender sus metas y crear un plan
+                  resultados a largo plazo y la coordinación con el equipo de atención de cada
+                  paciente. Trabaja con los pacientes para entender sus metas y crear un plan
                   quirúrgico que las apoye de manera segura.
                 </p>
-              </div>
-
-              <div class="card-footer">
-                <ul class="card-meta">
-                  <li class="lang-en">
-                    Focus areas: bariatric surgery, general surgery, and multidisciplinary
-                    peri-operative care.
-                  </li>
-                  <li class="lang-es" style="display:none;">
-                    Áreas de enfoque: cirugía bariátrica, cirugía general y atención perioperatoria
-                    multidisciplinaria.
-                  </li>
-                </ul>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- SIMPLE CTA AT BOTTOM -->
+      <!-- CTA -->
       <section class="section">
         <div class="container">
           <div class="card">
             <div class="card-header">
               <h2 class="card-title lang-en">Ready to refer or schedule?</h2>
-              <h2 class="card-title lang-es" style="display:none;">
+              <h2 class="card-title lang-es">
                 ¿Listo para referir o programar una cita?
               </h2>
             </div>
@@ -340,7 +308,7 @@
                 New patients and referrals are welcome. Same-week consultations are often
                 available. Call our office or send a message from the contact page to get started.
               </p>
-              <p class="lang-es" style="display:none;">
+              <p class="lang-es">
                 Aceptamos nuevos pacientes y referencias. Con frecuencia hay consultas disponibles
                 la misma semana. Llame a la oficina o envíe un mensaje desde la página de contacto
                 para comenzar.
@@ -349,11 +317,11 @@
             <div class="card-footer">
               <a href="tel:9566214981" class="btn btn-outline">
                 <span class="lang-en">Call (956) 621-4981</span>
-                <span class="lang-es" style="display:none;">Llamar al (956) 621-4981</span>
+                <span class="lang-es">Llamar al (956) 621-4981</span>
               </a>
               <a href="index.html#contact" class="btn btn-primary">
                 <span class="lang-en">Go to Contact Page</span>
-                <span class="lang-es" style="display:none;">Ir a la Página de Contacto</span>
+                <span class="lang-es">Ir a la Página de Contacto</span>
               </a>
             </div>
           </div>
@@ -361,52 +329,34 @@
       </section>
     </main>
 
-    <!-- FOOTER (reuse same as index) -->
+    <!-- FOOTER -->
     <footer>
       <div class="container footer-inner">
-        <div class="footer-branding">
-          <img
-            src="assets/pgs-logo.png"
-            alt="Premier General Surgeons logo"
-            class="footer-logo"
-            loading="lazy"
-            decoding="async"
-          />
-          <div>
-            <span class="lang-en">
-              &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.<br />
-              Brownsville, TX
-            </span>
-            <span class="lang-es" style="display:none;">
-              &copy; <span id="year"></span> Premier General Surgeons. Todos los derechos
-              reservados.<br />
-              Brownsville, TX
-            </span>
-          </div>
-        </div>
-
-        <div class="footer-links">
+        <div>
           <span class="lang-en">
-            <a href="surgeons.html" class="link">Meet our surgeons</a>
-            <span>·</span>
-            <a href="index.html#contact" class="link">Contact</a>
+            &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
           </span>
-          <span class="lang-es" style="display:none;">
-            <a href="surgeons.html" class="link">Nuestros cirujanos</a>
-            <span>·</span>
-            <a href="index.html#contact" class="link">Contacto</a>
+          <span class="lang-es">
+            &copy; <span id="year"></span> Premier General Surgeons. Todos los derechos reservados.
           </span>
+        </div>
+        <div class="footer-links">
+          <a href="surgeons.html" class="link">
+            <span class="lang-en">Our surgeons</span>
+            <span class="lang-es">Nuestros cirujanos</span>
+          </a>
           <span>·</span>
-          <a href="#" class="link">PGS</a>
+          <a href="index.html#contact" class="link">
+            <span class="lang-en">Contact</span>
+            <span class="lang-es">Contacto</span>
+          </a>
         </div>
       </div>
     </footer>
   </div>
 
-  <!-- Shared JS -->
   <script src="main.js"></script>
   <script>
-    // Keep footer year current if main.js doesn't already do this on every page
     (function () {
       var yearEl = document.getElementById("year");
       if (yearEl) {

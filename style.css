@@ -293,11 +293,24 @@ html[data-lang="es"] .lang-en {
       rgba(15, 23, 42, 0.80),
       rgba(15, 23, 42, 0.85)
     ),
-    url("assets/brownsville-hero.jpg");
+    url("assets/brownsville-hero.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transform: scale(1.03); /* slight zoom to avoid edges on resize */
+}
+
+/* Fallback for browsers that don't support WebP */
+@supports not (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=")) {
+  .hero::before {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.80),
+        rgba(15, 23, 42, 0.85)
+      ),
+      url("assets/brownsville-hero.jpg");
+  }
 }
 
 /* Make sure the inner grid sits above the overlay */
@@ -329,7 +342,7 @@ html[data-lang="es"] .lang-en {
 
   .hero::before {
     /* slightly stronger overlay and nudge focal point upward */
-    background: linear-gradient(to bottom, rgba(15,23,42,0.90), rgba(15,23,42,0.92)), url("assets/brownsville-hero.jpg");
+    background: linear-gradient(to bottom, rgba(15,23,42,0.90), rgba(15,23,42,0.92)), url("assets/brownsville-hero.webp");
     background-position: 50% 30%;
     transform: scale(1);
   }
@@ -1221,6 +1234,105 @@ footer {
   font-size: 0.95rem;
   font-weight: 600;
   color: #1f2937; /* main text color */
+}
+
+/* ===== SPACING & TYPOGRAPHY NORMALIZATION ===== */
+/* Add consistent spacing variables for repeated components */
+:root {
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+
+  --pill-padding-y: 0.4rem;
+  --pill-padding-x: 0.7rem;
+
+  --card-padding: 1rem;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+}
+
+/* Ensure flexible children can shrink without overflowing */
+.card-header,
+.card-header-main,
+.card-title,
+.card-subtitle,
+.stat-pill,
+.stat-label,
+.stat-value {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Card title/subtitle spacing consistency */
+.card-title {
+  margin: 0 0 var(--space-sm) 0;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* Stat bar grid: responsive columns with sensible min width */
+.stat-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-md);
+  align-items: center;
+}
+
+/* Stat pill normalization */
+.stat-pill {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.stat-label {
+  margin: 0 0 0.15rem 0;
+}
+
+.stat-value {
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Small screen adjustments to prevent clipping */
+@media (max-width: 420px) {
+  .stat-bar {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .card-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .stat-pill {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.66rem;
+  }
+
+  .stat-value {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium screens: slightly tighter spacing */
+@media (max-width: 900px) {
+  .card {
+    padding: 0.85rem;
+  }
 }
 
 /* RESPONSIVE */
