@@ -202,16 +202,10 @@ a {
 }
 
 /* Language toggle visibility */
-.lang-en,
-.lang-es {
-  display: block;
-}
-
-html[data-lang="en"] .lang-es {
-  display: none !important;
-}
-
-html[data-lang="es"] .lang-en {
+/* Note: Visibility is controlled by main.js using the 'hidden' attribute.
+   The [hidden] selector provides browser-native support, which takes
+   precedence over display rules when properly implemented. */
+[hidden] {
   display: none !important;
 }
 
