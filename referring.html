@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Surgeons | Premier General Surgeons, PLLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Meet the surgeons of Premier General Surgeons, PLLC in Brownsville and Harlingen, TX. General, bariatric, trauma, and advanced laparoscopic surgery."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#hero" class="logo">
+          <picture>
+            <source srcset="assets/pgs-logo.webp" type="image/webp">
+            <img
+              src="assets/pgs-logo.png"
+              alt="Premier General Surgeons logo"
+              class="logo-image"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              height="40"
+            />
+          </picture>
+
+          <div>
+            <div class="logo-text-top">PGS</div>
+            <div class="logo-text-bottom">Premier General Surgeons</div>
+          </div>
+        </a>
+
+        <nav class="nav-actions" aria-label="Main navigation">
+          <!-- Mobile nav EN -->
+<select class="nav-links-mobile-select lang-en"
+        onchange="handleNavSelect(this)"
+        aria-label="Main menu">
+  <option value="">Menu</option>
+  <option value="#hero">Home</option>
+  <option value="#services">Services</option>
+  <option value="#surgeons">Surgeons</option>
+  <option value="#midlevels">Mid-Level Providers</option>
+  <option value="#resources">Patient Resources</option>
+  <option value="#referring">Referring Providers</option>
+  <option value="#contact">Contact</option>
+</select>
+
+<!-- Mobile nav ES -->
+<select class="nav-links-mobile-select lang-es"
+  onchange="handleNavSelect(this)"
+  aria-label="Menú principal">
+  <option value="">Menú</option>
+  <option value="#hero">Inicio</option>
+  <option value="#services">Servicios</option>
+  <option value="#surgeons">Cirujanos</option>
+  <option value="#midlevels">Proveedores de Nivel Intermedio</option>
+  <option value="#resources">Recursos para Pacientes</option>
+  <option value="#referring">Médicos Referentes</option>
+  <option value="#contact">Contacto</option>
+</select>
+
+
+          <div class="nav-links">
+  <a href="#services">
+    <span class="lang-en">Services</span>
+    <span class="lang-es">Servicios</span>
+  </a>
+  <a href="surgeons.html">
+  <span class="lang-en">Surgeons</span>
+  <span class="lang-es">Cirujanos</span>
+</a>
+
+  <a href="#resources">
+    <span class="lang-en">Patients</span>
+    <span class="lang-es">Pacientes</span>
+  </a>
+  <a href="#referring">
+    <span class="lang-en">Referring Providers</span>
+    <span class="lang-es">Médicos Referentes</span>
+  </a>
+  <a href="#contact">
+    <span class="lang-en">Contact</span>
+    <span class="lang-es">Contacto</span>
+  </a>
+</div>
+
+
+          <!-- Language toggle -->
+          <div class="lang-toggle">
+            <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn lang-btn-es" data-lang="es" aria-label="Español">ES</button>
+          </div>
+
+          <a href="#contact" class="btn btn-primary lang-en" aria-label="Request an appointment">Request Appointment</a>
+          <a href="#contact" class="btn btn-primary lang-es" aria-label="Solicitar una cita">Solicitar Cita</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+  <!-- REFERRING PROVIDERS INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker lang-en">Referring Providers</div>
+        <div class="section-kicker lang-es">Médicos Referentes</div>
+
+        <h1 class="section-title lang-en">Information for Referring Physicians</h1>
+        <h1 class="section-title lang-es">Información para Médicos Referentes</h1>
+
+        <p class="section-subtitle lang-en">
+          We value our partnerships with primary care physicians and specialists throughout
+          the Rio Grande Valley. Our goal is to make referrals easy and to communicate
+          clearly about your patients’ care.
+        </p>
+        <p class="section-subtitle lang-es">
+          Valoramos nuestras alianzas con médicos de atención primaria y especialistas en
+          todo el Valle del Río Grande. Nuestro objetivo es facilitar las referencias y
+          mantener una comunicación clara sobre la atención de sus pacientes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO REFER -->
+  <section class="section" id="how-to-refer">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">How to Refer</h2>
+          <h2 class="card-title lang-es">Cómo Referir</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            Referrals may be made by phone or fax. When possible, please include recent
+            clinic notes, relevant imaging, and laboratory results. Our team will work
+            with your office to schedule the patient promptly.
+          </p>
+          <p class="lang-es">
+            Las referencias se pueden hacer por teléfono o fax. Cuando sea posible, incluya
+            notas clínicas recientes, estudios de imagen relevantes y resultados de
+            laboratorio. Nuestro equipo trabajará con su consultorio para programar la cita
+            del paciente lo antes posible.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">
+            <span class="lang-en">
+              Phone: (956) 621-4981 · Fax: (956) 621-4994
+            </span>
+            <span class="lang-es">
+              Teléfono: (956) 621-4981 · Fax: (956) 621-4994
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERRAL FORM -->
+  <section class="section" id="referral-form">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">Referral Form</h2>
+          <h2 class="card-title lang-es">Formulario de Referencia</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            A printable referral form will be available here. In the meantime, you may fax
+            your own referral sheet or clinic note to our office and our staff will contact
+            the patient directly.
+          </p>
+          <p class="lang-es">
+            Aquí estará disponible un formulario de referencia imprimible. Mientras tanto,
+            puede enviar por fax su propia hoja de referencia o nota de la consulta a
+            nuestra oficina y nuestro personal se comunicará directamente con el paciente.
+          </p>
+        </div>
+        <div class="card-footer">
+          <!-- Later you can replace this href with a real PDF, e.g. assets/forms/PGS-Referral.pdf -->
+          <a href="referring.html#referral-form" class="link">
+            <span class="lang-en">Download referral form (coming soon)</span>
+            <span class="lang-es">Descargar formulario de referencia (próximamente)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BACK TO CONTACT -->
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">Questions about a referral?</h2>
+          <h2 class="card-title lang-es">¿Preguntas sobre una referencia?</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            If you would like to discuss a case or clarify the best type of referral, please
+            call our office. We are happy to coordinate care for complex or urgent surgical
+            needs.
+          </p>
+          <p class="lang-es">
+            Si desea comentar un caso o aclarar el tipo de referencia más adecuado, por
+            favor llame a nuestra oficina. Con gusto coordinamos la atención para
+            necesidades quirúrgicas complejas o urgentes.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="tel:9566214981" class="btn btn-outline">
+            <span class="lang-en">Call (956) 621-4981</span>
+            <span class="lang-es">Llamar al (956) 621-4981</span>
+          </a>
+          <a href="index.html#contact" class="btn btn-primary">
+            <span class="lang-en">Go to Contact Page</span>
+            <span class="lang-es">Ir a la Página de Contacto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <span class="lang-en">
+            &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
+          </span>
+          <span class="lang-es">
+            &copy; <span id="year"></span> Premier General Surgeons. Todos los derechos reservados.
+          </span>
+        </div>
+        <div class="footer-links">
+          <a href="surgeons.html" class="link">
+            <span class="lang-en">Our surgeons</span>
+            <span class="lang-es">Nuestros cirujanos</span>
+          </a>
+          <span>·</span>
+          <a href="index.html#contact" class="link">
+            <span class="lang-en">Contact</span>
+            <span class="lang-es">Contacto</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      var yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>

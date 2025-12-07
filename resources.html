@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Surgeons | Premier General Surgeons, PLLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Meet the surgeons of Premier General Surgeons, PLLC in Brownsville and Harlingen, TX. General, bariatric, trauma, and advanced laparoscopic surgery."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#hero" class="logo">
+          <picture>
+            <source srcset="assets/pgs-logo.webp" type="image/webp">
+            <img
+              src="assets/pgs-logo.png"
+              alt="Premier General Surgeons logo"
+              class="logo-image"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              height="40"
+            />
+          </picture>
+
+          <div>
+            <div class="logo-text-top">PGS</div>
+            <div class="logo-text-bottom">Premier General Surgeons</div>
+          </div>
+        </a>
+
+        <nav class="nav-actions" aria-label="Main navigation">
+          <!-- Mobile nav EN -->
+<select class="nav-links-mobile-select lang-en"
+        onchange="handleNavSelect(this)"
+        aria-label="Main menu">
+  <option value="">Menu</option>
+  <option value="#hero">Home</option>
+  <option value="#services">Services</option>
+  <option value="#surgeons">Surgeons</option>
+  <option value="#midlevels">Mid-Level Providers</option>
+  <option value="#resources">Patient Resources</option>
+  <option value="#referring">Referring Providers</option>
+  <option value="#contact">Contact</option>
+</select>
+
+<!-- Mobile nav ES -->
+<select class="nav-links-mobile-select lang-es"
+  onchange="handleNavSelect(this)"
+  aria-label="Menú principal">
+  <option value="">Menú</option>
+  <option value="#hero">Inicio</option>
+  <option value="#services">Servicios</option>
+  <option value="#surgeons">Cirujanos</option>
+  <option value="#midlevels">Proveedores de Nivel Intermedio</option>
+  <option value="#resources">Recursos para Pacientes</option>
+  <option value="#referring">Médicos Referentes</option>
+  <option value="#contact">Contacto</option>
+</select>
+
+
+          <div class="nav-links">
+  <a href="#services">
+    <span class="lang-en">Services</span>
+    <span class="lang-es">Servicios</span>
+  </a>
+  <a href="surgeons.html">
+  <span class="lang-en">Surgeons</span>
+  <span class="lang-es">Cirujanos</span>
+</a>
+
+  <a href="#resources">
+    <span class="lang-en">Patients</span>
+    <span class="lang-es">Pacientes</span>
+  </a>
+  <a href="#referring">
+    <span class="lang-en">Referring Providers</span>
+    <span class="lang-es">Médicos Referentes</span>
+  </a>
+  <a href="#contact">
+    <span class="lang-en">Contact</span>
+    <span class="lang-es">Contacto</span>
+  </a>
+</div>
+
+
+          <!-- Language toggle -->
+          <div class="lang-toggle">
+            <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn lang-btn-es" data-lang="es" aria-label="Español">ES</button>
+          </div>
+
+          <a href="#contact" class="btn btn-primary lang-en" aria-label="Request an appointment">Request Appointment</a>
+          <a href="#contact" class="btn btn-primary lang-es" aria-label="Solicitar una cita">Solicitar Cita</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+  <!-- PATIENT RESOURCES INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker lang-en">Patients</div>
+        <div class="section-kicker lang-es">Pacientes</div>
+
+        <h1 class="section-title lang-en">Patient Resources</h1>
+        <h1 class="section-title lang-es">Recursos para Pacientes</h1>
+
+        <p class="section-subtitle lang-en">
+          Helpful information to prepare for your visit, surgery, and recovery with
+          Premier General Surgeons, PLLC in Brownsville and Harlingen.
+        </p>
+        <p class="section-subtitle lang-es">
+          Información útil para prepararse para su visita, cirugía y recuperación con
+          Premier General Surgeons, PLLC en Brownsville y Harlingen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW PATIENT FORMS -->
+  <section class="section" id="forms">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">New Patient Forms</h2>
+          <h2 class="card-title lang-es">Formularios para Pacientes Nuevos</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            Before your first visit, please review and complete our new patient forms.
+            Bringing these with you can shorten your check-in time and help us better
+            understand your medical history.
+          </p>
+          <p class="lang-es">
+            Antes de su primera visita, por favor revise y complete nuestros formularios
+            para pacientes nuevos. Llevarlos completos puede reducir su tiempo de registro
+            y ayudarnos a entender mejor su historial médico.
+          </p>
+        </div>
+        <div class="card-footer">
+          <!-- Replace these hrefs with real PDF links later if you want -->
+          <a href="resources.html#forms" class="link">
+            <span class="lang-en">Download forms (English)</span>
+            <span class="lang-es">Descargar formularios (Inglés)</span>
+          </a>
+          <span>·</span>
+          <a href="resources.html#forms" class="link">
+            <span class="lang-en">Download forms (Spanish)</span>
+            <span class="lang-es">Descargar formularios (Español)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRE-OPERATIVE INSTRUCTIONS -->
+  <section class="section" id="preop">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">Pre-Operative Instructions</h2>
+          <h2 class="card-title lang-es">Instrucciones Preoperatorias</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            These are general pre-operative guidelines. Your surgeon or hospital may give
+            you specific instructions that are more detailed. Always follow the written
+            instructions provided for your individual surgery.
+          </p>
+          <p class="lang-es">
+            Estas son pautas preoperatorias generales. Su cirujano u hospital puede darle
+            instrucciones específicas más detalladas. Siempre siga las instrucciones
+            escritas proporcionadas para su cirugía individual.
+          </p>
+          <p class="lang-en">
+            Common topics include when to stop eating and drinking, how to manage home
+            medications, and when to arrive at the hospital or surgery center.
+          </p>
+          <p class="lang-es">
+            Los temas comunes incluyen cuándo dejar de comer y beber, cómo manejar sus
+            medicamentos en casa y a qué hora llegar al hospital o centro quirúrgico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POST-OPERATIVE CARE -->
+  <section class="section" id="postop">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title lang-en">Post-Operative Care</h2>
+          <h2 class="card-title lang-es">Cuidado Postoperatorio</h2>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">
+            After surgery, you will receive written instructions for wound care, pain
+            control, activity, diet, and follow-up appointments. Please call our office if
+            you have questions or if something does not seem right.
+          </p>
+          <p class="lang-es">
+            Después de la cirugía, recibirá instrucciones escritas sobre el cuidado de la
+            herida, control del dolor, actividad, dieta y citas de seguimiento. Llame a
+            nuestra oficina si tiene preguntas o si algo no parece estar bien.
+          </p>
+          <p class="lang-en">
+            If you develop fever, worsening pain, redness or drainage from your incision,
+            difficulty breathing, chest pain, or any other concerning symptoms, seek
+            medical attention immediately.
+          </p>
+          <p class="lang-es">
+            Si presenta fiebre, dolor en aumento, enrojecimiento o secreción en la
+            incisión, dificultad para respirar, dolor en el pecho u otros síntomas
+            preocupantes, busque atención médica de inmediato.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="index.html#contact" class="link">
+            <span class="lang-en">Contact our office with questions</span>
+            <span class="lang-es">Comuníquese con nuestra oficina si tiene preguntas</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <span class="lang-en">
+            &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
+          </span>
+          <span class="lang-es">
+            &copy; <span id="year"></span> Premier General Surgeons. Todos los derechos reservados.
+          </span>
+        </div>
+        <div class="footer-links">
+          <a href="surgeons.html" class="link">
+            <span class="lang-en">Our surgeons</span>
+            <span class="lang-es">Nuestros cirujanos</span>
+          </a>
+          <span>·</span>
+          <a href="index.html#contact" class="link">
+            <span class="lang-en">Contact</span>
+            <span class="lang-es">Contacto</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      var yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>
