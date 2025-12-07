@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Construct the mailto URL. When the browser navigates to this URL
       // it opens the user's default email client with the fields filled.
-      const mailtoUrl = `mailto:appointments@premiergeneralsurgeons.com?subject=${subject}&body=${body}`;
+      const mailtoUrl = `mailto:appointments@premiergeneralsurgeon.com?subject=${subject}&body=${body}`;
 
       // Navigate to the mailto URL to open the email client. This does
       // not send the email automatically — the user must click send.
