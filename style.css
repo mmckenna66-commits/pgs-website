@@ -1218,7 +1218,18 @@ footer {
   .locations {
     grid-template-columns: minmax(0, 1fr);
   }
-  
+  .maps-link {
+  display: inline-block;
+  margin: 0.4rem 0 0.6rem;
+  color: var(--pgs-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.maps-link:hover {
+  text-decoration: underline;
+}
+
   .nav-links {
     display: none;
   }
