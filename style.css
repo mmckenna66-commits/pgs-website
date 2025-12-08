@@ -1273,6 +1273,39 @@ footer {
   margin: 0;
   color: var(--color-muted);
 }
+.surgeon-social {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.surgeon-social-links {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.surgeon-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  text-decoration: none;
+}
+
+.surgeon-social-links a i {
+  font-size: 14px;
+}
+
+.surgeon-social-links a:hover {
+  background: rgba(89, 136, 218, 0.08);
+}
 
 /* Stat bar grid: responsive columns with sensible min width */
 .stat-bar {
