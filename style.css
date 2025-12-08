@@ -16,6 +16,25 @@
   --radius-lg: 18px;
   --radius-md: 12px;
   --max-width: 1120px;
+  
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  
+  /* Component spacing */
+  --card-padding: 1rem;
+  --pill-padding-y: 0.4rem;
+  --pill-padding-x: 0.7rem;
+  
+  /* Font sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
 }
 
 * {
@@ -566,19 +585,25 @@ a {
   color: var(--color-muted);
 }
 
-/* GRID CARDS */
+/* ===== GRID CARDS ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: var(--space-lg);
 }
 
 .card {
   background: var(--color-bg-alt);
   border-radius: var(--radius-lg);
-  padding: 1.1rem 1rem;
+  padding: var(--card-padding);
   box-shadow: 0 10px 22px rgba(148, 163, 184, 0.35);
   border: 1px solid rgba(148, 163, 184, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(148, 163, 184, 0.45);
 }
 
 .card-header {
@@ -621,18 +646,22 @@ a {
 }
 
 .card-body {
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   color: var(--color-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
 }
 
 .card-meta {
   font-size: 0.82rem;
   color: var(--pgs-steel-blue);
+  margin-bottom: var(--space-xs);
 }
 
 .card-footer {
-  margin-top: 0.65rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1006,189 +1035,11 @@ footer {
   }
 
   .stat-value {
-    font-size: 0. ninerem;
+    font-size: 0.9rem;
   }
 }
 
-.link {
-  color: var(--pgs-blue);
-  font-weight: 500;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* CONTACT / LOCATIONS */
-.locations {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: flex-start;
-}
-
-.location-list {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.8rem;
-}
-
-.location-card {
-  background: #ffffff;
-  border-radius: var(--radius-lg);
-  padding: 1rem 1rem;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 18px rgba(148, 163, 184, 0.25);
-}
-
-.location-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.location-address {
-  font-size: 0.9rem;
-  color: var(--color-muted);
-  margin-bottom: 0.25rem;
-}
-
-.location-note {
-  font-size: 0.85rem;
-  color: var(--pgs-steel-blue);
-}
-
-.contact-panel {
-  background: linear-gradient(135deg, var(--pgs-blue), var(--pgs-light-blue));
-  border-radius: 22px;
-  padding: 1.2rem 1.2rem;
-  color: #ffffff;
-  box-shadow: var(--shadow-soft);
-}
-
-.contact-panel-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-}
-
-.contact-panel-line {
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-}
-
-.contact-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* FOOTER */
-/* CONTACT FORM */
-.contact-form {
-  margin-top: 1.2rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.contact-form-title {
-  font-size: 0.98rem;
-  font-weight: 600;
-  margin-bottom: 0.6rem;
-}
-
-.contact-form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-bottom: 0.6rem;
-}
-
-.contact-form-row label {
-  font-size: 0.85rem;
-  opacity: 0.95;
-}
-
-.contact-form-row input,
-.contact-form-row textarea {
-  border-radius: 10px;
-  border: none;
-  padding: 0.4rem 0.55rem;
-  font-size: 0.9rem;
-  font-family: inherit;
-  outline: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-}
-
-.contact-form-row input::placeholder,
-.contact-form-row textarea::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.contact-form-row input:focus,
-.contact-form-row textarea:focus {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.contact-form-button {
-  margin-top: 0.3rem;
-  font-size: 0.88rem;
-}
-
-.contact-form-note {
-  margin-top: 0.45rem;
-  font-size: 0.8rem;
-  opacity: 0.9;
-}
-
-footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 1.4rem 0 1.6rem;
-  background: #ffffff;
-  margin-top: 2rem;
-}
-
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.82rem;
-  color: var(--color-muted);
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-/* Ensure stat bar labels are readable on light pill background */
-.stat-pill {
-  background: #ffffff;
-  border-radius: 999px;
-  padding: 0.65rem 0.9rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  box-shadow: 0 8px 18px rgba(148, 163, 184, 0.3);
-  border: 1px solid #e5e7eb;
-}
-
-.stat-label,
-.stat-value {
-  color: #1f2933; /* same as var(--color-text) */
-}
-
-/* Footer branding with logo */
+/* CONTACT / LOCATIONS (duplicate .link rules removed) */\n/* All duplicate contact/location/form rules removed - already defined at lines 655-780 */\n\n/* Footer branding with logo */
 .footer-branding {
   display: flex;
   align-items: center;
@@ -1231,24 +1082,7 @@ footer {
 }
 
 /* ===== SPACING & TYPOGRAPHY NORMALIZATION ===== */
-/* Add consistent spacing variables for repeated components */
-:root {
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 0.75rem;
-  --space-lg: 1rem;
-
-  --pill-padding-y: 0.4rem;
-  --pill-padding-x: 0.7rem;
-
-  --card-padding: 1rem;
-
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-md: 1rem;
-  --fs-lg: 1.125rem;
-  --fs-xl: 1.25rem;
-}
+/* Spacing variables now defined in :root at top of file */
 
 /* Ensure flexible children can shrink without overflowing */
 .card-header,
@@ -1273,13 +1107,15 @@ footer {
   margin: 0;
   color: var(--color-muted);
 }
+/* Surgeon social media row - sits within card footer */
 .surgeon-social {
-  margin-top: 0.75rem;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: var(--space-sm);
   align-items: center;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
 }
 
 .surgeon-social-links {
@@ -1292,11 +1128,14 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: #ffffff;
+  color: var(--pgs-blue);
   text-decoration: none;
+  transition: all 0.15s ease;
 }
 
 .surgeon-social-links a i {
@@ -1304,7 +1143,10 @@ footer {
 }
 
 .surgeon-social-links a:hover {
-  background: rgba(89, 136, 218, 0.08);
+  background: var(--pgs-blue);
+  color: #ffffff;
+  border-color: var(--pgs-blue);
+  transform: translateY(-1px);
 }
 
 /* Stat bar grid: responsive columns with sensible min width */
@@ -1355,14 +1197,19 @@ footer {
   }
 }
 
-/* Medium screens: slightly tighter spacing */
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Medium screens (tablets and smaller) */
 @media (max-width: 900px) {
   .card {
     padding: 0.85rem;
   }
+  
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
     padding-top: 2.7rem;
@@ -1370,5 +1217,13 @@ footer {
 
   .locations {
     grid-template-columns: minmax(0, 1fr);
+  }
+  
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile-select {
+    display: inline-block;
   }
 }
