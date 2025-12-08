@@ -103,64 +103,102 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Michael J. McKenna, DO",
-  "medicalSpecialty": "GeneralSurgery",
-  "worksFor": {
-    "@type": "MedicalClinic",
-    "name": "Premier General Surgeons, PLLC"
-  },
-  "telephone": "+1-956-621-4981",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "4970 Frontage Rd., Suite A",
-    "addressLocality": "Brownsville",
-    "addressRegion": "TX",
-    "postalCode": "78526",
-    "addressCountry": "US"
-  }
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://premiergeneralsurgeon.com/#organization",
+      "name": "Premier General Surgeons, PLLC",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "Bariatric",
+        "Trauma"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4970 Frontage Rd., Suite A",
+        "addressLocality": "Brownsville",
+        "addressRegion": "TX",
+        "postalCode": "78526",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/19wRUC5FRo/?mibextid=wwXIfr"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://premiergeneralsurgeon.com/#dr-mckenna",
+      "name": "Michael J. McKenna, DO",
+      "jobTitle": "General Surgeon",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "Laparoscopic"
+      ],
+      "worksFor": {
+        "@id": "https://premiergeneralsurgeon.com/#organization"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100077009744559",
+        "https://www.instagram.com/drmichaelmckenna",
+        "https://www.tiktok.com/@drmichaelmckenna"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://premiergeneralsurgeon.com/#dr-barba",
+      "name": "Carlos A. Barba, MD",
+      "jobTitle": "General, Bariatric & Trauma Surgeon",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "Bariatric",
+        "Trauma"
+      ],
+      "worksFor": {
+        "@id": "https://premiergeneralsurgeon.com/#organization"
+      },
+      "sameAs": [
+        "https://www.facebook.com/CarlosABarbaMDPLLC",
+        "https://www.instagram.com/drcarlosbarba",
+        "https://www.tiktok.com/@drcarlosbarba"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://premiergeneralsurgeon.com/#dr-silhy",
+      "name": "Raquel Silhy, MD",
+      "jobTitle": "General & Advanced Laparoscopic Surgeon",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "Laparoscopic"
+      ],
+      "worksFor": {
+        "@id": "https://premiergeneralsurgeon.com/#organization"
+      }
+      /* You can add Dr. Silhy's social links here later in a "sameAs" array */
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://premiergeneralsurgeon.com/#dr-hill",
+      "name": "January Hill, MD",
+      "jobTitle": "General & Bariatric Surgeon",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "Bariatric"
+      ],
+      "worksFor": {
+        "@id": "https://premiergeneralsurgeon.com/#organization"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61575327365087",
+        "https://www.instagram.com/drjanuaryhill",
+        "https://www.tiktok.com/@drjanuaryhill"
+      ]
+    }
+  ]
 }
 </script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Carlos A. Barba, MD",
-  "medicalSpecialty": ["BariatricSurgery","TraumaSurgery"],
-  "worksFor": {
-    "@type": "MedicalClinic",
-    "name": "Premier General Surgeons, PLLC"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Raquel Silhy, MD",
-  "medicalSpecialty": "GeneralSurgery",
-  "worksFor": {
-    "@type": "MedicalClinic",
-    "name": "Premier General Surgeons, PLLC"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "January Hill, MD",
-  "medicalSpecialty": "BariatricSurgery",
-  "worksFor": {
-    "@type": "MedicalClinic",
-    "name": "Premier General Surgeons, PLLC"
-  }
-}
-</script>
-
 </head>
 
 <body>
@@ -268,7 +306,7 @@
             <h2 class="hero-title lang-es" id="hero-heading-es">
               Atención quirúrgica en <span>Brownsville, TX</span><br />
               de manos en las que puede confiar.
-            </h1>
+            </h2>
 
             <p class="hero-subtitle lang-en">
               Premier General Surgeons is a multi-physician surgical practice providing advanced general, bariatric, trauma, and wound care services for patients in the Rio Grande Valley.
@@ -532,7 +570,7 @@
                 Cirugía general y laparoscopía avanzada. El Dr. McKenna ofrece una amplia gama de atención quirúrgica abierta y mínimamente invasiva.
               </p>
               <div class="card-footer">
-  <span class="card-meta">Board-certified General Surgeon</span>
+  <span class="card-meta">General Surgery and Advanced Laparsocopy</span>
   <a href="surgeons.html#mckenna" class="link">
   <span class="lang-en">View profile</span>
   <span class="lang-es">Ver perfil</span>
