@@ -1218,6 +1218,26 @@ footer {
   .locations {
     grid-template-columns: minmax(0, 1fr);
   }
+  .map-embed {
+  margin-top: 0.75rem;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .map-embed iframe {
+    height: 250px;
+  }
+}
+
   .maps-link {
   display: inline-block;
   margin: 0.4rem 0 0.6rem;
@@ -1228,6 +1248,24 @@ footer {
 
 .maps-link:hover {
   text-decoration: underline;
+}
+/* Map CTA */
+.map-cta {
+  margin-top: 0.5rem;
+}
+
+.btn-small {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.78rem;
+}
+
+/* Disable scroll wheel zoom for better mobile UX */
+.map-embed iframe {
+  pointer-events: none;
+}
+
+.map-embed:hover iframe {
+  pointer-events: auto;
 }
 
   .nav-links {
