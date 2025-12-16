@@ -302,13 +302,14 @@ a {
   z-index: 0;
   background:
     linear-gradient(
-      to bottom,
-      rgba(15, 23, 42, 0.80),
-      rgba(15, 23, 42, 0.85)
+      180deg,
+      rgba(15, 23, 42, 0.75) 0%,
+      rgba(15, 23, 42, 0.82) 50%,
+      rgba(15, 23, 42, 0.88) 100%
     ),
     url("assets/brownsville-hero.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   transform: scale(1.03); /* slight zoom to avoid edges on resize */
 }
@@ -318,9 +319,10 @@ a {
   .hero::before {
     background-image:
       linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.80),
-        rgba(15, 23, 42, 0.85)
+        180deg,
+        rgba(15, 23, 42, 0.75) 0%,
+        rgba(15, 23, 42, 0.82) 50%,
+        rgba(15, 23, 42, 0.88) 100%
       ),
       url("assets/brownsville-hero.jpg");
   }
@@ -332,11 +334,12 @@ a {
   z-index: 1;
 }
 
-/* Slightly lighter text for supporting copy */
+/* Enhanced visibility for supporting copy with shadow for contrast */
 .hero-subtitle,
 .hero-subtitle-es,
 .hero-contact-line {
   color: #e5e7eb;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 
@@ -354,26 +357,31 @@ a {
   }
 
   .hero::before {
-    /* slightly stronger overlay and nudge focal point upward */
-    background: linear-gradient(to bottom, rgba(15,23,42,0.90), rgba(15,23,42,0.92)), url("assets/brownsville-hero.webp");
-    background-position: 50% 30%;
+    /* stronger overlay on mobile for improved text contrast and readability */
+    background: linear-gradient(180deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.90) 50%, rgba(15,23,42,0.94) 100%), url("assets/brownsville-hero.webp");
+    background-position: center bottom;
+    background-size: cover;
     transform: scale(1);
   }
 
   .hero-title,
+  .hero-kicker,
   .hero-subtitle,
   .hero-contact-line {
-    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
   }
 }
 
-/* Very subtle global text-shadow for hero titles to improve contrast */
+/* Enhanced text-shadow for hero titles to improve contrast across all backgrounds */
 .hero-title {
-  text-shadow: 0 1px 4px rgba(0,0,0,0.45);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.55);
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .hero-title span {
   color: var(--pgs-light-blue);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.55);
 }
 
 .hero-badge {
@@ -386,8 +394,9 @@ a {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 600;
-  color: var(--pgs-blue);
+  font-weight: 700;
+  color: var(--pgs-light-blue);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   margin-bottom: 0.75rem;
 }
 
@@ -424,11 +433,25 @@ a {
 
 .hero-contact-line {
   font-size: 0.95rem;
-  color: var(--color-muted);
+  color: #e5e7eb;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .hero-contact-line strong {
-  color: var(--pgs-blue);
+  color: var(--pgs-light-blue);
+  font-weight: 700;
+}
+
+/* Tablet adjustments for hero section */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .hero-badge-row {
