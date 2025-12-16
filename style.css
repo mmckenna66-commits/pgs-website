@@ -682,15 +682,14 @@ a {
 }
 
 .card-footer {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  margin-top: 0.65rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
+  flex-direction: column;      /* stack content vertically */
+  align-items: flex-start;     /* align links to the left */
+  gap: 0.25rem;
   font-size: 0.85rem;
 }
+
 
 .link {
   color: var(--pgs-blue);
