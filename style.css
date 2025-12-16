@@ -690,6 +690,21 @@ a {
   font-size: 0.85rem;
 }
 
+/* Make bullet lists inside cards stay neatly inside the box */
+.card ul {
+  margin: 0.25rem 0 0;      /* remove big default margin */
+  padding-left: 1.1rem;     /* gentle indent for bullets */
+}
+
+.card li {
+  margin-bottom: 0.25rem;   /* small vertical spacing */
+}
+
+/* Safety: prevent long words from breaking out of the card */
+.card {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
 .link {
   color: var(--pgs-blue);
