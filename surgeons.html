@@ -114,7 +114,7 @@
         <!-- NAVBAR -->
         <header class="navbar">
             <div class="container navbar-inner">
-                <a href="#hero" class="logo">
+                <a href="index.html" class="logo">
                     <picture>
                         <source srcset="assets/pgs-logo.webp" type="image/webp">
                         <img src="assets/pgs-logo.png" alt="Premier General Surgeons logo" class="logo-image"
@@ -132,31 +132,31 @@
                     <select class="nav-links-mobile-select lang-en" onchange="handleNavSelect(this)"
                         aria-label="Main menu">
                         <option value="">Menu</option>
-                        <option value="#hero">Home</option>
-                        <option value="#services">Services</option>
-                        <option value="#surgeons">Surgeons</option>
-                        <option value="#midlevels">Mid-Level Providers</option>
-                        <option value="#resources">Patient Resources</option>
-                        <option value="#referring">Referring Providers</option>
-                        <option value="#contact">Contact</option>
+                        <option value="index.html#hero">Home</option>
+                        <option value="index.html#services">Services</option>
+                        <option value="surgeons.html">Surgeons</option>
+                        <option value="index.html#midlevels">Mid-Level Providers</option>
+                        <option value="resources.html">Patient Resources</option>
+                        <option value="referring.html">Referring Providers</option>
+                        <option value="index.html#contact">Contact</option>
                     </select>
 
                     <!-- Mobile nav ES -->
                     <select class="nav-links-mobile-select lang-es" onchange="handleNavSelect(this)"
                         aria-label="Menú principal">
                         <option value="">Menú</option>
-                        <option value="#hero">Inicio</option>
-                        <option value="#services">Servicios</option>
-                        <option value="#surgeons">Cirujanos</option>
-                        <option value="#midlevels">Proveedores de Nivel Intermedio</option>
-                        <option value="#resources">Recursos para Pacientes</option>
-                        <option value="#referring">Médicos Referentes</option>
-                        <option value="#contact">Contacto</option>
+                        <option value="index.html#hero">Inicio</option>
+                        <option value="index.html#services">Servicios</option>
+                        <option value="surgeons.html">Cirujanos</option>
+                        <option value="index.html#midlevels">Proveedores de Nivel Intermedio</option>
+                        <option value="resources.html">Recursos para Pacientes</option>
+                        <option value="referring.html">Médicos Referentes</option>
+                        <option value="index.html#contact">Contacto</option>
                     </select>
 
 
                     <div class="nav-links">
-                        <a href="#services">
+                        <a href="index.html#services">
                             <span class="lang-en">Services</span>
                             <span class="lang-es">Servicios</span>
                         </a>
@@ -165,15 +165,15 @@
                             <span class="lang-es">Cirujanos</span>
                         </a>
 
-                        <a href="#resources">
+                        <a href="resources.html">
                             <span class="lang-en">Patients</span>
                             <span class="lang-es">Pacientes</span>
                         </a>
-                        <a href="#referring">
+                        <a href="referring.html">
                             <span class="lang-en">Referring Providers</span>
                             <span class="lang-es">Médicos Referentes</span>
                         </a>
-                        <a href="#contact">
+                        <a href="index.html#contact">
                             <span class="lang-en">Contact</span>
                             <span class="lang-es">Contacto</span>
                         </a>
@@ -188,9 +188,9 @@
                             aria-label="Español">ES</button>
                     </div>
 
-                    <a href="#contact" class="btn btn-primary lang-en" aria-label="Request an appointment">Request
+                    <a href="index.html#contact" class="btn btn-primary lang-en" aria-label="Request an appointment">Request
                         Appointment</a>
-                    <a href="#contact" class="btn btn-primary lang-es" aria-label="Solicitar una cita">Solicitar
+                    <a href="index.html#contact" class="btn btn-primary lang-es" aria-label="Solicitar una cita">Solicitar
                         Cita</a>
                 </nav>
             </div>
@@ -496,7 +496,7 @@
                 </div>
 
                 <div class="footer-links" aria-label="Footer navigation">
-                    <a href="index.html#surgeons" class="link">
+                    <a href="surgeons.html" class="link">
                         <span class="lang-en">Meet our surgeons</span>
                         <span class="lang-es">Nuestros cirujanos</span>
                     </a>
@@ -522,14 +522,6 @@
     </div>
 
     <script src="main.js"></script>
-    <script>
-        (function () {
-            var yearEl = document.getElementById("year");
-            if (yearEl) {
-                yearEl.textContent = new Date().getFullYear();
-            }
-        })();
-    </script>
 </body>
 
 </html>

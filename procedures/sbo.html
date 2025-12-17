@@ -237,23 +237,53 @@
             </div>
         </main>
 
-        <footer>
+        <footer role="contentinfo" aria-label="Site footer">
             <div class="container footer-inner">
-                <div>
-                    &copy; <span id="year"></span> Premier General Surgeons. All rights reserved.
+                <div class="footer-branding">
+                    <picture>
+                        <source srcset="../assets/pgs-logo.webp" type="image/webp">
+                        <img src="../assets/pgs-logo.png" alt="Premier General Surgeons logo" class="footer-logo"
+                            loading="lazy" decoding="async" height="30" />
+                    </picture>
+
+                    <div class="footer-copyright">
+                        <span class="lang-en">
+                            &copy; <span id="year"></span> Premier General Surgeons.
+                            All rights reserved.<br />
+                            Brownsville, TX
+                        </span>
+
+                        <span class="lang-es">
+                            &copy; <span id="year"></span> Premier General Surgeons.
+                            Todos los derechos reservados.<br />
+                            Brownsville, TX
+                        </span>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <span>Brownsville, TX</span>
-                    <span>·</span>
-                    <a href="../index.html#surgeons" class="link">Meet our surgeons</a>
-                    <span>·</span>
-                    <a href="../index.html#contact" class="link">Contact</a>
-                    <span>·</span>
+
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="../surgeons.html" class="link">
+                        <span class="lang-en">Meet our surgeons</span>
+                        <span class="lang-es">Nuestros cirujanos</span>
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
+                    <a href="../index.html#contact" class="link">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-es">Contacto</span>
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
                     <a href="https://www.facebook.com/share/19wRUC5FRo/?mibextid=wwXIfr" class="link" target="_blank"
-                        rel="noopener">
-                        PGS on Facebook
+                        rel="noopener" aria-label="Premier General Surgeons on Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="lang-en">PGS on Facebook</span>
+                        <span class="lang-es">PGS en Facebook</span>
                     </a>
                 </div>
+
             </div>
         </footer>
 

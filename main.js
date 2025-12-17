@@ -14,6 +14,9 @@
 // The function reads the selected `value`, finds the matching element
 // on the page (via `querySelector`) and scrolls it into view smoothly.
 // Finally it clears the select back to its default empty value.
+
+document.documentElement.classList.add("js");
+
 function handleNavSelect(select) {
     const value = select.value;
     if (value) {
