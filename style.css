@@ -706,6 +706,21 @@ a {
   overflow-wrap: break-word;
 }
 
+.breadcrumbs {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+}
+
+.breadcrumbs a {
+  color: var(--pgs-blue);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
 .link {
   color: var(--pgs-blue);
   font-weight: 500;
