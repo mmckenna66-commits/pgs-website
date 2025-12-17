@@ -301,17 +301,14 @@ a {
 }
 
 /* HERO */
-.hero {
-    position: relative;
-    padding: 3.5rem 0 2.5rem;
-    color: #f9fafb;
-    /* Fallback background color in case the hero image fails to load */
-    background-color: #061026;
-    overflow: hidden;
-    isolation: isolate;
-}
 
-/* Background image + dark overlay behind hero content */
+/* ==========================================
+   OLD HERO STYLES - COMMENTED OUT
+   These used ::before pseudo-element with background image overlay
+   Replaced by newer card-based layout below
+   ========================================== */
+
+/*
 .hero::before {
     content: "";
     position: absolute;
@@ -327,10 +324,8 @@ a {
     background-position: center bottom;
     background-repeat: no-repeat;
     transform: scale(1.03);
-    /* slight zoom to avoid edges on resize */
 }
 
-/* Fallback for browsers that don't support WebP */
 @supports not (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=")) {
     .hero::before {
         background-image:
@@ -342,13 +337,6 @@ a {
     }
 }
 
-/* Make sure the inner grid sits above the overlay */
-.hero-inner {
-    position: relative;
-    z-index: 1;
-}
-
-/* Enhanced visibility for supporting copy with shadow for contrast */
 .hero-subtitle,
 .hero-subtitle-es,
 .hero-contact-line {
@@ -356,23 +344,12 @@ a {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-.hero-inner {
-    display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-    gap: 2.5rem;
-    align-items: center;
-}
-
-/* Small-screen hero adjustments for better focal point and readability */
 @media (max-width: 480px) {
     .hero {
         padding: 2rem 0 1.5rem;
-        /* reduce vertical space on tiny phones */
     }
 
     .hero::before {
-        /* stronger overlay on mobile for improved text contrast and readability */
         background: linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.90) 50%, rgba(15, 23, 42, 0.94) 100%), url("assets/brownsville-hero.webp");
         background-position: center bottom;
         background-size: cover;
@@ -387,7 +364,6 @@ a {
     }
 }
 
-/* Enhanced text-shadow for hero titles to improve contrast across all backgrounds */
 .hero-title {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
     font-weight: 700;
@@ -412,6 +388,42 @@ a {
     font-weight: 700;
     color: var(--pgs-light-blue);
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.75rem;
+}
+
+.hero-contact-line {
+    font-size: 0.95rem;
+    color: #e5e7eb;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-contact-line strong {
+    color: var(--pgs-light-blue);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+*/
+
+/* ==========================================
+   ACTIVE HERO STYLES - Card-Based Layout
+   ========================================== */
+
+.hero-kicker {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: var(--pgs-light-blue);
     margin-bottom: 0.75rem;
 }
 
@@ -448,25 +460,12 @@ a {
 
 .hero-contact-line {
     font-size: 0.95rem;
-    color: #e5e7eb;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: var(--color-muted);
 }
 
 .hero-contact-line strong {
-    color: var(--pgs-light-blue);
+    color: var(--pgs-blue);
     font-weight: 700;
-}
-
-/* Tablet adjustments for hero section */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
 }
 
 .hero-badge-row {
@@ -506,13 +505,101 @@ a {
     background: #ffffff;
     border: 1px solid #d1d5db;
     border-radius: 8px;
-    /* square-ish card style */
     padding: 0.9rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
+
+.hero {
+    position: relative;
+    padding: 3.5rem 0 3rem;
+    color: #0f172a;
+    overflow: hidden;
+}
+
+/* Background image behind hero content */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background: url("assets/brownsville-hero.jpg") center center / cover no-repeat;
+    z-index: 0;
+}
+
+/* Slight dark overlay for readability, but lighter than before */
+.hero-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(15, 23, 42, 0.50),
+            rgba(15, 23, 42, 0.12));
+}
+
+/* Layout: flexible instead of a rigid 2-column grid */
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* Main hero content card */
+.hero-main-panel {
+    flex: 1 1 380px;
+    max-width: 640px;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    padding: 1.75rem 1.6rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
+}
+
+/* Right-hand card for additional content */
+.hero-card {
+    flex: 0 1 320px;
+    align-self: flex-end;
+    background: radial-gradient(circle at top, var(--pgs-light-blue), var(--pgs-blue));
+    border-radius: 24px;
+    padding: 1.6rem 1.4rem;
+    color: #ffffff;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Calmer “meta” line instead of bright pills */
+.hero-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1rem;
+}
+
+.hero-meta-item {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+    .hero-inner {
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+
+    .hero-main-panel {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .hero-card {
+        align-self: stretch;
+    }
+}
+
 
 /* Make text readable on white background */
 .stat-label {
@@ -527,18 +614,6 @@ a {
     font-size: 0.95rem;
     font-weight: 600;
     color: #1f2937;
-    /* main text color */
-}
-
-
-.hero-card {
-    background: radial-gradient(circle at top, var(--pgs-light-blue), var(--pgs-blue));
-    border-radius: 24px;
-    padding: 1.6rem 1.4rem;
-    color: #ffffff;
-    box-shadow: var(--shadow-soft);
-    position: relative;
-    overflow: hidden;
 }
 
 .hero-card::after {
@@ -588,12 +663,6 @@ a {
     margin-top: 1rem;
     font-size: 0.8rem;
     opacity: 0.9;
-}
-
-@media (max-width: 900px) {
-    .hero-inner {
-        grid-template-columns: minmax(0, 1fr);
-    }
 }
 
 /* SECTIONS GENERIC */
