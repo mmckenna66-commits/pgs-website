@@ -140,6 +140,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // -----------------------------
+    // Scroll animations with Intersection Observer
+    // -----------------------------
+    const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+    if (!("IntersectionObserver" in window)) {
+        // Fallback for older browsers: just show everything
+        animatedElements.forEach((el) => el.classList.add("is-visible"));
+    } else {
+        const observer = new IntersectionObserver(
+            (entries, obs) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        // Once it's visible, we don't need to keep watching it
+                        obs.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.15, // 15% in view triggers the animation
+            }
+        );
+
+        animatedElements.forEach((el) => observer.observe(el));
+    }
+
     // Initialize language from localStorage or default to English ('en')
     const savedLang = localStorage.getItem("pgsLang") || "en";
     setLang(savedLang);

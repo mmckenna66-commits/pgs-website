@@ -1106,6 +1106,18 @@ footer {
     }
 }
 
+/* Subtle fade/slide-in on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Very small phones: optimize card header for narrow widths */
 @media (max-width: 480px) {
     .card-header {
