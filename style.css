@@ -1108,20 +1108,20 @@ footer {
 
 /* Fail-safe: elements are visible by default */
 .animate-on-scroll {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: none;
 }
 
 /* Only hide + animate when JS is confirmed running */
 .js .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 .js .animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Very small phones: optimize card header for narrow widths */
