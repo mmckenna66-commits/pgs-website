@@ -788,6 +788,25 @@ a {
     flex-shrink: 0;
     box-shadow: 0 6px 14px rgba(15, 23, 42, 0.28);
 }
+/* Base icon behavior */
+.card-icon svg {
+  transition:
+    transform 220ms ease,
+    stroke 220ms ease,
+    filter 220ms ease;
+  transform-origin: center;
+}
+
+/* Card hover trigger */
+.card:hover .card-icon svg {
+  transform: translateY(-2px) scale(1.08);
+  filter: drop-shadow(0 2px 4px rgba(115,168,228,0.35));
+}
+
+/* Optional: slightly stronger color on hover */
+.card:hover .card-icon {
+  color: #5f97dc; /* slightly darker Steel Blue */
+}
 
 .card-title {
     font-size: 1rem;
@@ -1415,11 +1434,6 @@ footer {
 .stat-value {
     margin: 0;
     line-height: 1.2;
-}
-
-    .stat-value {
-        font-size: 0.9rem;
-    }
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
