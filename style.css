@@ -260,12 +260,17 @@ a {
 .lang-btn {
     border: none;
     background: transparent;
-    padding: 0.2rem 0.55rem;
+    padding: 0.3rem 0.65rem;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--color-muted);
+    min-width: 36px;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lang-btn-active {
@@ -456,6 +461,18 @@ a {
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-bottom: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .hero-actions {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .hero-contact-line {
@@ -698,8 +715,14 @@ a {
 /* ===== GRID CARDS ===== */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -1106,6 +1129,25 @@ footer {
     }
 }
 
+/* Extra small screens - improve container padding and spacing */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .card {
+        padding: 0.75rem;
+    }
+    
+    .hero-main-panel {
+        padding: 1.25rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+}
+
 /* Fail-safe: elements are visible by default */
 .animate-on-scroll {
     opacity: 1;
@@ -1185,19 +1227,23 @@ footer {
 /* Ensure stat pills don't clip on very narrow screens */
 @media (max-width: 420px) {
     .stat-bar {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 0.5rem;
     }
 
     .stat-pill {
         padding: 0.5rem 0.6rem;
-        /* slightly reduce padding to preserve content space */
     }
 
     .stat-label {
         font-size: 0.66rem;
     }
-
+    
+    .card-avatar {
+        width: 56px;
+        height: 56px;
+    }
+    
     .stat-value {
         font-size: 0.9rem;
     }
@@ -1344,26 +1390,6 @@ footer {
     margin: 0;
     line-height: 1.2;
 }
-
-/* Small screen adjustments to prevent clipping */
-@media (max-width: 420px) {
-    .stat-bar {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 0.5rem;
-    }
-
-    .card-avatar {
-        width: 56px;
-        height: 56px;
-    }
-
-    .stat-pill {
-        padding: 0.5rem 0.6rem;
-    }
-
-    .stat-label {
-        font-size: 0.66rem;
-    }
 
     .stat-value {
         font-size: 0.9rem;
