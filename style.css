@@ -738,6 +738,32 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(148, 163, 184, 0.45);
 }
+:root{
+  --pgs-steel-blue:#73A8E4;
+}
+
+/* icon container */
+.card-icon{
+  width: 28px;
+  height: 28px;
+  color: var(--pgs-steel-blue);
+  flex: 0 0 auto;
+}
+
+/* place icon + titles nicely */
+.card-header-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* optional: keep pill aligned with the right side */
+.card-header-right{
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 
 .card-header {
     display: flex;

@@ -458,11 +458,39 @@
                         <!-- CARD 1: APPENDICITIS -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Appendicitis</h3>
-                                <h3 class="card-title lang-es">Apendicitis</h3>
-                                <span class="card-pill lang-en">Emergency</span>
-                                <span class="card-pill lang-es">Emergencia</span>
+
+                                <!-- NEW: header row with icon + titles + pill -->
+                                <div class="card-header-top">
+                                    <!-- ICON: monochrome, inherits Steel Blue via currentColor -->
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- “medical / appendix” abstract icon (simple + clean) -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- abdomen outline -->
+                                            <path d="M8 4c0 2-2 3-2 6v2c0 4 2.5 8 6 8s6-4 6-8v-2c0-3-2-4-2-6" />
+                                            <!-- small “appendix” tail -->
+                                            <path d="M12.2 14.2c-.9 0-1.6.7-1.6 1.6 0 .8.4 1.4 1 2l.6.6" />
+                                            <!-- inflammation “spark” -->
+                                            <path d="M15.8 13.2l1.2-1.2M17.4 15.6h1.7M16 17.2l1.2 1.2" />
+                                        </svg>
+                                    </div>
+
+                                    <!-- Titles (your existing bilingual h3s, unchanged) -->
+                                    <div>
+                                        <h3 class="card-title lang-en">Appendicitis</h3>
+                                        <h3 class="card-title lang-es">Apendicitis</h3>
+                                    </div>
+
+                                    <!-- Pills (your existing bilingual spans, unchanged) -->
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Emergency</span>
+                                        <span class="card-pill lang-es">Emergencia</span>
+                                    </div>
+                                </div>
+
                             </div>
+
                             <p class="card-body lang-en">
                                 Urgent evaluation and laparoscopic appendectomy for acute appendicitis, with same-day or
                                 next-day surgery when needed.
@@ -482,14 +510,41 @@
                             </div>
                         </div>
 
+
                         <!-- CARD 2: HERNIAS -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Hernias</h3>
-                                <h3 class="card-title lang-es">Hernias</h3>
-                                <span class="card-pill lang-en">Common</span>
-                                <span class="card-pill lang-es">Común</span>
+
+                                <!-- NEW: header row with icon + titles + pill -->
+                                <div class="card-header-top">
+                                    <!-- ICON: hernia / mesh reinforcement -->
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- shield outline -->
+                                            <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z" />
+                                            <!-- mesh / reinforcement grid -->
+                                            <path d="M9 9h6M9 12h6M9 15h6" />
+                                            <path d="M12 9v6" />
+                                        </svg>
+                                    </div>
+
+                                    <!-- Titles (unchanged) -->
+                                    <div>
+                                        <h3 class="card-title lang-en">Hernias</h3>
+                                        <h3 class="card-title lang-es">Hernias</h3>
+                                    </div>
+
+                                    <!-- Pills (unchanged) -->
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Common</span>
+                                        <span class="card-pill lang-es">Común</span>
+                                    </div>
+                                </div>
+
                             </div>
+
                             <p class="card-body lang-en">
                                 Repair of inguinal, umbilical, ventral, and hiatal hernias using laparoscopic and open
                                 techniques with mesh reinforcement.
@@ -511,11 +566,33 @@
                         <!-- CARD 3: GALLBLADDER -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Gallbladder Surgery</h3>
-                                <h3 class="card-title lang-es">Cirugía de Vesícula Biliar</h3>
-                                <span class="card-pill lang-en">Core</span>
-                                <span class="card-pill lang-es">Fundamental</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Gallbladder / biliary -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- simple “pear” gallbladder silhouette -->
+                                            <path
+                                                d="M12 4c2.8 0 5 2.3 5 5.2 0 3.5-2 6.3-5 6.3s-5-2.8-5-6.3C7 6.3 9.2 4 12 4z" />
+                                            <!-- cystic duct -->
+                                            <path d="M12 15.5v4.5" />
+                                            <path d="M12 20c0-1.2 1-2.2 2.2-2.2H16" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Gallbladder</h3>
+                                        <h3 class="card-title lang-es">Vesícula biliar</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Common</span>
+                                        <span class="card-pill lang-es">Común</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Laparoscopic cholecystectomy for gallstones, cholecystitis, and biliary colic with
                                 same-day or overnight hospital stay.
@@ -538,11 +615,33 @@
                         <!-- CARD 4: BARIATRIC SURGERY -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Bariatric Surgery</h3>
-                                <h3 class="card-title lang-es">Cirugía Bariátrica</h3>
-                                <span class="card-pill lang-en">Weight Loss</span>
-                                <span class="card-pill lang-es">Pérdida de Peso</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Bariatric / weight loss -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- scale -->
+                                            <path d="M7 20h10" />
+                                            <path d="M8 20l1-12a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3l1 12" />
+                                            <!-- dial -->
+                                            <path d="M12 9.5l1.8-1.8" />
+                                            <path d="M10 12.5a4 4 0 0 1 4 0" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Bariatric Surgery</h3>
+                                        <h3 class="card-title lang-es">Cirugía bariátrica</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Specialty</span>
+                                        <span class="card-pill lang-es">Especialidad</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Sleeve gastrectomy and gastric bypass for medically supervised weight loss and metabolic
                                 health improvement.
@@ -565,11 +664,34 @@
                         <!-- CARD 5: COLON SURGERY -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Colon Surgery</h3>
-                                <h3 class="card-title lang-es">Cirugía de Colon</h3>
-                                <span class="card-pill lang-en">Digestive</span>
-                                <span class="card-pill lang-es">Digestivo</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Colon / large intestine -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- simplified colon frame -->
+                                            <path d="M8 6h4" />
+                                            <path d="M8 6c-1.7 0-3 1.3-3 3v2c0 1.7 1.3 3 3 3h1" />
+                                            <path d="M16 6h-4" />
+                                            <path d="M16 6c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3h-1" />
+                                            <!-- transverse + sigmoid hint -->
+                                            <path d="M9 14c0 2 1 4 3 4s3-2 3-4" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Colon</h3>
+                                        <h3 class="card-title lang-es">Colon</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Screening</span>
+                                        <span class="card-pill lang-es">Detección</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Colon resection for diverticulitis, colon cancer, polyps, and inflammatory bowel disease
                                 using laparoscopic and open techniques.
@@ -591,11 +713,35 @@
                         <!-- CARD 6: REFLUX & HIATAL HERNIA -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Reflux &amp; Hiatal Hernia</h3>
-                                <h3 class="card-title lang-es">Reflujo y Hernia Hiatal</h3>
-                                <span class="card-pill lang-en">GERD</span>
-                                <span class="card-pill lang-es">ERGE</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Hiatal hernia / upper GI -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- esophagus -->
+                                            <path d="M12 3v6" />
+                                            <path d="M10.5 9c0 1.2.7 2 1.5 2s1.5.8 1.5 2-.7 2-1.5 2-1.5.8-1.5 2v4" />
+                                            <!-- stomach curve -->
+                                            <path d="M12 11c3 0 6 2 6 5.5 0 2.2-1.4 4.2-3.5 4.2H12" />
+                                            <!-- “upward displacement” cue -->
+                                            <path d="M18 9l0 3" />
+                                            <path d="M16.8 10.2L18 9l1.2 1.2" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Hiatal Hernia</h3>
+                                        <h3 class="card-title lang-es">Hernia hiatal</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Reflux</span>
+                                        <span class="card-pill lang-es">Reflujo</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Laparoscopic fundoplication and hiatal hernia repair for chronic heartburn,
                                 regurgitation, and failed medical management.
@@ -618,11 +764,34 @@
                         <!-- CARD 7: SMALL BOWEL OBSTRUCTION -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Small Bowel Obstruction</h3>
-                                <h3 class="card-title lang-es">Obstrucción Intestinal</h3>
-                                <span class="card-pill lang-en">Emergency</span>
-                                <span class="card-pill lang-es">Emergencia</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- SBO / obstruction -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- intestine loops -->
+                                            <path d="M7 9c2-2 4 2 6 0s4-2 6 0" />
+                                            <path d="M7 13c2-2 4 2 6 0s4-2 6 0" />
+                                            <path d="M7 17c2-2 4 2 6 0s4-2 6 0" />
+                                            <!-- “block” symbol -->
+                                            <circle cx="12" cy="12" r="3.2" />
+                                            <path d="M10.1 10.1l3.8 3.8" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Small Bowel Obstruction</h3>
+                                        <h3 class="card-title lang-es">Obstrucción intestinal</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Urgent</span>
+                                        <span class="card-pill lang-es">Urgente</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Surgical treatment for bowel obstruction caused by adhesions, hernias, or other
                                 conditions requiring urgent intervention.
@@ -644,11 +813,32 @@
                         <!-- CARD 8: SOFT TISSUE SURGERY -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Skin &amp; Soft Tissue Surgery</h3>
-                                <h3 class="card-title lang-es">Cirugía de Piel y Tejidos Blandos</h3>
-                                <span class="card-pill lang-en">Outpatient</span>
-                                <span class="card-pill lang-es">Ambulatorio</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Soft tissue / minor procedures -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- lesion / cyst -->
+                                            <path d="M12 7c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5z" />
+                                            <!-- scalpel hint -->
+                                            <path d="M18 6l-6 6" />
+                                            <path d="M16.5 4.5L19.5 7.5" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Soft Tissue</h3>
+                                        <h3 class="card-title lang-es">Tejidos blandos</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Office</span>
+                                        <span class="card-pill lang-es">Consultorio</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Removal of cysts, lipomas, abscesses, and other soft tissue masses with pathological
                                 examination when needed.
@@ -670,11 +860,32 @@
                         <!-- CARD 9: TRAUMA & EMERGENCY SURGERY -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Trauma &amp; Emergency Surgery</h3>
-                                <h3 class="card-title lang-es">Cirugía de Trauma y Emergencias</h3>
-                                <span class="card-pill lang-en">Acute</span>
-                                <span class="card-pill lang-es">Agudo</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Trauma / emergency care -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- first-aid cross -->
+                                            <path d="M10 6h4v4h4v4h-4v4h-4v-4H6v-4h4z" />
+                                            <!-- motion/urgent cue -->
+                                            <path d="M3 12h2" />
+                                            <path d="M19 12h2" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Trauma</h3>
+                                        <h3 class="card-title lang-es">Trauma</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Emergency</span>
+                                        <span class="card-pill lang-es">Emergencia</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Emergency surgical care for traumatic injuries, penetrating wounds, and life-threatening
                                 surgical emergencies.
@@ -696,11 +907,35 @@
                         <!-- CARD 10: WOUND CARE -->
                         <div class="card animate-on-scroll">
                             <div class="card-header">
-                                <h3 class="card-title lang-en">Wound Care</h3>
-                                <h3 class="card-title lang-es">Cuidado de Heridas</h3>
-                                <span class="card-pill lang-en">Healing</span>
-                                <span class="card-pill lang-es">Curación</span>
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <!-- Wound care / bandage -->
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <!-- bandage body -->
+                                            <path d="M8 9l7-7a3 3 0 0 1 4 4l-7 7" />
+                                            <path d="M6 11l-3 3a3 3 0 0 0 4 4l3-3" />
+                                            <!-- center pad -->
+                                            <path d="M9 15l6-6" />
+                                            <!-- perforations -->
+                                            <path
+                                                d="M12 12h0.01M10.8 13.2h0.01M13.2 10.8h0.01M11.6 14.4h0.01M14.4 11.6h0.01" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Wound Care</h3>
+                                        <h3 class="card-title lang-es">Cuidado de heridas</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Healing</span>
+                                        <span class="card-pill lang-es">Curación</span>
+                                    </div>
+                                </div>
                             </div>
+
                             <p class="card-body lang-en">
                                 Comprehensive wound management for post-operative wounds, chronic ulcers, and diabetic
                                 foot ulcers with specialized dressings.
