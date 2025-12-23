@@ -1436,6 +1436,34 @@ footer {
     line-height: 1.2;
 }
 
+.physician-review {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border-left: 3px solid #d1d5db;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.physician-review h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.physician-review p {
+  margin: 0;
+}
+
+.physician-review strong {
+  color: #374151;
+  font-weight: 600;
+}
+
 /* ===== RESPONSIVE BREAKPOINTS ===== */
 
 /* Medium screens (tablets and smaller) */
