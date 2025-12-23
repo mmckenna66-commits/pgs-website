@@ -468,7 +468,7 @@ a {
         flex-direction: column;
         gap: 0.6rem;
     }
-    
+
     .hero-actions .btn {
         width: 100%;
         justify-content: center;
@@ -738,31 +738,32 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(148, 163, 184, 0.45);
 }
-:root{
-  --pgs-steel-blue:#73A8E4;
+
+:root {
+    --pgs-steel-blue: #73A8E4;
 }
 
 /* icon container */
-.card-icon{
-  width: 28px;
-  height: 28px;
-  color: var(--pgs-steel-blue);
-  flex: 0 0 auto;
+.card-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--pgs-steel-blue);
+    flex: 0 0 auto;
 }
 
 /* place icon + titles nicely */
-.card-header-top{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.card-header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* optional: keep pill aligned with the right side */
-.card-header-right{
-  margin-left: auto;
-  display: flex;
-  gap: 8px;
-  align-items: center;
+.card-header-right {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .card-header {
@@ -788,24 +789,26 @@ a {
     flex-shrink: 0;
     box-shadow: 0 6px 14px rgba(15, 23, 42, 0.28);
 }
+
 /* Base icon behavior */
 .card-icon svg {
-  transition:
-    transform 220ms ease,
-    stroke 220ms ease,
-    filter 220ms ease;
-  transform-origin: center;
+    transition:
+        transform 220ms ease,
+        stroke 220ms ease,
+        filter 220ms ease;
+    transform-origin: center;
 }
 
 /* Card hover trigger */
 .card:hover .card-icon svg {
-  transform: translateY(-2px) scale(1.08);
-  filter: drop-shadow(0 2px 4px rgba(115,168,228,0.35));
+    transform: translateY(-2px) scale(1.08);
+    filter: drop-shadow(0 2px 4px rgba(115, 168, 228, 0.35));
 }
 
 /* Optional: slightly stronger color on hover */
 .card:hover .card-icon {
-  color: #5f97dc; /* slightly darker Steel Blue */
+    color: #5f97dc;
+    /* slightly darker Steel Blue */
 }
 
 .card-title {
@@ -1179,15 +1182,15 @@ footer {
     .container {
         padding: 0 1rem;
     }
-    
+
     .card {
         padding: 0.75rem;
     }
-    
+
     .hero-main-panel {
         padding: 1.25rem 1rem;
     }
-    
+
     .section-title {
         font-size: 1.4rem;
     }
@@ -1283,12 +1286,12 @@ footer {
     .stat-label {
         font-size: 0.66rem;
     }
-    
+
     .card-avatar {
         width: 56px;
         height: 56px;
     }
-    
+
     .stat-value {
         font-size: 0.9rem;
     }
@@ -1437,31 +1440,62 @@ footer {
 }
 
 .physician-review {
-  margin-top: 2.5rem;
-  padding: 1rem 1.25rem;
-  background: #f9fafb;
-  border-left: 3px solid #d1d5db;
-  font-size: 0.8125rem;
-  color: #6b7280;
-  line-height: 1.5;
+    margin-top: 2.5rem;
+    padding: 1rem 1.25rem;
+    background: #f9fafb;
+    border-left: 3px solid #d1d5db;
+    font-size: 0.8125rem;
+    color: #6b7280;
+    line-height: 1.5;
 }
 
 .physician-review h3 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #4b5563;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .physician-review p {
-  margin: 0;
+    margin: 0;
 }
 
 .physician-review strong {
-  color: #374151;
-  font-weight: 600;
+    color: #374151;
+    font-weight: 600;
+}
+
+.faq-section {
+    margin-top: 2.5rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    background: #fff;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    margin: 0.75rem 0 0 0;
+    color: #374151;
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
