@@ -13,13 +13,13 @@
   "@graph": [
     {
       "@type": "MedicalProcedure",
-      "@id": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html#procedure",
+      "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#procedure",
       "name": "Appendectomy",
       "alternateName": ["Appendicitis Surgery", "Appendix Removal"],
       "description": "Surgical removal of the inflamed appendix to treat appendicitis. Performed using laparoscopic or open surgical techniques.",
       "procedureType": "Surgical",
       "bodyLocation": {
-        "@type": "BodyPart",
+        "@type": "AnatomicalStructure",
         "name": "Appendix"
       },
       "indication": [
@@ -34,67 +34,68 @@
         "@type": "MedicalService",
         "serviceType": "General Surgery",
         "provider": {
-          "@type": "MedicalClinic",
-          "@id": "https://www.premiergeneralsurgeon.com/#organization",
+          "@type": "Organization",
+          "@id": "https://premiergeneralsurgeon.com/#organization",
           "name": "Premier General Surgeons, PLLC",
-          "telephone": "+1-956-621-4981",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "4970 Frontage Rd., Suite A",
-            "addressLocality": "Brownsville",
-            "addressRegion": "TX",
-            "postalCode": "78526",
-            "addressCountry": "US"
-          }
+          "url": "https://premiergeneralsurgeon.com",
+          "telephone": "+1-956-621-4981"
         }
       }
     },
     {
       "@type": "MedicalWebPage",
-      "@id": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html",
-      "url": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html",
+      "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#webpage",
+      "url": "https://premiergeneralsurgeon.com/procedures/appendicitis.html",
       "name": "Appendicitis Surgery in Brownsville, TX | Premier General Surgeons",
       "description": "Prompt evaluation and surgical treatment of appendicitis in Brownsville and Harlingen, TX. Laparoscopic and open appendectomy available.",
-      "inLanguage": ["en", "es"],
+      "inLanguage": "en",
       "about": {
-        "@id": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html#procedure"
+        "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#procedure"
       },
-      "specialty": "GeneralSurgery",
+      "medicalSpecialty": "GeneralSurgery",
       "medicalAudience": [
-        {"@type": "Patient"},
-        {"@type": "Physician"}
+        { "@type": "Patient" },
+        { "@type": "Physician" }
       ],
       "lastReviewed": "2025-12-17",
+      "publisher": { "@id": "https://premiergeneralsurgeon.com/#organization" },
+"reviewedBy": { "@id": "https://premiergeneralsurgeon.com/#dr-mckenna" }
+
+      },
       "breadcrumb": {
-        "@id": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html#breadcrumb"
+        "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html#breadcrumb",
+      "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.premiergeneralsurgeon.com/"
+          "item": "https://premiergeneralsurgeon.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://www.premiergeneralsurgeon.com/#services"
+          "item": "https://premiergeneralsurgeon.com/#services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Appendicitis Surgery",
-          "item": "https://www.premiergeneralsurgeon.com/procedures/appendicitis.html"
+          "item": "https://premiergeneralsurgeon.com/procedures/appendicitis.html"
         }
       ]
     },
     {
       "@type": "FAQPage",
+      "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#faq",
+      "mainEntityOfPage": {
+        "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#webpage"
+      },
       "mainEntity": [
         {"@type":"Question","name":"What are common symptoms of appendicitis?","acceptedAnswer":{"@type":"Answer","text":"Symptoms can include abdominal pain (often starting near the belly button and moving to the right lower abdomen), nausea/vomiting, loss of appetite, fever, and worsening pain with movement. Symptoms vary, especially in children and older adults."}},
         {"@type":"Question","name":"Is appendicitis an emergency?","acceptedAnswer":{"@type":"Answer","text":"Yes. Appendicitis is typically treated urgently to reduce the risk of rupture and infection in the abdomen. If you suspect appendicitis, seek immediate medical evaluation."}},
