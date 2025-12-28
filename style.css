@@ -100,12 +100,14 @@ a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .logo-image {
     height: 56px;
     width: auto;
     display: block;
+    flex-shrink: 0;
 }
 
 .logo-mark {
@@ -129,6 +131,7 @@ a {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: var(--pgs-blue);
+    max-width: 120px;
 }
 
 .logo-text-bottom {
@@ -137,6 +140,7 @@ a {
     font-size: 0.92rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    max-width: 120px;
 }
 
 .nav-links {
@@ -283,6 +287,11 @@ a {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+/* Fix navbar button to prevent size change between languages */
+.nav-actions .btn-primary {
+    width: 172px;
 }
 
 .nav-links-mobile-select {
@@ -1127,6 +1136,12 @@ footer {
     .nav-actions>a.btn {
         padding: 0.5rem 0.9rem;
         font-size: 0.9rem;
+    }
+
+    /* Allow button to be narrower on small screens */
+    .nav-actions .btn-primary {
+        width: auto;
+        min-width: 140px;
     }
 
     /* Contact panel: make full-width, reduce padding and improve form spacing */
