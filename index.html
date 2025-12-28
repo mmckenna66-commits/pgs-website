@@ -55,62 +55,68 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "Premier General Surgeons, PLLC",
-  "url": "https://www.premiergeneralsurgeon.com",
-  "telephone": "+1-956-621-4981",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "4970 Frontage Rd., Suite A",
-    "addressLocality": "Brownsville",
-    "addressRegion": "TX",
-    "postalCode": "78526",
-    "addressCountry": "US"
-  },
-  "openingHours": [
-    "Mo-Fr 08:00-17:00"
-  ],
-  "medicalSpecialty": [
-    "GeneralSurgery",
-    "BariatricSurgery",
-    "TraumaSurgery",
-    "LaparoscopicSurgery",
-    "WoundCare"
-  ],
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Rio Grande Valley"
-  },
-  "department": [
+  "@graph": [
     {
-      "@type": "MedicalSpecialty",
-      "name": "General Surgery"
+      "@type": "Organization",
+      "@id": "https://premiergeneralsurgeon.com/#organization",
+      "name": "Premier General Surgeons, PLLC",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "sameAs": [
+        "https://www.facebook.com/share/19wRUC5FRo/?mibextid=wwXIfr"
+      ]
     },
     {
-      "@type": "MedicalSpecialty",
-      "name": "Bariatric Surgery"
+      "@type": "MedicalClinic",
+      "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville",
+      "name": "Premier General Surgeons, PLLC",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4970 Frontage Rd., Suite A",
+        "addressLocality": "Brownsville",
+        "addressRegion": "TX",
+        "postalCode": "78526",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "BariatricSurgery",
+        "TraumaSurgery",
+        "LaparoscopicSurgery",
+        "WoundCare"
+      ],
+      "areaServed": { "@type": "AdministrativeArea", "name": "Rio Grande Valley" },
+      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
     },
     {
-      "@type": "MedicalSpecialty",
-      "name": "Trauma Surgery"
-    },
-    {
-      "@type": "MedicalSpecialty",
-      "name": "Wound Care"
+      "@type": "MedicalClinic",
+      "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen",
+      "name": "Premier General Surgeons, PLLC",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5505 S Expressway, Ste 301",
+        "addressLocality": "Harlingen",
+        "addressRegion": "TX",
+        "postalCode": "78550",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "medicalSpecialty": [
+        "GeneralSurgery",
+        "BariatricSurgery",
+        "TraumaSurgery",
+        "LaparoscopicSurgery",
+        "WoundCare"
+      ],
+      "areaServed": { "@type": "AdministrativeArea", "name": "Rio Grande Valley" },
+      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
     }
-  ],
-  "subOrganization": {
-    "@type": "MedicalClinic",
-    "name": "Premier General Surgeons – Harlingen",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "5505 S Expressway, Ste 301",
-      "addressLocality": "Harlingen",
-      "addressRegion": "TX",
-      "postalCode": "78550",
-      "addressCountry": "US"
-    }
-  }
+  ]
 }
 </script>
 
@@ -120,40 +126,15 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MedicalClinic",
-      "@id": "https://premiergeneralsurgeon.com/#organization",
-      "name": "Premier General Surgeons, PLLC",
-      "url": "https://premiergeneralsurgeon.com/",
-      "telephone": "+1-956-621-4981",
-      "medicalSpecialty": [
-        "GeneralSurgery",
-        "Bariatric",
-        "Trauma"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "4970 Frontage Rd., Suite A",
-        "addressLocality": "Brownsville",
-        "addressRegion": "TX",
-        "postalCode": "78526",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.facebook.com/share/19wRUC5FRo/?mibextid=wwXIfr"
-      ]
-    },
-    {
       "@type": "Physician",
       "@id": "https://premiergeneralsurgeon.com/#dr-mckenna",
       "name": "Michael J. McKenna, DO",
       "jobTitle": "General Surgeon",
       "medicalSpecialty": [
         "GeneralSurgery",
-        "Laparoscopic"
+        "LaparoscopicSurgery"
       ],
-      "worksFor": {
-        "@id": "https://premiergeneralsurgeon.com/#organization"
-      },
+      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" },
       "sameAs": [
         "https://www.facebook.com/profile.php?id=100077009744559",
         "https://www.instagram.com/drmichaelmckenna",
@@ -167,12 +148,10 @@
       "jobTitle": "General, Bariatric & Trauma Surgeon",
       "medicalSpecialty": [
         "GeneralSurgery",
-        "Bariatric",
-        "Trauma"
+        "BariatricSurgery",
+        "TraumaSurgery"
       ],
-      "worksFor": {
-        "@id": "https://premiergeneralsurgeon.com/#organization"
-      },
+      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" },
       "sameAs": [
         "https://www.facebook.com/CarlosABarbaMDPLLC",
         "https://www.instagram.com/drcarlosbarba",
@@ -186,11 +165,9 @@
       "jobTitle": "General & Advanced Laparoscopic Surgeon",
       "medicalSpecialty": [
         "GeneralSurgery",
-        "Laparoscopic"
+        "LaparoscopicSurgery"
       ],
-      "worksFor": {
-        "@id": "https://premiergeneralsurgeon.com/#organization"
-      }
+      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" }
     },
     {
       "@type": "Physician",
@@ -199,11 +176,9 @@
       "jobTitle": "General & Bariatric Surgeon",
       "medicalSpecialty": [
         "GeneralSurgery",
-        "Bariatric"
+        "BariatricSurgery"
       ],
-      "worksFor": {
-        "@id": "https://premiergeneralsurgeon.com/#organization"
-      },
+      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" },
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61575327365087",
         "https://www.instagram.com/drjanuaryhill",
@@ -213,6 +188,8 @@
   ]
 }
 </script>
+
+
 </head>
 
 <body>
@@ -1402,7 +1379,8 @@
                         </h2>
 
                         <p class="section-subtitle lang-en">
-                            We focus on clear communication, evidence-based surgical decision-making, and reliable follow-up
+                            We focus on clear communication, evidence-based surgical decision-making, and reliable
+                            follow-up
                             for patients and referring providers across the Rio Grande Valley.
                         </p>
                         <p class="section-subtitle lang-es">
@@ -1412,72 +1390,76 @@
                     </div>
 
                     <div class="grid">
-                    <div class="card animate-on-scroll">
-                        <div class="card-header">
-                            <h3 class="card-title lang-en">Patient-centered communication</h3>
-                            <h3 class="card-title lang-es">Comunicación centrada en el paciente</h3>
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <h3 class="card-title lang-en">Patient-centered communication</h3>
+                                <h3 class="card-title lang-es">Comunicación centrada en el paciente</h3>
+                            </div>
+                            <p class="card-body lang-en">
+                                We explain options, risks, and recovery expectations in straightforward terms so you can
+                                make informed decisions.
+                            </p>
+                            <p class="card-body lang-es">
+                                Explicamos opciones, riesgos y expectativas de recuperación de forma clara para que
+                                pueda
+                                tomar decisiones informadas.
+                            </p>
                         </div>
-                        <p class="card-body lang-en">
-                            We explain options, risks, and recovery expectations in straightforward terms so you can
-                            make informed decisions.
-                        </p>
-                        <p class="card-body lang-es">
-                            Explicamos opciones, riesgos y expectativas de recuperación de forma clara para que pueda
-                            tomar decisiones informadas.
-                        </p>
-                    </div>
 
-                    <div class="card animate-on-scroll">
-                        <div class="card-header">
-                            <h3 class="card-title lang-en">Timely evaluation &amp; follow-up</h3>
-                            <h3 class="card-title lang-es">Evaluación y seguimiento oportunos</h3>
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <h3 class="card-title lang-en">Timely evaluation &amp; follow-up</h3>
+                                <h3 class="card-title lang-es">Evaluación y seguimiento oportunos</h3>
+                            </div>
+                            <p class="card-body lang-en">
+                                We work to provide prompt consultation when clinically appropriate and maintain
+                                continuity
+                                through post-operative care.
+                            </p>
+                            <p class="card-body lang-es">
+                                Buscamos brindar consultas oportunas cuando sea clínicamente apropiado y mantener
+                                continuidad durante el cuidado postoperatorio.
+                            </p>
                         </div>
-                        <p class="card-body lang-en">
-                            We work to provide prompt consultation when clinically appropriate and maintain continuity
-                            through post-operative care.
-                        </p>
-                        <p class="card-body lang-es">
-                            Buscamos brindar consultas oportunas cuando sea clínicamente apropiado y mantener
-                            continuidad durante el cuidado postoperatorio.
-                        </p>
-                    </div>
 
-                    <div class="card animate-on-scroll">
-                        <div class="card-header">
-                            <h3 class="card-title lang-en">Experienced surgical team</h3>
-                            <h3 class="card-title lang-es">Equipo quirúrgico con experiencia</h3>
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <h3 class="card-title lang-en">Experienced surgical team</h3>
+                                <h3 class="card-title lang-es">Equipo quirúrgico con experiencia</h3>
+                            </div>
+                            <p class="card-body lang-en">
+                                Our surgeons provide comprehensive general surgery services, including minimally
+                                invasive
+                                approaches when appropriate.
+                            </p>
+                            <p class="card-body lang-es">
+                                Nuestros cirujanos brindan servicios integrales de cirugía general, incluyendo abordajes
+                                mínimamente invasivos cuando corresponda.
+                            </p>
                         </div>
-                        <p class="card-body lang-en">
-                            Our surgeons provide comprehensive general surgery services, including minimally invasive
-                            approaches when appropriate.
-                        </p>
-                        <p class="card-body lang-es">
-                            Nuestros cirujanos brindan servicios integrales de cirugía general, incluyendo abordajes
-                            mínimamente invasivos cuando corresponda.
-                        </p>
-                    </div>
 
-                    <div class="card animate-on-scroll">
-                        <div class="card-header">
-                            <h3 class="card-title lang-en">Support for referring providers</h3>
-                            <h3 class="card-title lang-es">Apoyo para médicos referidores</h3>
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <h3 class="card-title lang-en">Support for referring providers</h3>
+                                <h3 class="card-title lang-es">Apoyo para médicos referidores</h3>
+                            </div>
+                            <p class="card-body lang-en">
+                                We value collaboration and aim to provide clear documentation and communication
+                                following
+                                consultation and surgery.
+                            </p>
+                            <p class="card-body lang-es">
+                                Valoramos la colaboración y buscamos proporcionar documentación y comunicación claras
+                                después de la consulta y la cirugía.
+                            </p>
                         </div>
-                        <p class="card-body lang-en">
-                            We value collaboration and aim to provide clear documentation and communication following
-                            consultation and surgery.
-                        </p>
-                        <p class="card-body lang-es">
-                            Valoramos la colaboración y buscamos proporcionar documentación y comunicación claras
-                            después de la consulta y la cirugía.
-                        </p>
-                    </div>
 
-                    <div class="hero-actions" style="margin-top: 1.25rem;">
-                        <a href="index.html#contact" class="btn btn-primary lang-en">Request Appointment</a>
-                        <a href="index.html#contact" class="btn btn-primary lang-es">Solicitar Cita</a>
-                        <a href="tel:9566214981" class="btn btn-outline">Call: <strong>(956) 621-4981</strong></a>
+                        <div class="hero-actions" style="margin-top: 1.25rem;">
+                            <a href="index.html#contact" class="btn btn-primary lang-en">Request Appointment</a>
+                            <a href="index.html#contact" class="btn btn-primary lang-es">Solicitar Cita</a>
+                            <a href="tel:9566214981" class="btn btn-outline">Call: <strong>(956) 621-4981</strong></a>
+                        </div>
                     </div>
-                </div>
             </section>
 
             <!-- CONTACT / LOCATIONS -->

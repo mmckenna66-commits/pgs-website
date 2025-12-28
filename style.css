@@ -463,6 +463,11 @@ a {
     margin-bottom: 1.1rem;
 }
 
+/* Ensure consistent button layout regardless of text length */
+.hero-actions .btn-primary {
+    min-width: 180px;
+}
+
 @media (max-width: 480px) {
     .hero-actions {
         flex-direction: column;
@@ -472,6 +477,10 @@ a {
     .hero-actions .btn {
         width: 100%;
         justify-content: center;
+    }
+    
+    .hero-actions .btn-primary {
+        min-width: unset;
     }
 }
 
