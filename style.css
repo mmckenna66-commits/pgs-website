@@ -733,13 +733,24 @@ a {
 /* ===== GRID CARDS ===== */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-lg);
+    grid-auto-rows: 1fr;
+    max-width: 100%;
+}
+
+.grid > * {
+    max-width: 400px;
+    justify-self: start;
 }
 
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+    
+    .grid > * {
+        max-width: 100%;
     }
 }
 
@@ -750,6 +761,8 @@ a {
     box-shadow: 0 10px 22px rgba(148, 163, 184, 0.35);
     border: 1px solid rgba(148, 163, 184, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -849,6 +862,7 @@ a {
     color: var(--color-muted);
     margin-bottom: var(--space-sm);
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 .card-meta {
