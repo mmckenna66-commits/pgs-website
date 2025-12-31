@@ -40,89 +40,6 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://premiergeneralsurgeon.com/#organization",
-      "name": "Premier General Surgeons, PLLC",
-      "url": "https://premiergeneralsurgeon.com/",
-      "telephone": "+1-956-621-4981",
-      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
-      "logo": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "4970 Frontage Rd., Suite A",
-          "addressLocality": "Brownsville",
-          "addressRegion": "TX",
-          "postalCode": "78526",
-          "addressCountry": "US"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "5505 S Expressway, Ste 301",
-          "addressLocality": "Harlingen",
-          "addressRegion": "TX",
-          "postalCode": "78550",
-          "addressCountry": "US"
-        }
-      ]
-    },
-    {
-      "@type": "MedicalClinic",
-      "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville",
-      "name": "Premier General Surgeons, PLLC — Brownsville",
-      "url": "https://premiergeneralsurgeon.com/",
-      "telephone": "+1-956-621-4981",
-      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "4970 Frontage Rd., Suite A",
-        "addressLocality": "Brownsville",
-        "addressRegion": "TX",
-        "postalCode": "78526",
-        "addressCountry": "US"
-      },
-      "openingHours": "Mo-Fr 08:00-17:00",
-      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
-    },
-    {
-      "@type": "MedicalClinic",
-      "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen",
-      "name": "Premier General Surgeons, PLLC — Harlingen",
-      "url": "https://premiergeneralsurgeon.com/",
-      "telephone": "+1-956-621-4981",
-      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "5505 S Expressway, Ste 301",
-        "addressLocality": "Harlingen",
-        "addressRegion": "TX",
-        "postalCode": "78550",
-        "addressCountry": "US"
-      },
-      "openingHours": "Mo-Fr 08:00-17:00",
-      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
-    },
-    {
-      "@type": "Physician",
-      "@id": "https://premiergeneralsurgeon.com/#dr-mckenna",
-      "name": "Michael J. McKenna, DO",
-      "jobTitle": "General Surgeon",
-      "medicalSpecialty": ["GeneralSurgery", "LaparoscopicSurgery"],
-      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" },
-      "workLocation": [
-        { "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville" },
-        { "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen" }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "4970 Frontage Rd., Suite A",
-        "addressLocality": "Brownsville",
-        "addressRegion": "TX",
-        "postalCode": "78526",
-        "addressCountry": "US"
-      }
-    },
-    {
       "@type": "MedicalProcedure",
       "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#procedure",
       "name": "Appendectomy",
@@ -133,22 +50,17 @@
         "@type": "AnatomicalStructure",
         "name": "Appendix"
       },
-      "indication": [
-        "Acute appendicitis",
-        "Ruptured appendix",
-        "Perforated appendix"
-      ],
+      "indication": ["Acute appendicitis", "Ruptured appendix", "Perforated appendix"],
       "howPerformed": "Laparoscopic or open surgical technique to remove the inflamed appendix under general anesthesia",
       "preparation": "Fasting, blood tests, imaging (CT or ultrasound), physical examination",
-      "followup": "Post-operative monitoring, pain management, gradual return to normal activities within 2-4 weeks",
-      "availableService": {
-        "@type": "MedicalService",
-        "serviceType": "General Surgery",
-        "provider": [
-          { "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville" },
-          { "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen" }
-        ]
-      }
+      "followup": "Post-operative monitoring, pain management, gradual return to normal activities within 2-4 weeks"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://premiergeneralsurgeon.com/#dr-mckenna",
+      "name": "Michael J. McKenna, DO",
+      "jobTitle": "General Surgeon",
+      "medicalSpecialty": ["GeneralSurgery", "LaparoscopicSurgery"]
     },
     {
       "@type": "MedicalWebPage",
@@ -158,10 +70,7 @@
       "description": "Prompt evaluation and surgical treatment of appendicitis in Brownsville and Harlingen, TX. Laparoscopic and open appendectomy available.",
       "inLanguage": "en",
       "about": { "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#procedure" },
-      "medicalSpecialty": "GeneralSurgery",
-      "medicalAudience": [{ "@type": "Patient" }, { "@type": "Physician" }],
       "lastReviewed": "2025-12-17",
-      "publisher": { "@id": "https://premiergeneralsurgeon.com/#organization" },
       "reviewedBy": { "@id": "https://premiergeneralsurgeon.com/#dr-mckenna" },
       "breadcrumb": { "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#breadcrumb" }
     },
@@ -182,48 +91,34 @@
         {
           "@type": "Question",
           "name": "What are common symptoms of appendicitis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Symptoms can include abdominal pain (often starting near the belly button and moving to the right lower abdomen), nausea/vomiting, loss of appetite, fever, and worsening pain with movement. Symptoms vary, especially in children and older adults."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Symptoms can include abdominal pain (often starting near the belly button and moving to the right lower abdomen), nausea/vomiting, loss of appetite, fever, and worsening pain with movement. Symptoms vary, especially in children and older adults." }
         },
         {
           "@type": "Question",
           "name": "Is appendicitis an emergency?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Appendicitis is typically treated urgently to reduce the risk of rupture and infection in the abdomen. If you suspect appendicitis, seek immediate medical evaluation."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Appendicitis is typically treated urgently to reduce the risk of rupture and infection in the abdomen. If you suspect appendicitis, seek immediate medical evaluation." }
         },
         {
           "@type": "Question",
           "name": "How is appendicitis diagnosed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Diagnosis is based on exam, labs, and imaging such as CT scan or ultrasound. Your care team will determine the most appropriate testing."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Diagnosis is based on exam, labs, and imaging such as CT scan or ultrasound. Your care team will determine the most appropriate testing." }
         },
         {
           "@type": "Question",
           "name": "What is recovery like after an appendectomy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many patients recover quickly after laparoscopic surgery, returning to light activity within days. Recovery time can be longer if the appendix has ruptured or if there are complications."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Many patients recover quickly after laparoscopic surgery, returning to light activity within days. Recovery time can be longer if the appendix has ruptured or if there are complications." }
         },
         {
           "@type": "Question",
           "name": "When should I seek urgent care after surgery?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Seek urgent care for fever, worsening abdominal pain, persistent vomiting, redness/drainage at incisions that worsens, or inability to eat/drink."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Seek urgent care for fever, worsening abdominal pain, persistent vomiting, redness/drainage at incisions that worsens, or inability to eat/drink." }
         }
       ]
     }
   ]
 }
 </script>
+
 
     <link rel="stylesheet" href="../style.css" />
 </head>
