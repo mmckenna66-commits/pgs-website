@@ -40,6 +40,77 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://premiergeneralsurgeon.com/#organization",
+      "name": "Premier General Surgeons, PLLC",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
+      "logo": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "4970 Frontage Rd., Suite A",
+          "addressLocality": "Brownsville",
+          "addressRegion": "TX",
+          "postalCode": "78526",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "5505 S Expressway, Ste 301",
+          "addressLocality": "Harlingen",
+          "addressRegion": "TX",
+          "postalCode": "78550",
+          "addressCountry": "US"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville",
+      "name": "Premier General Surgeons, PLLC — Brownsville",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4970 Frontage Rd., Suite A",
+        "addressLocality": "Brownsville",
+        "addressRegion": "TX",
+        "postalCode": "78526",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen",
+      "name": "Premier General Surgeons, PLLC — Harlingen",
+      "url": "https://premiergeneralsurgeon.com/",
+      "telephone": "+1-956-621-4981",
+      "image": "https://premiergeneralsurgeon.com/assets/pgs-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5505 S Expressway, Ste 301",
+        "addressLocality": "Harlingen",
+        "addressRegion": "TX",
+        "postalCode": "78550",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "parentOrganization": { "@id": "https://premiergeneralsurgeon.com/#organization" }
+    }
+  ]
+}
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "MedicalProcedure",
       "@id": "https://premiergeneralsurgeon.com/procedures/appendicitis.html#procedure",
       "name": "Appendectomy",
@@ -61,13 +132,10 @@
       "availableService": {
         "@type": "MedicalService",
         "serviceType": "General Surgery",
-        "provider": {
-          "@type": "Organization",
-          "@id": "https://premiergeneralsurgeon.com/#organization",
-          "name": "Premier General Surgeons, PLLC",
-          "url": "https://premiergeneralsurgeon.com",
-          "telephone": "+1-956-621-4981"
-        }
+        "provider": [
+  { "@id": "https://premiergeneralsurgeon.com/#clinic-brownsville" },
+  { "@id": "https://premiergeneralsurgeon.com/#clinic-harlingen" }
+]
       }
     },
     {
