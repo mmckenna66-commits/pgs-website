@@ -1,37 +1,51 @@
 // main.js
 // This file contains small, plain JavaScript helpers for the website UI.
 // It does NOT require a framework. The sections below handle:
-// - mobile navigation selection (scroll to a section),
+// - mobile hamburger menu toggle,
 // - setting the current year in the footer,
 // - turning the contact form submission into a pre-filled email (mailto),
 // - and a simple language toggle that uses `localStorage`.
 
 // -----------------------------
-// Mobile navigation helper
+// Mobile navigation menu
 // -----------------------------
-// `handleNavSelect` is called when a mobile <select> navigation element
-// changes value. The `select` parameter is the <select> element itself.
-// The function reads the selected `value`, finds the matching element
-// on the page (via `querySelector`) and scrolls it into view smoothly.
-// Finally it clears the select back to its default empty value.
-
 document.documentElement.classList.add("js");
-
-function handleNavSelect(select) {
-    const value = select.value;
-    if (value) {
-        const section = document.querySelector(value);
-        if (section) {
-            // Smoothly scroll the matched section into view
-            section.scrollIntoView({ behavior: "smooth" });
-        }
-        // Reset the select so it doesn't stay on the chosen value
-        select.value = "";
-    }
-}
 
 // Wait until the HTML document is fully loaded before querying DOM nodes
 document.addEventListener("DOMContentLoaded", () => {
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const menuOverlay = document.querySelector('.mobile-menu-overlay');
+    const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    if (menuToggle && menuOverlay) {
+        // Toggle menu on button click
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = !isExpanded ? 'hidden' : '';
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', (e) => {
+            if (e.target === menuOverlay) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking a link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
     // -----------------------------
     // Footer: set the current year
     // -----------------------------

@@ -159,33 +159,12 @@
                 </a>
 
                 <nav class="nav-actions" aria-label="Main navigation">
-                    <!-- Mobile nav EN -->
-                    <select class="nav-links-mobile-select lang-en" onchange="handleNavSelect(this)"
-                        aria-label="Main menu">
-                        <option value="">Menu</option>
-                        <option value="../index.html#hero">Home</option>
-                        <option value="../index.html#services">Services</option>
-                        <option value="../index.html#surgeons">Surgeons</option>
-                        <option value="../staff.html">Staff</option>
-                        <option value="../index.html#midlevels">Mid-Level Providers</option>
-                        <option value="../index.html#resources">Patient Resources</option>
-                        <option value="../index.html#referring">Referring Providers</option>
-                        <option value="../index.html#contact">Contact</option>
-                    </select>
-
-                    <!-- Mobile nav ES -->
-                    <select class="nav-links-mobile-select lang-es" onchange="handleNavSelect(this)"
-                        aria-label="Menú principal">
-                        <option value="">Menú</option>
-                        <option value="../index.html#hero">Inicio</option>
-                        <option value="../index.html#services">Servicios</option>
-                        <option value="../index.html#surgeons">Cirujanos</option>
-                        <option value="../staff.html">Personal</option>
-                        <option value="../index.html#midlevels">Proveedores de Nivel Intermedio</option>
-                        <option value="../index.html#resources">Recursos para Pacientes</option>
-                        <option value="../index.html#referring">Médicos Referentes</option>
-                        <option value="../index.html#contact">Contacto</option>
-                    </select>
+                    <!-- Mobile hamburger menu button -->
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
 
 
                     <div class="nav-links">
@@ -232,6 +211,45 @@
             </div>
         </header>
 
+        <!-- Mobile menu overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <nav class="mobile-menu-nav">
+                    <a href="../index.html#hero" class="mobile-menu-link">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-es">Inicio</span>
+                    </a>
+                    <a href="../index.html#services" class="mobile-menu-link">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-es">Servicios</span>
+                    </a>
+                    <a href="../surgeons.html" class="mobile-menu-link">
+                        <span class="lang-en">Surgeons</span>
+                        <span class="lang-es">Cirujanos</span>
+                    </a>
+                    <a href="../staff.html" class="mobile-menu-link">
+                        <span class="lang-en">Staff</span>
+                        <span class="lang-es">Personal</span>
+                    </a>
+                    <a href="../index.html#midlevels" class="mobile-menu-link">
+                        <span class="lang-en">Mid-Level Providers</span>
+                        <span class="lang-es">Proveedores de Nivel Intermedio</span>
+                    </a>
+                    <a href="../resources.html" class="mobile-menu-link">
+                        <span class="lang-en">Patient Resources</span>
+                        <span class="lang-es">Recursos para Pacientes</span>
+                    </a>
+                    <a href="../referring.html" class="mobile-menu-link">
+                        <span class="lang-en">Referring Providers</span>
+                        <span class="lang-es">Médicos Referentes</span>
+                    </a>
+                    <a href="../index.html#contact" class="mobile-menu-link">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-es">Contacto</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
 
         <main class="section">
             <div class="container">
