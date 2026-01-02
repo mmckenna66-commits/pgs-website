@@ -301,12 +301,16 @@ a {
     gap: 4px;
     z-index: 1001;
     order: -1; /* Ensure it appears first in flex layout */
+    align-items: center;
+    justify-content: center;
+    min-width: 44px; /* Touch target size */
+    min-height: 44px;
 }
 
 .hamburger-line {
     width: 24px;
-    height: 2px;
-    background-color: var(--color-primary);
+    height: 3px;
+    background-color: #5988DA; /* PGS Blue */
     transition: all 0.3s ease;
     display: block;
 }
@@ -375,7 +379,7 @@ a {
 }
 
 .mobile-menu-link:hover {
-    color: var(--color-primary);
+    color: #5988DA; /* PGS Blue */
 }
 
 @media (max-width: 768px) {
