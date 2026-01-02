@@ -300,6 +300,7 @@ a {
     flex-direction: column;
     gap: 4px;
     z-index: 1001;
+    order: -1; /* Ensure it appears first in flex layout */
 }
 
 .hamburger-line {
@@ -307,6 +308,7 @@ a {
     height: 2px;
     background-color: var(--color-primary);
     transition: all 0.3s ease;
+    display: block;
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
@@ -378,16 +380,16 @@ a {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none !important;
     }
 
     .mobile-menu-toggle {
-        display: flex;
+        display: flex !important;
     }
 
     /* Hide Request Appointment button on mobile */
     .nav-actions .btn-primary {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -1225,7 +1227,17 @@ footer {
 
     /* Hide Request Appointment button on mobile - hamburger menu replaces it */
     .nav-actions .btn-primary {
-        display: none;
+        display: none !important;
+    }
+    
+    /* Ensure hamburger menu is visible */
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+    
+    /* Hide desktop nav links */
+    .nav-links {
+        display: none !important;
     }
 
     /* Contact panel: make full-width, reduce padding and improve form spacing */
