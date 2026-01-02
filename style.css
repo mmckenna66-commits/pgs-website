@@ -293,8 +293,8 @@ a {
 /* Mobile menu button - hidden on desktop */
 .mobile-menu-toggle {
     display: none;
-    background: none;
-    border: none;
+    background: transparent;
+    border: 1px solid #5988DA; /* Add visible border */
     cursor: pointer;
     padding: 0.5rem;
     flex-direction: column;
@@ -305,6 +305,7 @@ a {
     justify-content: center;
     min-width: 44px; /* Touch target size */
     min-height: 44px;
+    border-radius: 8px;
 }
 
 .hamburger-line {
