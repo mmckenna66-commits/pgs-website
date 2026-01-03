@@ -498,203 +498,247 @@
                     <div class="section-header">
                         <div class="section-kicker lang-en">What We Do</div>
                         <div class="section-kicker lang-es">Lo Que Hacemos</div>
-                        <h2 class="section-title lang-en" id="services-heading">Our Surgical &amp; Specialty Services
-                        </h2>
-                        <h2 class="section-title lang-es" id="services-heading-es">Nuestros Servicios Quirúrgicos y
-                            Especializados</h2>
+                        <h2 class="section-title lang-en" id="services-heading">Our Surgical &amp; Specialty Services</h2>
+                        <h2 class="section-title lang-es" id="services-heading-es">Nuestros Servicios Quirúrgicos y Especializados</h2>
                         <p class="section-subtitle lang-en">
-                            Care organized around three core pillars—general surgery, weight loss &amp; metabolic care,
-                            and
+                            Care organized around three core pillars—general surgery, weight loss &amp; metabolic care, and
                             wound care—serving patients across Brownsville, Harlingen, and the Rio Grande Valley.
                         </p>
                         <p class="section-subtitle lang-es">
                             Atención organizada en tres pilares principales—cirugía general, manejo de peso y cuidado
-                            metabólico, y cuidado de heridas—para pacientes en Brownsville, Harlingen y el Valle del Río
-                            Grande.
+                            metabólico, y cuidado de heridas—para pacientes en Brownsville, Harlingen y el Valle del Río Grande.
                         </p>
                     </div>
 
                     <div class="grid">
 
-                        <!-- PILLAR CARD 1: WEIGHT LOSS & METABOLIC CARE -->
-                        <div class="card animate-on-scroll">
-                            <div class="card-header">
-                                <div class="card-header-top">
+                    <!-- PILLAR CARD 1: WEIGHT LOSS & METABOLIC CARE -->
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <div class="card-header-top">
 
-                                    <div class="card-icon" aria-hidden="true">
-                                        <!-- “metabolic/scale” abstract icon -->
-                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
-                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <!-- scale body -->
-                                            <path
-                                                d="M6 20a2 2 0 0 1-2-2V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6z" />
-                                            <!-- dial -->
-                                            <path d="M8 9a4 4 0 0 1 8 0" />
-                                            <path d="M12 9l2-2" />
-                                            <!-- heart/metabolic spark -->
-                                            <path
-                                                d="M9.2 13.6c1.2-1.2 2.3-.6 2.8.2.5-.8 1.6-1.4 2.8-.2 1.2 1.2.2 2.7-2.8 4.6-3-1.9-4-3.4-2.8-4.6z" />
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="card-title lang-en">Weight Loss &amp; Metabolic Care</h3>
-                                        <h3 class="card-title lang-es">Pérdida de Peso y Cuidado Metabólico</h3>
-                                    </div>
-
-                                    <div class="card-header-right">
-                                        <span class="card-pill lang-en">Comprehensive</span>
-                                        <span class="card-pill lang-es">Integral</span>
-                                    </div>
-
+                                <div class="card-icon" aria-hidden="true">
+                                    <!-- “scalpel/abdomen” abstract icon -->
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <!-- simplified abdomen outline -->
+                                        <path d="M8 4c0 2-2 3-2 6v2c0 4 2.5 8 6 8s6-4 6-8v-2c0-3-2-4-2-6" />
+                                        <!-- scalpel -->
+                                        <path
+                                            d="M14.5 7.5l2 2-6.8 6.8c-.6.6-1.6.6-2.2 0l-.3-.3c-.6-.6-.6-1.6 0-2.2L14.5 7.5z" />
+                                        <path d="M16.5 9.5l1.2-1.2" />
+                                    </svg>
                                 </div>
-                            </div>
 
-                            <p class="card-body lang-en">
-                                A core focus of our practice. We offer a comprehensive approach that includes both
-                                surgical and medical weight loss options—each plan tailored to your health
-                                history, lifestyle, and long-term goals.
-                            </p>
-                            <p class="card-body lang-es">
-                                Una de nuestras áreas centrales de enfoque. Ofrecemos un enfoque integral que incluye
-                                opciones quirúrgicas y médicas para la pérdida de peso—cada plan de tratamiento se
-                                adapta a su historial de salud, estilo de vida y metas a largo plazo.
-                            </p>
+                                <div>
+                                    <h3 class="card-title lang-en">General Surgery</h3>
+                                    <h3 class="card-title lang-es">Cirugía General</h3>
+                                </div>
 
-                            <div class="card-meta lang-en">
-                                Bariatric surgery (sleeve / bypass) + physician-supervised medical weight loss programs
-                                and follow-up care
-                            </div>
-                            <div class="card-meta lang-es">
-                                Cirugía bariátrica (manga / bypass) + programas médicos supervisados de pérdida de peso
-                                y atención de seguimiento
-                            </div>
+                                <div class="card-header-right">
+                                    <span class="card-pill lang-en">Comprehensive</span>
+                                    <span class="card-pill lang-es">Integral</span>
+                                </div>
 
-                            <div class="card-footer">
-                                <a href="procedures/bariatric.html" class="link lang-en">Bariatric surgery options</a>
-                                <a href="procedures/bariatric.html" class="link lang-es">Opciones de cirugía
-                                    bariátrica</a>
-
-                                <a href="medical-weight-loss.html" class="link lang-en">Medical weight loss</a>
-                                <a href="medical-weight-loss.html" class="link lang-es">Pérdida de peso médica</a>
                             </div>
                         </div>
 
+                        <p class="card-body lang-en">
+                            Inpatient and outpatient surgical care for acute and chronic conditions—using minimally
+                            invasive and open
+                            techniques when appropriate.
+                        </p>
+                        <p class="card-body lang-es">
+                            Atención quirúrgica ambulatoria y hospitalaria para condiciones agudas y crónicas—con
+                            técnicas mínimamente
+                            invasivas y abiertas cuando sea apropiado.
+                        </p>
 
-                        <!-- PILLAR CARD 2: GENERAL SURGERY -->
-                        <div class="card animate-on-scroll">
-                            <div class="card-header">
-                                <div class="card-header-top">
+                        <div class="card-meta lang-en">
+                            Common areas: gallbladder, hernia, reflux/hiatal hernia, appendix, colon &amp; bowel,
+                            emergency surgery
+                        </div>
+                        <div class="card-meta lang-es">
+                            Áreas comunes: vesícula, hernia, reflujo/hernia hiatal, apéndice, colon e intestino, cirugía
+                            de urgencia
+                        </div>
 
-                                    <div class="card-icon" aria-hidden="true">
-                                        <!-- "scalpel/abdomen" abstract icon -->
-                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
-                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <!-- simplified abdomen outline -->
-                                            <path d="M8 4c0 2-2 3-2 6v2c0 4 2.5 8 6 8s6-4 6-8v-2c0-3-2-4-2-6" />
-                                            <!-- scalpel -->
-                                            <path
-                                                d="M14.5 7.5l2 2-6.8 6.8c-.6.6-1.6.6-2.2 0l-.3-.3c-.6-.6-.6-1.6 0-2.2L14.5 7.5z" />
-                                            <path d="M16.5 9.5l1.2-1.2" />
-                                        </svg>
-                                    </div>
+                        <div class="card-footer">
+                            <!-- If your General Surgery hub page is not created yet, use an anchor for now -->
+                            <a href="general-surgery.html" class="link lang-en">Explore general surgery</a>
+                            <a href="general-surgery.html" class="link lang-es">Explorar cirugía general</a>
+                        </div>
+                    </div>
 
-                                    <div>
-                                        <h3 class="card-title lang-en">General Surgery</h3>
-                                        <h3 class="card-title lang-es">Cirugía General</h3>
-                                    </div>
 
-                                    <div class="card-header-right">
-                                        <span class="card-pill lang-en">Foundation</span>
-                                        <span class="card-pill lang-es">Fundamental</span>
-                                    </div>
+                    <!-- PILLAR CARD 1: WEIGHT LOSS & METABOLIC CARE -->
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <div class="card-header-top">
 
+                                <div class="card-icon" aria-hidden="true">
+                                    <!-- “metabolic/scale” abstract icon -->
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <!-- scale body -->
+                                        <path
+                                            d="M6 20a2 2 0 0 1-2-2V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6z" />
+                                        <!-- dial -->
+                                        <path d="M8 9a4 4 0 0 1 8 0" />
+                                        <path d="M12 9l2-2" />
+                                        <!-- heart/metabolic spark -->
+                                        <path
+                                            d="M9.2 13.6c1.2-1.2 2.3-.6 2.8.2.5-.8 1.6-1.4 2.8-.2 1.2 1.2.2 2.7-2.8 4.6-3-1.9-4-3.4-2.8-4.6z" />
+                                    </svg>
                                 </div>
-                            </div>
 
-                            <p class="card-body lang-en">
-                                Inpatient and outpatient surgical care for acute and chronic conditions—using minimally
-                                invasive and open techniques when appropriate.
-                            </p>
-                            <p class="card-body lang-es">
-                                Atención quirúrgica ambulatoria y hospitalaria para condiciones agudas y crónicas—con
-                                técnicas mínimamente invasivas y abiertas cuando sea apropiado.
-                            </p>
+                                <div>
+                                    <h3 class="card-title lang-en">Weight Loss &amp; Metabolic Care</h3>
+                                    <h3 class="card-title lang-es">Pérdida de Peso y Cuidado Metabólico</h3>
+                                </div>
 
-                            <div class="card-meta lang-en">
-                                Common areas: gallbladder, hernia, reflux/hiatal hernia, appendix, colon &amp; bowel,
-                                emergency surgery
-                            </div>
-                            <div class="card-meta lang-es">
-                                Áreas comunes: vesícula, hernia, reflujo/hernia hiatal, apéndice, colon e intestino,
-                                cirugía
-                                de urgencia
-                            </div>
+                                <div class="card-header-right">
+                                    <span class="card-pill lang-en">Comprehensive</span>
+                                    <span class="card-pill lang-es">Integral</span>
+                                </div>
 
-                            <div class="card-footer">
-                                <a href="general-surgery.html" class="link lang-en">Explore general surgery</a>
-                                <a href="general-surgery.html" class="link lang-es">Explorar cirugía general</a>
                             </div>
                         </div>
 
+                        <p class="card-body lang-en">
+                            One of our core focus areas. We offer a comprehensive approach that includes both surgical and medical weight loss options—each treatment plan is tailored to your health history, lifestyle, and long-term goals.
+                        </p>
+                        <p class="card-body lang-es">
+                            Una de nuestras áreas centrales de enfoque. Ofrecemos un enfoque integral que incluye opciones quirúrgicas y médicas para la pérdida de peso—cada plan de tratamiento se adapta a su historial de salud, estilo de vida y metas a largo plazo.
+                        </p>
 
-                        <!-- PILLAR CARD 3: WOUND CARE -->
-                        <div class="card animate-on-scroll">
-                            <div class="card-header">
-                                <div class="card-header-top">
+                        <div class="card-meta lang-en">
+                            Bariatric surgery (sleeve / bypass) + physician-supervised medical weight loss programs and follow-up care
+                        </div>
+                        <div class="card-meta lang-es">
+                            Cirugía bariátrica (manga / bypass) + programas médicos supervisados de pérdida de peso y atención de seguimiento
+                        </div>
 
-                                    <div class="card-icon" aria-hidden="true">
-                                        <!-- “wound/dressing” abstract icon -->
-                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
-                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <!-- bandage -->
-                                            <path d="M7 7l10 10" />
-                                            <path d="M17 7L7 17" />
-                                            <rect x="5" y="5" width="14" height="14" rx="3" />
-                                            <!-- small perforations -->
-                                            <path d="M9 12h.01M12 9h.01M12 15h.01M15 12h.01" />
-                                        </svg>
-                                    </div>
+                        <div class="card-footer">
+                            <a href="procedures/bariatric.html" class="link lang-en">Bariatric surgery options</a>
+                            <a href="procedures/bariatric.html" class="link lang-es">Opciones de cirugía bariátrica</a>
 
-                                    <div>
-                                        <h3 class="card-title lang-en">Wound Care</h3>
-                                        <h3 class="card-title lang-es">Cuidado de Heridas</h3>
-                                    </div>
+                            <a href="medical-weight-loss.html" class="link lang-en">Medical weight loss</a>
+                            <a href="medical-weight-loss.html" class="link lang-es">Pérdida de peso médica</a>
+                        </div>
+                    </div>
 
-                                    <div class="card-header-right">
-                                        <span class="card-pill lang-en">Specialized</span>
-                                        <span class="card-pill lang-es">Especializado</span>
-                                    </div>
 
+                    <!-- PILLAR CARD 2: GENERAL SURGERY -->
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <div class="card-header-top">
+
+                                <div class="card-icon" aria-hidden="true">
+                                    <!-- "scalpel/abdomen" abstract icon -->
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <!-- simplified abdomen outline -->
+                                        <path d="M8 4c0 2-2 3-2 6v2c0 4 2.5 8 6 8s6-4 6-8v-2c0-3-2-4-2-6" />
+                                        <!-- scalpel -->
+                                        <path
+                                            d="M14.5 7.5l2 2-6.8 6.8c-.6.6-1.6.6-2.2 0l-.3-.3c-.6-.6-.6-1.6 0-2.2L14.5 7.5z" />
+                                        <path d="M16.5 9.5l1.2-1.2" />
+                                    </svg>
                                 </div>
-                            </div>
 
-                            <p class="card-body lang-en">
-                                Specialized management for post-operative and complex wounds—focused on healing support,
-                                infection risk reduction, and recovery.
-                            </p>
-                            <p class="card-body lang-es">
-                                Manejo especializado de heridas postoperatorias y complejas—enfocado en apoyar la
-                                cicatrización, reducir el riesgo de infección y mejorar la recuperación.
-                            </p>
+                                <div>
+                                    <h3 class="card-title lang-en">General Surgery</h3>
+                                    <h3 class="card-title lang-es">Cirugía General</h3>
+                                </div>
 
-                            <div class="card-meta lang-en">
-                                Post-op wounds, chronic wounds, diabetic foot wounds, and complex wound management
-                            </div>
-                            <div class="card-meta lang-es">
-                                Heridas postoperatorias, heridas crónicas, heridas del pie diabético y manejo de heridas
-                                complejas
-                            </div>
+                                <div class="card-header-right">
+                                    <span class="card-pill lang-en">Foundation</span>
+                                    <span class="card-pill lang-es">Fundamental</span>
+                                </div>
 
-                            <div class="card-footer">
-                                <a href="procedures/wound-care.html" class="link lang-en">Wound care services</a>
-                                <a href="procedures/wound-care.html" class="link lang-es">Servicios de cuidado de
-                                    heridas</a>
                             </div>
                         </div>
+
+                        <p class="card-body lang-en">
+                            Inpatient and outpatient surgical care for acute and chronic conditions—using minimally
+                            invasive and open techniques when appropriate.
+                        </p>
+                        <p class="card-body lang-es">
+                            Atención quirúrgica ambulatoria y hospitalaria para condiciones agudas y crónicas—con
+                            técnicas mínimamente invasivas y abiertas cuando sea apropiado.
+                        </p>
+
+                        <div class="card-meta lang-en">
+                            Common areas: gallbladder, hernia, reflux/hiatal hernia, appendix, colon &amp; bowel,
+                            emergency surgery
+                        </div>
+                        <div class="card-meta lang-es">
+                            Áreas comunes: vesícula, hernia, reflujo/hernia hiatal, apéndice, colon e intestino, cirugía
+                            de urgencia
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="general-surgery.html" class="link lang-en">Explore general surgery</a>
+                            <a href="general-surgery.html" class="link lang-es">Explorar cirugía general</a>
+                        </div>
+                    </div>
+
+
+                    <!-- PILLAR CARD 3: WOUND CARE -->
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <div class="card-header-top">
+
+                                <div class="card-icon" aria-hidden="true">
+                                    <!-- “wound/dressing” abstract icon -->
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <!-- bandage -->
+                                        <path d="M7 7l10 10" />
+                                        <path d="M17 7L7 17" />
+                                        <rect x="5" y="5" width="14" height="14" rx="3" />
+                                        <!-- small perforations -->
+                                        <path d="M9 12h.01M12 9h.01M12 15h.01M15 12h.01" />
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <h3 class="card-title lang-en">Wound Care</h3>
+                                    <h3 class="card-title lang-es">Cuidado de Heridas</h3>
+                                </div>
+
+                                <div class="card-header-right">
+                                    <span class="card-pill lang-en">Specialized</span>
+                                    <span class="card-pill lang-es">Especializado</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="card-body lang-en">
+                            Specialized management for post-operative and complex wounds—focused on healing support,
+                            infection risk reduction, and recovery.
+                        </p>
+                        <p class="card-body lang-es">
+                            Manejo especializado de heridas postoperatorias y complejas—enfocado en apoyar la
+                            cicatrización, reducir el riesgo de infección y mejorar la recuperación.
+                        </p>
+
+                        <div class="card-meta lang-en">
+                            Post-op wounds, chronic wounds, diabetic foot wounds, and complex wound management
+                        </div>
+                        <div class="card-meta lang-es">
+                            Heridas postoperatorias, heridas crónicas, heridas del pie diabético y manejo de heridas
+                            complejas
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="procedures/wound-care.html" class="link lang-en">Wound care services</a>
+                            <a href="procedures/wound-care.html" class="link lang-es">Servicios de cuidado de
+                                heridas</a>
+                        </div>
+                    </div>
 
                     </div>
 
