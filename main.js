@@ -157,9 +157,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // -----------------------------
+    // ============================================
     // Scroll animations with Intersection Observer
-    // -----------------------------
+    // ============================================
+    // STANDARDIZED SITE-WIDE ANIMATION SYSTEM
+    // 
+    // Trigger threshold: 0.15 (15% of element visible)
+    // Animation styling: defined in style.css
+    //   - Duration: 0.5s
+    //   - Easing: ease-out
+    //   - Effect: fade + 20px upward translate
+    // 
+    // DO NOT modify threshold without updating
+    // documentation in style.css
+    // ============================================
     const animatedElements = document.querySelectorAll(".animate-on-scroll");
 
     if (!("IntersectionObserver" in window)) {

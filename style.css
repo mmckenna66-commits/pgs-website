@@ -797,6 +797,33 @@ a {
     margin-bottom: 1.5rem;
 }
 
+/* Clickable section header with overlay anchor */
+.section-header-clickable {
+    position: relative;
+    cursor: pointer;
+}
+
+.section-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.section-header-overlay:focus {
+    outline: 2px solid var(--pgs-blue);
+    outline-offset: 2px;
+    border-radius: var(--radius-md);
+}
+
+/* Ensure section header content renders above overlay */
+.section-header-clickable > *:not(.section-header-overlay) {
+    position: relative;
+    z-index: 1;
+}
+
 .section-kicker {
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -860,6 +887,26 @@ a {
     cursor: pointer;
 }
 
+.card:has(.card-overlay)::before {
+    content: '→';
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--pgs-blue);
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.card:has(.card-overlay):hover::before,
+.card:has(.card-overlay):focus-within::before {
+    opacity: 0.35;
+    transform: translateX(0);
+}
+
 .card:has(.card-overlay):hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 26px rgba(148, 163, 184, 0.55);
@@ -890,6 +937,9 @@ a {
     height: 28px;
     color: var(--pgs-steel-blue);
     flex: 0 0 auto;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* place icon + titles nicely */
@@ -913,6 +963,9 @@ a {
     align-items: center;
     margin-bottom: 0.35rem;
     gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .card-header-main {
@@ -929,6 +982,9 @@ a {
     object-fit: cover;
     flex-shrink: 0;
     box-shadow: 0 6px 14px rgba(15, 23, 42, 0.28);
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* Base icon behavior */
@@ -955,6 +1011,9 @@ a {
 .card-title {
     font-size: 1rem;
     font-weight: 600;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .card-pill {
@@ -965,6 +1024,9 @@ a {
     color: var(--pgs-blue);
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .card-body {
@@ -973,12 +1035,18 @@ a {
     margin-bottom: var(--space-sm);
     line-height: 1.5;
     flex-grow: 1;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .card-meta {
     font-size: 0.82rem;
     color: var(--pgs-steel-blue);
     margin-bottom: var(--space-xs);
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* Make bullet lists inside cards stay neatly inside the box */
@@ -1018,6 +1086,17 @@ a {
 .link {
     color: var(--pgs-blue);
     font-weight: 500;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: 0;
 }
 
 .link:hover {
@@ -1336,6 +1415,22 @@ footer {
     }
 }
 
+/* ============================================
+   SCROLL ANIMATIONS (Standardized Site-wide)
+   ============================================
+   
+   Animation Specification:
+   - Duration: 0.5s (standardized from 0.45s)
+   - Easing: ease-out (smoother deceleration)
+   - Translate: 20px upward (standardized from 16px)
+   - Opacity: 0 → 1 (fade in)
+   
+   Trigger: 15% of element visible (set in main.js)
+   
+   DO NOT modify these values without updating
+   all instances site-wide for consistency.
+   ============================================ */
+
 /* Fail-safe: elements are visible by default */
 .animate-on-scroll {
     opacity: 1;
@@ -1345,8 +1440,8 @@ footer {
 /* Only hide + animate when JS is confirmed running */
 .js .animate-on-scroll {
     opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.45s ease, transform 0.45s ease;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .js .animate-on-scroll.is-visible {
