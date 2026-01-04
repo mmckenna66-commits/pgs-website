@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Weight Loss & Metabolic Care in Brownsville, TX | Premier General Surgeons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Comprehensive weight loss and metabolic care in Brownsville, TX. Bariatric surgery and physician-supervised medical weight loss programs. Premier General Surgeons provides personalized treatment plans. Se habla español." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://premiergeneralsurgeon.com/weight-loss.html">
+    <meta property="og:title" content="Weight Loss & Metabolic Care in Brownsville, TX | Premier General Surgeons">
+    <meta property="og:description"
+        content="Comprehensive weight loss and metabolic care in Brownsville, TX. Bariatric surgery and medical weight loss programs. Se habla español.">
+    <meta property="og:image" content="https://premiergeneralsurgeon.com/assets/pgs-logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weight Loss & Metabolic Care in Brownsville, TX | Premier General Surgeons">
+    <meta name="twitter:description"
+        content="Comprehensive weight loss and metabolic care in Brownsville, TX. Bariatric surgery and medical weight loss programs. Se habla español.">
+    <meta name="twitter:image" content="https://premiergeneralsurgeon.com/assets/pgs-logo.png">
+
+
+    <!-- Favicons -->
+    <!-- Primary icon (high-res) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/favicon2-512.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/favicons/favicon2-256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/favicons/favicon2-128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon2-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon2-32.png">
+    <link rel="apple-touch-icon" href="assets/favicons/favicon2-128.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <link rel="shortcut icon" href="assets/favicons/favicon2-32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://premiergeneralsurgeon.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Weight Loss & Metabolic Care",
+      "item": "https://premiergeneralsurgeon.com/weight-loss.html"
+    }
+  ]
+}
+    </script>
+
+    <!-- FAQPage Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What weight loss options does Premier General Surgeons offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer both bariatric surgery (gastric sleeve and gastric bypass) and physician-supervised medical weight loss programs. Each treatment plan is tailored to your health history, lifestyle, and long-term goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I a candidate for bariatric surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates typically have a BMI of 40 or higher, or a BMI of 35 or higher with obesity-related health conditions such as type 2 diabetes, high blood pressure, or sleep apnea. A comprehensive consultation with our surgeons will determine if bariatric surgery is right for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between gastric sleeve and gastric bypass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gastric sleeve (sleeve gastrectomy) removes a portion of the stomach to create a smaller, sleeve-shaped stomach. Gastric bypass (Roux-en-Y) creates a small stomach pouch and reroutes the small intestine. Both are effective procedures with different mechanisms and benefits. Your surgeon will help determine which is best for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Premier General Surgeons offer medical weight loss without surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer physician-supervised medical weight loss programs that include nutritional counseling, lifestyle modification support, and follow-up care. This option is ideal for patients who are not candidates for surgery or who prefer a non-surgical approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of follow-up care is provided after bariatric surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide comprehensive follow-up care including regular check-ins, nutritional guidance, monitoring of weight loss progress, and management of any post-surgical needs. Long-term success requires ongoing support, and our team is committed to your journey."
+      }
+    }
+  ]
+}
+    </script>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="container navbar-inner">
+                <a href="index.html" class="logo">
+                    <picture>
+                        <source srcset="assets/pgs-logo.webp" type="image/webp">
+                        <img src="assets/pgs-logo.png" alt="Premier General Surgeons logo" class="logo-image"
+                            loading="eager" decoding="async" fetchpriority="high" height="40" />
+                    </picture>
+
+                    <div>
+                        <div class="logo-text-top">PGS</div>
+                        <div class="logo-text-bottom">Premier General Surgeons</div>
+                    </div>
+                </a>
+
+                <nav class="nav-actions" aria-label="Main navigation">
+                    <!-- Mobile hamburger menu button -->
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+
+
+                    <div class="nav-links">
+                        <a href="index.html#services">
+                            <span class="lang-en">Services</span>
+                            <span class="lang-es">Servicios</span>
+                        </a>
+                        <a href="surgeons.html">
+                            <span class="lang-en">Surgeons</span>
+                            <span class="lang-es">Cirujanos</span>
+                        </a>
+                        <a href="staff.html">
+                            <span class="lang-en">Staff</span>
+                            <span class="lang-es">Personal</span>
+                        </a>
+                        <a href="resources.html">
+                            <span class="lang-en">Patients</span>
+                            <span class="lang-es">Pacientes</span>
+                        </a>
+                        <a href="referring.html">
+                            <span class="lang-en">Referring Providers</span>
+                            <span class="lang-es">Médicos Referentes</span>
+                        </a>
+                        <a href="index.html#contact">
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-es">Contacto</span>
+                        </a>
+                    </div>
+
+
+                    <!-- Language toggle -->
+                    <div class="lang-toggle">
+                        <button type="button" class="lang-btn lang-btn-en" data-lang="en"
+                            aria-label="English">EN</button>
+                        <button type="button" class="lang-btn lang-btn-es" data-lang="es"
+                            aria-label="Español">ES</button>
+                    </div>
+
+                    <a href="index.html#contact" class="btn btn-primary lang-en"
+                        aria-label="Request an appointment">Request
+                        Appointment</a>
+                    <a href="index.html#contact" class="btn btn-primary lang-es"
+                        aria-label="Solicitar una cita">Solicitar
+                        Cita</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Mobile menu overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <nav class="mobile-menu-nav">
+                    <a href="index.html" class="mobile-menu-link">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-es">Inicio</span>
+                    </a>
+                    <a href="index.html#services" class="mobile-menu-link">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-es">Servicios</span>
+                    </a>
+                    <a href="surgeons.html" class="mobile-menu-link">
+                        <span class="lang-en">Surgeons</span>
+                        <span class="lang-es">Cirujanos</span>
+                    </a>
+                    <a href="staff.html" class="mobile-menu-link">
+                        <span class="lang-en">Staff</span>
+                        <span class="lang-es">Personal</span>
+                    </a>
+                    <a href="resources.html" class="mobile-menu-link">
+                        <span class="lang-en">Patient Resources</span>
+                        <span class="lang-es">Recursos para Pacientes</span>
+                    </a>
+                    <a href="referring.html" class="mobile-menu-link">
+                        <span class="lang-en">Referring Providers</span>
+                        <span class="lang-es">Médicos Referentes</span>
+                    </a>
+                    <a href="index.html#contact" class="mobile-menu-link">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-es">Contacto</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <!-- PAGE HEADER -->
+            <section class="section">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="lang-en">Home</a>
+                        <a href="index.html" class="lang-es">Inicio</a>
+                        <span> / </span>
+                        <span class="lang-en">Weight Loss & Metabolic Care</span>
+                        <span class="lang-es">Pérdida de Peso y Cuidado Metabólico</span>
+                    </div>
+
+                    <h1 class="lang-en">Weight Loss & Metabolic Care</h1>
+                    <h1 class="lang-es">Pérdida de Peso y Cuidado Metabólico</h1>
+
+                    <p class="section-subtitle lang-en">
+                        Comprehensive surgical and medical weight loss solutions tailored to your health goals—serving
+                        Brownsville, Harlingen, and the Rio Grande Valley.
+                    </p>
+                    <p class="section-subtitle lang-es">
+                        Soluciones integrales de pérdida de peso quirúrgicas y médicas adaptadas a sus objetivos de
+                        salud—sirviendo a Brownsville, Harlingen y el Valle del Río Grande.
+                    </p>
+                </div>
+            </section>
+
+            <!-- OVERVIEW -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker lang-en">Our Approach</div>
+                        <div class="section-kicker lang-es">Nuestro Enfoque</div>
+                        <h2 class="section-title lang-en">Two Pathways to Sustainable Weight Loss</h2>
+                        <h2 class="section-title lang-es">Dos Caminos hacia una Pérdida de Peso Sostenible</h2>
+                    </div>
+
+                    <div class="grid">
+                        <!-- CARD 1: BARIATRIC SURGERY -->
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M6 20a2 2 0 0 1-2-2V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6z" />
+                                            <path d="M8 9a4 4 0 0 1 8 0" />
+                                            <path d="M12 9l2-2" />
+                                            <path
+                                                d="M9.2 13.6c1.2-1.2 2.3-.6 2.8.2.5-.8 1.6-1.4 2.8-.2 1.2 1.2.2 2.7-2.8 4.6-3-1.9-4-3.4-2.8-4.6z" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Bariatric Surgery</h3>
+                                        <h3 class="card-title lang-es">Cirugía Bariátrica</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Surgical</span>
+                                        <span class="card-pill lang-es">Quirúrgico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-body lang-en">
+                                Proven surgical procedures including gastric sleeve (sleeve gastrectomy) and gastric
+                                bypass (Roux-en-Y) designed to help you achieve significant, long-term weight loss and
+                                improve obesity-related health conditions.
+                            </p>
+                            <p class="card-body lang-es">
+                                Procedimientos quirúrgicos comprobados que incluyen manga gástrica (gastrectomía en
+                                manga) y bypass gástrico (Roux-en-Y) diseñados para ayudarle a lograr una pérdida de
+                                peso significativa y a largo plazo y mejorar las condiciones de salud relacionadas con
+                                la obesidad.
+                            </p>
+
+                            <div class="card-meta lang-en">
+                                For patients with BMI ≥40, or BMI ≥35 with obesity-related conditions
+                            </div>
+                            <div class="card-meta lang-es">
+                                Para pacientes con IMC ≥40, o IMC ≥35 con condiciones relacionadas con la obesidad
+                            </div>
+
+                            <div class="card-footer">
+                                <a href="procedures/bariatric.html" class="link lang-en">Learn about bariatric
+                                    surgery</a>
+                                <a href="procedures/bariatric.html" class="link lang-es">Conozca la cirugía
+                                    bariátrica</a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2: MEDICAL WEIGHT LOSS -->
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Medical Weight Loss</h3>
+                                        <h3 class="card-title lang-es">Pérdida de Peso Médica</h3>
+                                    </div>
+
+                                    <div class="card-header-right">
+                                        <span class="card-pill lang-en">Non-Surgical</span>
+                                        <span class="card-pill lang-es">No Quirúrgico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-body lang-en">
+                                Physician-supervised programs combining nutritional counseling, lifestyle modification
+                                strategies, and ongoing support. Ideal for patients seeking non-surgical options or
+                                preparing for bariatric surgery.
+                            </p>
+                            <p class="card-body lang-es">
+                                Programas supervisados por médicos que combinan asesoramiento nutricional, estrategias
+                                de modificación del estilo de vida y apoyo continuo. Ideal para pacientes que buscan
+                                opciones no quirúrgicas o que se preparan para una cirugía bariátrica.
+                            </p>
+
+                            <div class="card-meta lang-en">
+                                Personalized plans with regular follow-up and accountability
+                            </div>
+                            <div class="card-meta lang-es">
+                                Planes personalizados con seguimiento regular y responsabilidad
+                            </div>
+
+                            <div class="card-footer">
+                                <a href="mailto:appointments@premiergeneralsurgeon.com" class="link lang-en">Inquire
+                                    about medical weight loss</a>
+                                <a href="mailto:appointments@premiergeneralsurgeon.com" class="link lang-es">Consulte
+                                    sobre pérdida de peso médica</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY CHOOSE PGS -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker lang-en">Why Choose PGS</div>
+                        <div class="section-kicker lang-es">Por Qué Elegir PGS</div>
+                        <h2 class="section-title lang-en">Comprehensive Care From Start to Finish</h2>
+                        <h2 class="section-title lang-es">Atención Integral de Principio a Fin</h2>
+                    </div>
+
+                    <div class="grid">
+                        <!-- CARD 3: EXPERIENCED TEAM -->
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                            <circle cx="8.5" cy="7" r="4" />
+                                            <path d="M20 8v6M23 11h-6" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Experienced Surgical Team</h3>
+                                        <h3 class="card-title lang-es">Equipo Quirúrgico Experimentado</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-body lang-en">
+                                Board-certified bariatric surgeons with extensive experience in minimally invasive
+                                techniques. Our team has performed hundreds of successful weight loss procedures with a
+                                focus on patient safety and outcomes.
+                            </p>
+                            <p class="card-body lang-es">
+                                Cirujanos bariátricos certificados por la junta con amplia experiencia en técnicas
+                                mínimamente invasivas. Nuestro equipo ha realizado cientos de procedimientos exitosos de
+                                pérdida de peso con un enfoque en la seguridad y los resultados del paciente.
+                            </p>
+
+                            <div class="card-footer">
+                                <a href="surgeons.html" class="link lang-en">Meet our surgeons</a>
+                                <a href="surgeons.html" class="link lang-es">Conozca a nuestros cirujanos</a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4: COMPREHENSIVE SUPPORT -->
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Long-Term Support</h3>
+                                        <h3 class="card-title lang-es">Apoyo a Largo Plazo</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-body lang-en">
+                                Weight loss success requires ongoing care. We provide comprehensive follow-up visits,
+                                nutritional guidance, and management of any post-procedure needs to ensure you achieve
+                                and maintain your goals.
+                            </p>
+                            <p class="card-body lang-es">
+                                El éxito en la pérdida de peso requiere atención continua. Proporcionamos visitas de
+                                seguimiento integrales, orientación nutricional y manejo de cualquier necesidad
+                                posterior al procedimiento para asegurar que logre y mantenga sus objetivos.
+                            </p>
+
+                            <div class="card-footer">
+                                <a href="procedures/wound-care.html" class="link lang-en">Post-operative care</a>
+                                <a href="procedures/wound-care.html" class="link lang-es">Atención postoperatoria</a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5: PERSONALIZED APPROACH -->
+                        <div class="card animate-on-scroll">
+                            <div class="card-header">
+                                <div class="card-header-top">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="card-title lang-en">Tailored Treatment Plans</h3>
+                                        <h3 class="card-title lang-es">Planes de Tratamiento Personalizados</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-body lang-en">
+                                No two patients are the same. We take time to understand your medical history,
+                                lifestyle, and goals to recommend the most appropriate weight loss approach—whether
+                                surgical, medical, or a combination.
+                            </p>
+                            <p class="card-body lang-es">
+                                No hay dos pacientes iguales. Nos tomamos el tiempo para comprender su historial médico,
+                                estilo de vida y objetivos para recomendar el enfoque de pérdida de peso más apropiado,
+                                ya sea quirúrgico, médico o una combinación.
+                            </p>
+
+                            <div class="card-footer">
+                                <a href="general-surgery.html" class="link lang-en">Our surgical expertise</a>
+                                <a href="general-surgery.html" class="link lang-es">Nuestra experiencia quirúrgica</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker lang-en">Common Questions</div>
+                        <div class="section-kicker lang-es">Preguntas Frecuentes</div>
+                        <h2 class="section-title lang-en">Frequently Asked Questions</h2>
+                        <h2 class="section-title lang-es">Preguntas Frecuentes</h2>
+                    </div>
+
+                    <div class="grid">
+                        <!-- FAQ 1 -->
+                        <div class="card animate-on-scroll">
+                            <h3 class="card-title lang-en">What weight loss options does Premier General Surgeons offer?
+                            </h3>
+                            <h3 class="card-title lang-es">¿Qué opciones de pérdida de peso ofrece Premier General
+                                Surgeons?</h3>
+
+                            <p class="card-body lang-en">
+                                We offer both bariatric surgery (gastric sleeve and gastric bypass) and
+                                physician-supervised medical weight loss programs. Each treatment plan is tailored to
+                                your health history, lifestyle, and long-term goals.
+                            </p>
+                            <p class="card-body lang-es">
+                                Ofrecemos cirugía bariátrica (manga gástrica y bypass gástrico) y programas médicos de
+                                pérdida de peso supervisados por médicos. Cada plan de tratamiento se adapta a su
+                                historial de salud, estilo de vida y objetivos a largo plazo.
+                            </p>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="card animate-on-scroll">
+                            <h3 class="card-title lang-en">Am I a candidate for bariatric surgery?</h3>
+                            <h3 class="card-title lang-es">¿Soy candidato para cirugía bariátrica?</h3>
+
+                            <p class="card-body lang-en">
+                                Candidates typically have a BMI of 40 or higher, or a BMI of 35 or higher with
+                                obesity-related health conditions such as type 2 diabetes, high blood pressure, or sleep
+                                apnea. A comprehensive consultation with our surgeons will determine if bariatric
+                                surgery is right for you.
+                            </p>
+                            <p class="card-body lang-es">
+                                Los candidatos generalmente tienen un IMC de 40 o más, o un IMC de 35 o más con
+                                condiciones de salud relacionadas con la obesidad, como diabetes tipo 2, presión
+                                arterial alta o apnea del sueño. Una consulta integral con nuestros cirujanos
+                                determinará si la cirugía bariátrica es adecuada para usted.
+                            </p>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="card animate-on-scroll">
+                            <h3 class="card-title lang-en">What is the difference between gastric sleeve and gastric
+                                bypass?</h3>
+                            <h3 class="card-title lang-es">¿Cuál es la diferencia entre manga gástrica y bypass
+                                gástrico?</h3>
+
+                            <p class="card-body lang-en">
+                                Gastric sleeve (sleeve gastrectomy) removes a portion of the stomach to create a
+                                smaller, sleeve-shaped stomach. Gastric bypass (Roux-en-Y) creates a small stomach pouch
+                                and reroutes the small intestine. Both are effective procedures with different
+                                mechanisms and benefits. Your surgeon will help determine which is best for you.
+                            </p>
+                            <p class="card-body lang-es">
+                                La manga gástrica (gastrectomía en manga) elimina una porción del estómago para crear un
+                                estómago más pequeño en forma de manga. El bypass gástrico (Roux-en-Y) crea una pequeña
+                                bolsa estomacal y redirige el intestino delgado. Ambos son procedimientos efectivos con
+                                diferentes mecanismos y beneficios. Su cirujano le ayudará a determinar cuál es mejor
+                                para usted.
+                            </p>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="card animate-on-scroll">
+                            <h3 class="card-title lang-en">Does Premier General Surgeons offer medical weight loss
+                                without surgery?</h3>
+                            <h3 class="card-title lang-es">¿Premier General Surgeons ofrece pérdida de peso médica sin
+                                cirugía?</h3>
+
+                            <p class="card-body lang-en">
+                                Yes, we offer physician-supervised medical weight loss programs that include nutritional
+                                counseling, lifestyle modification support, and follow-up care. This option is ideal for
+                                patients who are not candidates for surgery or who prefer a non-surgical approach.
+                            </p>
+                            <p class="card-body lang-es">
+                                Sí, ofrecemos programas médicos de pérdida de peso supervisados por médicos que incluyen
+                                asesoramiento nutricional, apoyo para la modificación del estilo de vida y atención de
+                                seguimiento. Esta opción es ideal para pacientes que no son candidatos para cirugía o
+                                que prefieren un enfoque no quirúrgico.
+                            </p>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="card animate-on-scroll">
+                            <h3 class="card-title lang-en">What kind of follow-up care is provided after bariatric
+                                surgery?</h3>
+                            <h3 class="card-title lang-es">¿Qué tipo de atención de seguimiento se proporciona después
+                                de la cirugía bariátrica?</h3>
+
+                            <p class="card-body lang-en">
+                                We provide comprehensive follow-up care including regular check-ins, nutritional
+                                guidance, monitoring of weight loss progress, and management of any post-surgical needs.
+                                Long-term success requires ongoing support, and our team is committed to your journey.
+                            </p>
+                            <p class="card-body lang-es">
+                                Proporcionamos atención de seguimiento integral que incluye chequeos regulares,
+                                orientación nutricional, monitoreo del progreso de pérdida de peso y manejo de cualquier
+                                necesidad postquirúrgica. El éxito a largo plazo requiere apoyo continuo, y nuestro
+                                equipo está comprometido con su viaje.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA SECTION -->
+            <section class="section">
+                <div class="container">
+                    <div class="card animate-on-scroll">
+                        <h2 class="card-title lang-en">Ready to Start Your Weight Loss Journey?</h2>
+                        <h2 class="card-title lang-es">¿Listo para Comenzar su Viaje de Pérdida de Peso?</h2>
+
+                        <p class="card-body lang-en">
+                            Schedule a consultation with our experienced bariatric team to discuss your weight loss
+                            goals and explore which option is right for you. We're here to support you every step of the
+                            way.
+                        </p>
+                        <p class="card-body lang-es">
+                            Programe una consulta con nuestro experimentado equipo bariátrico para discutir sus
+                            objetivos de pérdida de peso y explorar qué opción es la adecuada para usted. Estamos aquí
+                            para apoyarlo en cada paso del camino.
+                        </p>
+
+                        <div class="card-footer">
+                            <a href="mailto:appointments@premiergeneralsurgeon.com?subject=Weight Loss Consultation Request"
+                                class="link lang-en">
+                                Email us at appointments@premiergeneralsurgeon.com
+                            </a>
+                            <a href="mailto:appointments@premiergeneralsurgeon.com?subject=Solicitud de Consulta de Pérdida de Peso"
+                                class="link lang-es">
+                                Envíenos un correo a appointments@premiergeneralsurgeon.com
+                            </a>
+
+                            <a href="tel:9566214981" class="link lang-en">
+                                Call: (956) 621-4981
+                            </a>
+                            <a href="tel:9566214981" class="link lang-es">
+                                Llamar: (956) 621-4981
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer role="contentinfo" aria-label="Site footer">
+            <div class="container footer-inner">
+
+                <div class="footer-branding">
+                    <picture>
+                        <source srcset="assets/pgs-logo.webp" type="image/webp">
+                        <img src="assets/pgs-logo.png" alt="Premier General Surgeons logo" class="footer-logo"
+                            loading="lazy" decoding="async" height="30" />
+                    </picture>
+
+
+                    <div class="footer-copyright">
+                        <!-- ENGLISH -->
+                        <span class="lang-en">
+                            &copy; <span id="year"></span> Premier General Surgeons.
+                            All rights reserved.<br />
+                            Brownsville, TX
+                        </span>
+
+                        <!-- SPANISH -->
+                        <span class="lang-es">
+                            &copy; <span id="year"></span> Premier General Surgeons.
+                            Todos los derechos reservados.<br />
+                            Brownsville, TX
+                        </span>
+                    </div>
+                </div>
+
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="surgeons.html" class="link">
+                        <span class="lang-en">Meet our surgeons</span>
+                        <span class="lang-es">Nuestros cirujanos</span>
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
+                    <a href="index.html#contact" class="link">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-es">Contacto</span>
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
+                    <a href="https://www.facebook.com/share/19wRUC5FRo/?mibextid=wwXIfr" class="link" target="_blank"
+                        rel="noopener" aria-label="Premier General Surgeons on Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="lang-en">PGS on Facebook</span>
+                        <span class="lang-es">PGS en Facebook</span>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- External JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
