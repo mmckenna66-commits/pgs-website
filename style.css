@@ -848,11 +848,36 @@ a {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(148, 163, 184, 0.45);
+}
+
+.card:has(.card-overlay) {
+    cursor: pointer;
+}
+
+.card:has(.card-overlay):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(148, 163, 184, 0.55);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--radius-lg);
+    z-index: 1;
+}
+
+.card-overlay:focus {
+    outline: 2px solid var(--pgs-blue);
+    outline-offset: 2px;
 }
 
 :root {
@@ -954,17 +979,6 @@ a {
     font-size: 0.82rem;
     color: var(--pgs-steel-blue);
     margin-bottom: var(--space-xs);
-}
-
-.card-footer {
-    margin-top: 0.65rem;
-    display: flex;
-    flex-direction: column;
-    /* stack content vertically */
-    align-items: flex-start;
-    /* align links to the left */
-    gap: 0.25rem;
-    font-size: 0.85rem;
 }
 
 /* Make bullet lists inside cards stay neatly inside the box */
