@@ -39,10 +39,12 @@
     <!-- External stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- BreadcrumbList Structured Data -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@graph": [
+{
   "@type": "BreadcrumbList",
   "@id": "https://premiergeneralsurgeon.com/weight-loss.html#breadcrumb",
   "itemListElement": [
@@ -59,7 +61,34 @@
       "item": "https://premiergeneralsurgeon.com/weight-loss.html"
     }
   ]
+},
+{
+  "@type": "Physician",
+  "@id": "https://premiergeneralsurgeon.com/#dr-mckenna",
+  "name": "Michael J. McKenna, DO",
+  "jobTitle": "General Surgeon",
+  "medicalSpecialty": ["GeneralSurgery", "BariatricSurgery"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4970 Frontage Rd., Suite A",
+    "addressLocality": "Brownsville",
+    "addressRegion": "TX",
+    "postalCode": "78526",
+    "addressCountry": "US"
+  }
+},
+{
+  "@type": "MedicalWebPage",
+  "@id": "https://premiergeneralsurgeon.com/weight-loss.html#webpage",
+  "url": "https://premiergeneralsurgeon.com/weight-loss.html",
+  "name": "Weight Loss & Metabolic Care in Brownsville & Harlingen, TX | Premier General Surgeons",
+  "description": "Comprehensive, physician-led weight loss care—medical and surgical options tailored to you. Serving the Rio Grande Valley with careful evaluation and long-term follow-up.",
+  "inLanguage": "en",
+  "lastReviewed": "2026-01-03",
+  "reviewedBy": { "@id": "https://premiergeneralsurgeon.com/#dr-mckenna" },
+  "breadcrumb": { "@id": "https://premiergeneralsurgeon.com/weight-loss.html#breadcrumb" }
 }
+]}
     </script>
 
     <!-- FAQPage Structured Data -->
@@ -136,7 +165,6 @@
                     </picture>
 
                     <div>
-                        <div class="logo-text-top">PGS</div>
                         <div class="logo-text-bottom">Premier General Surgeons</div>
                     </div>
                 </a>
@@ -154,6 +182,10 @@
                         <a href="index.html#services">
                             <span class="lang-en">Services</span>
                             <span class="lang-es">Servicios</span>
+                        </a>
+                        <a href="/weight-loss.html">
+                            <span class="lang-en">Weight Loss</span>
+                            <span class="lang-es">Pérdida de Peso</span>
                         </a>
                         <a href="surgeons.html">
                             <span class="lang-en">Surgeons</span>
@@ -207,6 +239,10 @@
                     <a href="index.html#services" class="mobile-menu-link">
                         <span class="lang-en">Services</span>
                         <span class="lang-es">Servicios</span>
+                    </a>
+                    <a href="/weight-loss.html" class="mobile-menu-link">
+                        <span class="lang-en">Weight Loss</span>
+                        <span class="lang-es">Pérdida de Peso</span>
                     </a>
                     <a href="surgeons.html" class="mobile-menu-link">
                         <span class="lang-en">Surgeons</span>
@@ -639,70 +675,131 @@
     </div>
   </section>
 
-  <!-- FAQ (visible) -->
+  <!-- FAQ -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title lang-en">Frequently Asked Questions</h2>
-        <h2 class="section-title lang-es">Preguntas Frecuentes</h2>
-      </div>
+      <section class="faq-section animate-on-scroll" id="faq">
+        <div class="lang-en">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
 
-      <div class="grid">
-      <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>Do I need surgery to lose weight?</strong><br>
-          Not always. Many patients start with medical weight loss. Others benefit from bariatric surgery based on BMI,
-          health conditions, and prior weight-loss history.
-        </p>
-        <p class="card-body lang-es"><strong>¿Necesito cirugía para perder peso?</strong><br>
-          No siempre. Muchos pacientes inician con pérdida de peso médica. Otros se benefician de cirugía bariátrica según
-          el IMC, condiciones de salud e intentos previos.
-        </p>
-      </div>
+            <details class="faq-item">
+              <summary>Do I need surgery to lose weight?</summary>
+              <p>Not always. Many patients start with medical weight loss. Others benefit from bariatric surgery based on BMI, health conditions, and prior weight-loss history.</p>
+            </details>
 
-      <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>What happens at the first visit?</strong><br>
-          We review your goals and medical history and discuss options. We may recommend testing when appropriate, then build a plan and follow-up schedule.
-        </p>
-        <p class="card-body lang-es"><strong>¿Qué sucede en la primera visita?</strong><br>
-          Revisamos sus metas e historial médico y hablamos de opciones. Podemos recomendar estudios cuando sea apropiado y luego crear un plan y calendario de seguimiento.
-        </p>
-      </div>
+            <details class="faq-item">
+              <summary>What happens at the first visit?</summary>
+              <p>We review your goals and medical history and discuss options. We may recommend testing when appropriate, then build a plan and follow-up schedule.</p>
+            </details>
 
-      <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>Do you offer medical weight loss programs?</strong><br>
-          Yes. We offer physician-supervised programs, which may include nutrition planning, lifestyle guidance, and medication-based therapy when appropriate.
-        </p>
-        <p class="card-body lang-es"><strong>¿Ofrecen programas de pérdida de peso médica?</strong><br>
-          Sí. Ofrecemos programas supervisados por médicos, que pueden incluir plan de nutrición, guía de estilo de vida y terapia con medicamentos cuando sea apropiado.
-        </p>
-      </div>
+            <details class="faq-item">
+              <summary>Do you offer medical weight loss programs?</summary>
+              <p>Yes. We offer physician-supervised programs, which may include nutrition planning, lifestyle guidance, and medication-based therapy when appropriate.</p>
+            </details>
 
-      <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>How do I know which option is right for me?</strong><br>
-          The best approach depends on your health and goals. A consultation helps us recommend a safe plan tailored to you.
-        </p>
-        <p class="card-body lang-es"><strong>¿Cómo sé qué opción es la adecuada?</strong><br>
-          La mejor opción depende de su salud y metas. Una consulta nos ayuda a recomendar un plan seguro adaptado a usted.
-        </p>
-      </div>
+            <details class="faq-item">
+              <summary>How do I know which option is right for me?</summary>
+              <p>The best approach depends on your health and goals. A consultation helps us recommend a safe plan tailored to you.</p>
+            </details>
 
-      <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>How quickly can I be seen?</strong><br>
-          Availability varies. Contact our team to request an appointment and we will coordinate next steps.
-        </p>
-        <p class="card-body lang-es"><strong>¿Qué tan pronto puedo ser atendido?</strong><br>
-          La disponibilidad varía. Contáctenos para solicitar una cita y coordinaremos los siguientes pasos.
-        </p>
-      </div>
+            <details class="faq-item">
+              <summary>How quickly can I be seen?</summary>
+              <p>Availability varies. Contact our team to request an appointment and we will coordinate next steps.</p>
+            </details>
 
+            <details class="faq-item">
+              <summary>Do you treat wound complications after surgery?</summary>
+              <p>Yes. We provide wound care management when needed and coordinate follow-up for healing and recovery.</p>
+            </details>
+
+          </div>
+        </div>
+
+        <div class="lang-es">
+          <h2>Preguntas Frecuentes</h2>
+          <div class="faq-list">
+
+            <details class="faq-item">
+              <summary>¿Necesito cirugía para perder peso?</summary>
+              <p>No siempre. Muchos pacientes inician con pérdida de peso médica. Otros se benefician de cirugía bariátrica según el IMC, condiciones de salud e intentos previos.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>¿Qué sucede en la primera visita?</summary>
+              <p>Revisamos sus metas e historial médico y hablamos de opciones. Podemos recomendar estudios cuando sea apropiado y luego crear un plan y calendario de seguimiento.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>¿Ofrecen programas de pérdida de peso médica?</summary>
+              <p>Sí. Ofrecemos programas supervisados por médicos, que pueden incluir plan de nutrición, guía de estilo de vida y terapia con medicamentos cuando sea apropiado.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>¿Cómo sé qué opción es la adecuada?</summary>
+              <p>La mejor opción depende de su salud y metas. Una consulta nos ayuda a recomendar un plan seguro adaptado a usted.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>¿Qué tan pronto puedo ser atendido?</summary>
+              <p>La disponibilidad varía. Contáctenos para solicitar una cita y coordinaremos los siguientes pasos.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>¿Tratan complicaciones de heridas después de cirugía?</summary>
+              <p>Sí. Brindamos manejo de heridas cuando sea necesario y coordinamos seguimiento para cicatrización y recuperación.</p>
+            </details>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="section">
+    <div class="container">
       <div class="card animate-on-scroll">
-        <p class="card-body lang-en"><strong>Do you treat wound complications after surgery?</strong><br>
-          Yes. We provide wound care management when needed and coordinate follow-up for healing and recovery.
-        </p>
-        <p class="card-body lang-es"><strong>¿Tratan complicaciones de heridas después de cirugía?</strong><br>
-          Sí. Brindamos manejo de heridas cuando sea necesario y coordinamos seguimiento para cicatrización y recuperación.
-        </p>
+        <div class="card-header">
+          <h3 class="card-title lang-en">Related Services</h3>
+          <h3 class="card-title lang-es">Servicios Relacionados</h3>
+        </div>
+        <div class="card-body">
+          <p class="lang-en">Learn more about other surgical procedures we offer:</p>
+          <p class="lang-es">Conozca más sobre otros procedimientos quirúrgicos que ofrecemos:</p>
+          <ul style="margin-top: 1rem;">
+            <li><a href="/general-surgery.html" class="lang-en">General Surgery</a><a href="/general-surgery.html" class="lang-es">Cirugía General</a></li>
+            <li><a href="/procedures/bariatric.html" class="lang-en">Bariatric Surgery</a><a href="/procedures/bariatric.html" class="lang-es">Cirugía Bariátrica</a></li>
+            <li><a href="/procedures/wound-care.html" class="lang-en">Wound Care</a><a href="/procedures/wound-care.html" class="lang-es">Cuidado de Heridas</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Physician Review -->
+  <section class="section">
+    <div class="container">
+      <div class="physician-review animate-on-scroll">
+        <div class="lang-en">
+          <h3>Physician Review</h3>
+          <p>
+            This page was reviewed by
+            <strong>Michael J. McKenna, DO</strong>,
+            a board-certified general surgeon with experience in medical and surgical weight loss,
+            metabolic health management, and long-term patient care.
+          </p>
+        </div>
+
+        <div class="lang-es">
+          <h3>Revisión médica</h3>
+          <p>
+            Esta página fue revisada por
+            <strong>Michael J. McKenna, DO</strong>,
+            cirujano general certificado con experiencia en pérdida de peso médica y quirúrgica,
+            manejo de salud metabólica y atención a largo plazo del paciente.
+          </p>
+        </div>
       </div>
     </div>
   </section>
