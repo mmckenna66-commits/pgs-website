@@ -57,56 +57,63 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // -----------------------------
-    // Contact form: open user's email client
+    // Contact form: Formspree submission
     // -----------------------------
-    // The site uses a simple pattern: instead of sending the form to a
-    // server, we open the user's default email client with a pre-filled
-    // email (`mailto:`). This is useful for small sites where a backend
-    // isn't available. The code below collects form values and builds
-    // a properly encoded `mailto:` URL.
+    // The form now submits directly to Formspree via AJAX instead of
+    // opening an email client. This provides inline feedback without
+    // leaving the page.
     const form = document.getElementById("contact-form");
     if (form) {
-        form.addEventListener("submit", (event) => {
+        form.addEventListener("submit", async (event) => {
             // Prevent the browser's default form submission behavior
             event.preventDefault();
-
-            // Read values from the form inputs safely. The `?.` operator
-            // prevents errors if an element is missing, and `trim()` removes
-            // extra whitespace. The `|| ""` ensures we always have a string.
-            // Safely read input values. If an element is missing, fall back to
-            // an empty string before calling `trim()` to avoid runtime errors.
-            const name = (document.getElementById("cf-name")?.value || "").trim();
-            const dob = (document.getElementById("cf-dob")?.value || "").trim();
-            const phone = (document.getElementById("cf-phone")?.value || "").trim();
-            const message = (document.getElementById("cf-message")?.value || "").trim();
-
-            // `encodeURIComponent` is used to make strings safe for use in
-            // URLs (it escapes characters like spaces, &, ? and newlines).
-            const subject = encodeURIComponent("Appointment request from website");
-
-            // Build the body as multiple lines, filtering out any empty lines
-            // so the email body looks neat even if some fields are blank.
-            const bodyLines = [
-                "Appointment / consultation request from website:",
-                "",
-                name ? `Name: ${name}` : "",
-                dob ? `Date of birth: ${dob}` : "",
-                phone ? `Phone: ${phone}` : "",
-                "",
-                "Message:",
-                message || "(no additional message provided)",
-            ].filter(Boolean);
-
-            // Join lines with a newline character, then encode for the URL
-            const body = encodeURIComponent(bodyLines.join("\n"));
-
-            // Construct the mailto URL. When the browser navigates to this URL
-            // it opens the user's default email client with the fields filled.
-            const mailtoUrl = `mailto:appointments@premiergeneralsurgeon.com?subject=${subject}&body=${body}`;
-
-            // Navigate to the mailto URL to open the email client. This does
-            // not send the email automatically — the user must click send.
-            window.location.href = mailtoUrl;
+            
+            const statusDiv = document.getElementById("form-status");
+            const submitButtons = form.querySelectorAll('button[type="submit"]');
+            
+            // Disable submit buttons during submission
+            submitButtons.forEach(btn => {
+                btn.disabled = true;
+                btn.style.opacity = "0.6";
+            });
+            
+            try {
+                // Submit form data to Formspree
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Success message
+                    statusDiv.innerHTML = `
+                        <div style="padding: 1rem; background: #dcfce7; border: 1px solid #86efac; border-radius: 8px; color: #166534;">
+                            <strong>✓ Message sent successfully!</strong> We'll contact you soon.
+                        </div>
+                    `;
+                    statusDiv.style.display = "block";
+                    form.reset(); // Clear the form
+                } else {
+                    throw new Error("Form submission failed");
+                }
+            } catch (error) {
+                // Error message
+                statusDiv.innerHTML = `
+                    <div style="padding: 1rem; background: #fee2e2; border: 1px solid #fca5a5; border-radius: 8px; color: #991b1b;">
+                        <strong>× Error:</strong> Unable to send message. Please call (956) 621-4981 or email directly.
+                    </div>
+                `;
+                statusDiv.style.display = "block";
+            } finally {
+                // Re-enable submit buttons
+                submitButtons.forEach(btn => {
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                });
+            }
         });
     }
 
