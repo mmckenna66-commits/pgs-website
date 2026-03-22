@@ -635,6 +635,9 @@ a {
 .hero {
     position: relative;
     padding: 3.5rem 0 3rem;
+    height: 60vh;
+    min-height: 560px;
+    max-height: 760px;
     color: #0f172a;
     overflow: hidden;
 }
@@ -643,7 +646,7 @@ a {
 .hero-background {
     position: absolute;
     inset: 0;
-    background: url("assets/brownsville-hero.jpg") center center / cover no-repeat;
+    background: url("assets/brownsville-hero.jpg") center 38% / cover no-repeat;
     z-index: 0;
 }
 
@@ -665,12 +668,14 @@ a {
     flex-wrap: wrap;
     gap: 2rem;
     align-items: stretch;
+    min-height: 360px;
 }
 
 /* Main hero content card */
 .hero-main-panel {
     flex: 1 1 380px;
     max-width: 640px;
+    min-height: 320px;
     background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(10px);
     border-radius: 22px;
@@ -680,7 +685,9 @@ a {
 
 /* Right-hand card for additional content */
 .hero-card {
-    flex: 0 1 320px;
+    flex: 0 0 340px;
+    width: 340px;
+    min-height: 320px;
     align-self: flex-end;
     background: radial-gradient(circle at top, var(--pgs-light-blue), var(--pgs-blue));
     border-radius: 24px;
@@ -706,16 +713,26 @@ a {
 
 /* Mobile adjustments */
 @media (max-width: 900px) {
+    .hero {
+        height: auto;
+        min-height: 0;
+    }
+
     .hero-inner {
         flex-direction: column;
         gap: 1.75rem;
+        min-height: 0;
     }
 
     .hero-main-panel {
+        min-height: 0;
         padding: 1.5rem 1.25rem;
     }
 
     .hero-card {
+        flex: 1 1 auto;
+        width: auto;
+        min-height: 0;
         align-self: stretch;
     }
 }
@@ -1087,6 +1104,56 @@ a {
 
 .breadcrumbs a:hover {
     text-decoration: underline;
+}
+
+.mt-075 {
+    margin-top: 0.75rem;
+}
+
+.mt-07 {
+    margin-top: 0.7rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-125 {
+    margin-top: 1.25rem;
+}
+
+.mt-15 {
+    margin-top: 1.5rem;
+}
+
+.mt-25 {
+    margin-top: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.note-muted {
+    font-size: 0.9375rem;
+    color: var(--color-muted);
+}
+
+.note-subtle {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.d-none {
+    display: none;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
 }
 
 .link {
