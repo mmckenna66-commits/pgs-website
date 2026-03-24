@@ -635,11 +635,11 @@ a {
 .hero {
     position: relative;
     padding: 3.5rem 0 3rem;
-    height: 60vh;
+    height: auto;
     min-height: 560px;
-    max-height: 760px;
+    max-height: none;
     color: #0f172a;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Background image behind hero content */
