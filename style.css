@@ -737,6 +737,43 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    .hero-main-panel {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn,
+    .hero-actions .btn-primary {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .hero {
+        padding: 3rem 0 2.4rem;
+    }
+
+    .hero-inner {
+        gap: 1.5rem;
+    }
+
+    .hero-main-panel,
+    .hero-card {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* Make text readable on white background */
 .stat-label {
