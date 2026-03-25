@@ -215,6 +215,14 @@ a {
     white-space: nowrap;
 }
 
+@media (max-width: 480px) {
+    .btn {
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
 .btn-primary {
     background: linear-gradient(135deg, var(--pgs-blue), var(--pgs-steel-blue));
     color: #ffffff;
@@ -675,7 +683,6 @@ a {
 .hero-main-panel {
     flex: 1 1 380px;
     max-width: 640px;
-    min-height: 320px;
     background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(10px);
     border-radius: 22px;
@@ -687,7 +694,6 @@ a {
 .hero-card {
     flex: 0 0 340px;
     width: 340px;
-    min-height: 320px;
     align-self: flex-end;
     background: radial-gradient(circle at top, var(--pgs-light-blue), var(--pgs-blue));
     border-radius: 24px;
@@ -695,7 +701,17 @@ a {
     color: #ffffff;
     box-shadow: var(--shadow-soft);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+}
+
+.hero-main-panel,
+.hero-card {
+    min-height: unset;
+}
+
+.hero-card,
+.hero-main-panel {
+    overflow: visible;
 }
 
 /* Calmer “meta” line instead of bright pills */
@@ -1882,18 +1898,26 @@ footer {
     @media (min-width: 768px) {
         .map-embed iframe {
             height: 250px;
+            width: 100%;
         }
     }
 
     .maps-link {
         display: inline-block;
+            max-width: 100%;
         margin: 0.4rem 0 0.6rem;
         color: var(--pgs-blue);
         font-weight: 600;
         text-decoration: none;
+            width: 100%;
+            max-width: 100%;
     }
 
     .maps-link:hover {
+
+    .hero-actions .btn {
+        word-break: break-word;
+    }
         text-decoration: underline;
     }
 
