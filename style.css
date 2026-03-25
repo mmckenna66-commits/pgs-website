@@ -704,7 +704,7 @@ a {
 }
 
 .hero-main-panel {
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Calmer “meta” line instead of bright pills */
@@ -720,7 +720,6 @@ a {
     color: var(--color-muted);
 }
 
-/* Mobile adjustments */
 @media (max-width: 900px) {
     .hero {
         height: auto;
@@ -735,6 +734,8 @@ a {
 
     .hero-main-panel {
         min-height: 0;
+        height: auto;
+        overflow: visible;
         padding: 1.5rem 1.25rem;
     }
 
@@ -750,6 +751,8 @@ a {
     .hero-main-panel {
         width: 100%;
         max-width: none;
+        height: auto;
+        overflow: visible;
         display: flex;
         flex-direction: column;
         min-width: 0;
