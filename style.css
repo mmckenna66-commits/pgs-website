@@ -788,6 +788,47 @@ a {
         word-break: break-word;
         max-width: 100%;
     }
+
+    /* Reduce hero text sizes on mobile so content fits inside the panel */
+    .hero-title {
+        font-size: 1.55rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-kicker {
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.45;
+    }
+
+    .hero-subtitle-es {
+        font-size: 0.82rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.45;
+    }
+
+    .hero-actions {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-actions .btn,
+    .hero-actions .btn-primary {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-contact-line {
+        font-size: 0.82rem;
+        line-height: 1.4;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
