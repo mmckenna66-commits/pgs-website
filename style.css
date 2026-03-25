@@ -1943,3 +1943,19 @@ footer {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-home .hero-contact-line {
+        margin-top: 0.75rem;
+        font-size: 0.95rem;
+        line-height: 1.35;
+    }
+
+    .hero-home .hero-meta-row {
+        display: none;
+    }
+
+    .hero-home .hero-main-panel {
+        gap: 0;
+    }
+}
