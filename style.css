@@ -570,22 +570,6 @@ a {
     min-width: 180px;
 }
 
-@media (max-width: 480px) {
-    .hero-actions {
-        flex-direction: column;
-        gap: 0.6rem;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .hero-actions .btn-primary {
-        min-width: unset;
-    }
-}
-
 .hero-contact-line {
     font-size: 0.95rem;
     color: var(--color-muted);
@@ -763,6 +747,9 @@ a {
 
     .hero-actions {
         width: 100%;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: stretch;
     }
 
     .hero-actions .btn,
@@ -770,6 +757,11 @@ a {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+        justify-content: center;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+        word-break: break-word;
     }
 }
 
@@ -1914,10 +1906,6 @@ footer {
     }
 
     .maps-link:hover {
-
-    .hero-actions .btn {
-        word-break: break-word;
-    }
         text-decoration: underline;
     }
 
