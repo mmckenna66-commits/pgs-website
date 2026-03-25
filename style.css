@@ -1987,4 +1987,9 @@ footer {
         line-height: 1.2 !important;
         word-break: break-word !important;
     }
+
+    .hero-home .hero-actions .btn[hidden],
+    .hero-home .hero-actions .btn-primary[hidden] {
+        display: none !important;
+    }
 }
