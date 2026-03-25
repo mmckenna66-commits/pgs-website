@@ -1662,9 +1662,7 @@ footer {
 }
 
 /* CONTACT / LOCATIONS (duplicate .link rules removed) */
-\n
 /* All duplicate contact/location/form rules removed - already defined at lines 655-780 */
-\n\n
 
 /* Footer branding with logo */
 .footer-branding {
@@ -1907,13 +1905,12 @@ footer {
 
     .maps-link {
         display: inline-block;
-            max-width: 100%;
+        max-width: 100%;
         margin: 0.4rem 0 0.6rem;
         color: var(--pgs-blue);
         font-weight: 600;
         text-decoration: none;
-            width: 100%;
-            max-width: 100%;
+        width: 100%;
     }
 
     .maps-link:hover {
