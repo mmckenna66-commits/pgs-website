@@ -205,6 +205,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     padding: 0.55rem 1.15rem;
     border-radius: 999px;
     border: none;
@@ -674,6 +675,11 @@ a {
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
 }
 
+.hero-main-panel,
+.hero-actions {
+    min-width: 0;
+}
+
 /* Right-hand card for additional content */
 .hero-card {
     flex: 0 0 340px;
@@ -743,10 +749,12 @@ a {
         max-width: none;
         display: flex;
         flex-direction: column;
+        min-width: 0;
     }
 
     .hero-actions {
         width: 100%;
+        display: flex;
         flex-direction: column;
         gap: 0.6rem;
         align-items: stretch;
@@ -754,10 +762,13 @@ a {
 
     .hero-actions .btn,
     .hero-actions .btn-primary {
+        display: flex;
         width: 100%;
         max-width: 100%;
         min-width: 0;
+        box-sizing: border-box;
         justify-content: center;
+        align-items: center;
         white-space: normal;
         text-align: center;
         line-height: 1.2;
