@@ -774,6 +774,14 @@ a {
         line-height: 1.2;
         word-break: break-word;
     }
+
+    .hero-subtitle,
+    .hero-subtitle-es,
+    .hero-kicker {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
@@ -1975,7 +1983,7 @@ footer {
 
     .hero-home .hero-actions .btn,
     .hero-home .hero-actions .btn-primary {
-        display: flex !important;
+        display: flex;
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
@@ -1986,10 +1994,5 @@ footer {
         text-align: center !important;
         line-height: 1.2 !important;
         word-break: break-word !important;
-    }
-
-    .hero-home .hero-actions .btn[hidden],
-    .hero-home .hero-actions .btn-primary[hidden] {
-        display: none !important;
     }
 }
