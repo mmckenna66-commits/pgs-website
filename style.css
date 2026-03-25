@@ -699,9 +699,12 @@ a {
     min-height: unset;
 }
 
-.hero-card,
-.hero-main-panel {
+.hero-card {
     overflow: visible;
+}
+
+.hero-main-panel {
+    overflow: hidden;
 }
 
 /* Calmer “meta” line instead of bright pills */
