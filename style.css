@@ -1829,3 +1829,15 @@ footer {
         word-break: break-word !important;
     }
 }
+
+/* TikTok embed responsive wrapper */
+.video-embed {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-embed .tiktok-embed {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
