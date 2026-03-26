@@ -12,7 +12,6 @@ Primary public pages at repo root:
 - `surgeons.html` — Surgeon profiles
 - `staff.html` — Staff profiles
 - `resources.html` — Patient resources/forms
-- `referring.html` — Referring providers page
 
 Platform/public support files to keep:
 
