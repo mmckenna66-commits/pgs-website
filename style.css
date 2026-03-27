@@ -1833,11 +1833,22 @@ footer {
 /* TikTok embed responsive wrapper */
 .video-embed {
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .video-embed .tiktok-embed {
     max-width: 100% !important;
     min-width: 0 !important;
     width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+    .video-embed {
+        max-width: 100%;
+    }
 }
