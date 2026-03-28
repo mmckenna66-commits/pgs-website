@@ -1064,7 +1064,9 @@ a {
 
 /* Re-enable pointer events for interactive elements inside card content */
 .card-body a,
-.card-body button {
+.card-body button,
+.card-body .video-embed,
+.card-body .video-embed * {
     pointer-events: auto;
 }
 
@@ -1838,6 +1840,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    position: relative;
+    pointer-events: auto;
 }
 
 .video-embed .tiktok-embed {
