@@ -1727,21 +1727,43 @@ footer {
 
 .physician-review {
     margin-top: 2.5rem;
-    padding: 1rem 1.25rem;
-    background: #f9fafb;
-    border-left: 3px solid #d1d5db;
-    font-size: 0.8125rem;
-    color: #6b7280;
-    line-height: 1.5;
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    font-size: 0.875rem;
+    color: #475569;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+}
+
+.physician-review::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--pgs-blue), #60a5fa);
+}
+
+.physician-review > .lang-en,
+.physician-review > .lang-es {
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 14px;
+    padding: 1rem 1rem 0.95rem;
 }
 
 .physician-review h3 {
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #4b5563;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin: 0 0 0.6rem;
+    color: var(--pgs-blue);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 }
 
 .physician-review p {
@@ -1749,8 +1771,16 @@ footer {
 }
 
 .physician-review strong {
-    color: #374151;
-    font-weight: 600;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+@media (min-width: 760px) {
+    .physician-review {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        padding: 1.5rem;
+    }
 }
 
 .faq-section {
