@@ -870,12 +870,17 @@ a {
     gap: 0.45rem;
 }
 
-.hero-card-list span {
+.hero-card-list > li > span:first-child {
     width: 6px;
     height: 6px;
     border-radius: 999px;
     background: var(--pgs-yellow-orange);
     flex-shrink: 0;
+}
+
+.hero-card .link {
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .hero-hospital-tag {
