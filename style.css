@@ -1424,6 +1424,18 @@ footer {
     line-height: 1.4;
 }
 
+.footer-disclaimer {
+    flex-basis: 100%;
+    max-width: 720px;
+    margin: 0.5rem auto 0;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+    text-align: center;
+}
+
 .footer-logo {
     height: 30px;
     width: auto;
@@ -1591,6 +1603,12 @@ footer {
 
     .footer-links {
         gap: 0.5rem;
+    }
+
+    .footer-disclaimer {
+        margin: 0;
+        max-width: none;
+        text-align: left;
     }
 
     .footer-copyright {
