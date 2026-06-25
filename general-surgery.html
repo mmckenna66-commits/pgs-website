@@ -46,6 +46,7 @@
       "name": "Michael J. McKenna, DO",
       "jobTitle": "General Surgeon",
       "medicalSpecialty": ["GeneralSurgery", "LaparoscopicSurgery"],
+      "worksFor": { "@id": "https://premiergeneralsurgeon.com/#organization" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "4970 Frontage Rd., Suite A",
@@ -137,6 +138,16 @@
           }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://premiergeneralsurgeon.com/general-surgery.html#procedure",
+      "name": "General Surgery",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "howPerformed": "Minimally invasive (laparoscopic) or open techniques, selected based on the patient's condition, anatomy, and medical history.",
+      "bodyLocation": "Abdomen",
+      "relevantSpecialty": "GeneralSurgery",
+      "provider": { "@id": "https://premiergeneralsurgeon.com/#organization" }
     }
   ]
 }
