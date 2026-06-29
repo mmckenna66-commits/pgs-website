@@ -88,6 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
                 
                 if (response.ok) {
+                    // Fire a GA4 lead-conversion event. This only runs when
+                    // Formspree confirms the submission succeeded, so it counts
+                    // real leads. In GA4, mark `generate_lead` as a Key Event
+                    // to track it as a conversion.
+                    if (typeof gtag === "function") {
+                        gtag("event", "generate_lead", {
+                            form_id: "contact-form",
+                            form_destination: form.action
+                        });
+                    }
+
                     // Success message
                     statusDiv.innerHTML = `
                         <div style="padding: 1rem; background: #dcfce7; border: 1px solid #86efac; border-radius: 8px; color: #166534;">
@@ -116,6 +127,25 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // -----------------------------
+    // Click-to-call tracking
+    // -----------------------------
+    // A single delegated listener fires a GA4 event whenever any phone
+    // (`tel:`) link on the page is clicked. Because it's delegated on the
+    // document, it covers every tel: link site-wide without per-link wiring.
+    // In GA4, mark `click_to_call` as a Key Event to track calls as conversions.
+    document.addEventListener("click", (event) => {
+        const link = event.target.closest('a[href^="tel:"]');
+        if (!link) return;
+        if (typeof gtag === "function") {
+            gtag("event", "click_to_call", {
+                phone_number: link.getAttribute("href").replace("tel:", ""),
+                link_text: (link.textContent || "").trim(),
+                page_path: window.location.pathname
+            });
+        }
+    });
 
     // -----------------------------
     // Language toggle (simple, client-side)
